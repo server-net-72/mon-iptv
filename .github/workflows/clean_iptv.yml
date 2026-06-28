@@ -1,0 +1,32 @@
+name: Nettoyage IPTV Automatique
+
+on:
+  schedule:
+    - cron: '0 3 * * *' # S'exécute automatiquement toutes les nuits à 3h du matin
+  workflow_dispatch: # Permet de lancer le nettoyage manuellement quand vous le voulez
+
+jobs:
+  clean-playlist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le projet
+        uses: actions/checkout@v4
+
+      - name: Télécharger et nettoyer la liste
+        run: |
+          # 1. Téléchargement du fichier GitHub d'origine (Celui avec les tags EXTVLCOPT)
+          curl -s "https://githubusercontent.com" > raw_list.m3u
+
+          # 2. Suppression automatique de TOUTES les lignes contenant EXTVLCOPT
+          sed '/#EXTVLCOPT/d' raw_list.m3u > playlist_propre.m3u
+
+          # 3. Nettoyage des fichiers temporaires
+          rm raw_list.m3u
+
+      - name: Enregistrer la liste propre sur votre GitHub
+        run: |
+          git config --global user.name "server-net-72"
+          git config --global user.email "server-net-72@://github.com"
+          git add playlist_propre.m3u
+          git commit -m "Mise à jour et nettoyage automatique des chaînes" || exit 0
+          git push
