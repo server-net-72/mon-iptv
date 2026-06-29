@@ -1,26 +1,31 @@
-name: Nettoyage IPTV Automatique
+yamlname: Nettoyage IPTV Automatique
 
 on:
   schedule:
-    - cron: '0 3 * * *' # S'exécute toutes les nuits à 3h du matin
-  workflow_dispatch: # Permet de lancer le nettoyage manuellement
+    - cron: '0 3 * * *'
+  workflow_dispatch:
 
 jobs:
   clean-playlist:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Force l'autorisation d'écriture directement dans le script
+      contents: write
     steps:
       - name: Récupérer le projet
         uses: actions/checkout@v4
 
       - name: Télécharger et nettoyer la liste
         run: |
-          # Téléchargement de la liste arabe officielle
-          curl -s "https://github.io" > raw_list.m3u
+          # Téléchargement sécurisé en simulant un vrai navigateur internet
+          wget --user-agent="Mozilla/5.0" -O raw_list.m3u "https://github.io"
 
-          # Suppression stricte de toutes les lignes contenant EXTVLCOPT
-          sed '/#EXTVLCOPT/d' raw_list.m3u > playlist_propre.m3u
+          # Vérification si le fichier n'est pas vide avant de nettoyer
+          if [ -s raw_list.m3u ]; then
+            sed '/#EXTVLCOPT/d' raw_list.m3u > playlist_propre.m3u
+          else
+            echo "Erreur : Le fichier téléchargé est vide !"
+            exit 1
+          fi
 
           # Nettoyage
           rm raw_list.m3u
