@@ -15,7 +15,7 @@ jobs:
       - name: Télécharger et nettoyer la liste
         run: |
           # 1. Téléchargement du fichier GitHub d'origine (Celui avec les tags EXTVLCOPT)
-          curl -s "https://githubusercontent.com" > raw_list.m3u
+          curl -s "https://github.io > raw_list.m3u
 
           # 2. Suppression automatique de TOUTES les lignes contenant EXTVLCOPT
           sed '/#EXTVLCOPT/d' raw_list.m3u > playlist_propre.m3u
