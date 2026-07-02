@@ -16,9 +16,13 @@ jobs:
 
       - name: Télécharger et nettoyer la liste
         run: |
-          # Téléchargement direct du fichier source brut (sans passer par le site web)
-          curl -L --retry 3 --retry-delay 5 -s "https://githubusercontent.com" > raw_list.m3u
+          # Tentative de téléchargement avec l'URL officielle de leur CDN
+          curl -L -s "https://iptv-org.github.io/iptv/languages/ara.m3u" > raw_list.m3u
 
+          # Si le fichier est vide, on utilise l'URL de secours brute de GitHub
+          if [ ! -s raw_list.m3u ]; then
+            curl -L -s "https://githubusercontent.com" > raw_list.m3u
+          fi
 
           # Suppression stricte de toutes les lignes contenant EXTVLCOPT
           sed '/#EXTVLCOPT/d' raw_list.m3u > playlist_propre.m3u
