@@ -16,18 +16,13 @@ jobs:
 
       - name: Télécharger et nettoyer la liste
         run: |
-          # Téléchargement sécurisé en simulant un vrai navigateur internet
-          wget --user-agent="Mozilla/5.0" -O raw_list.m3u "https://github.io"
+          # Téléchargement direct du fichier source brut (sans passer par le site web)
+          curl -L -s "https://githubusercontent.com" > raw_list.m3u
 
-          # Vérification si le fichier n'est pas vide avant de nettoyer
-          if [ -s raw_list.m3u ]; then
-            sed '/#EXTVLCOPT/d' raw_list.m3u > playlist_propre.m3u
-          else
-            echo "Erreur : Le fichier téléchargé est vide !"
-            exit 1
-          fi
+          # Suppression stricte de toutes les lignes contenant EXTVLCOPT
+          sed '/#EXTVLCOPT/d' raw_list.m3u > playlist_propre.m3u
 
-          # Nettoyage
+          # Nettoyage du fichier temporaire
           rm raw_list.m3u
 
       - name: Enregistrer la liste propre sur GitHub
