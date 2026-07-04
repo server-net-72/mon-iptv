@@ -16,10 +16,10 @@ jobs:
 
       - name: Télécharger et nettoyer la liste
         run: |
-          # Tentative de téléchargement avec l'URL officielle de leur CDN
-          curl -L -s "https://iptv-org.github.io/iptv/languages/ara.m3u" > raw_list.m3u
+          # Téléchargement via le miroir jsDelivr pour éviter l'erreur réseau (exit code 6)
+          curl -L -s "https://jsdelivr.net" > raw_list.m3u
 
-          # Si le fichier est vide, on utilise l'URL de secours brute de GitHub
+          # Si le miroir échoue, tentative avec une commande de secours
           if [ ! -s raw_list.m3u ]; then
             curl -L -s "https://githubusercontent.com" > raw_list.m3u
           fi
@@ -29,9 +29,9 @@ jobs:
 
           # Nettoyage du fichier temporaire
           rm raw_list.m3u
+          
+          
 
-      - name: Enregistrer la liste propre sur GitHub
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Mise à jour et nettoyage automatique"
-          file_pattern: 'playlist_propre.m3u'
+      
+    
+
