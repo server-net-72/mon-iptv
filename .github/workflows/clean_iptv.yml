@@ -1,37 +1,58 @@
-name: Nettoyage IPTV Automatique
-
-on:
-  schedule:
-    - cron: '0 3 * * *'
-  workflow_dispatch:
-
-jobs:
-  clean-playlist:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Récupérer le projet
-        uses: actions/checkout@v4
-
-      - name: Télécharger et nettoyer la liste
+      - name: Télécharger et nettoyer les 4 listes
         run: |
-          # Téléchargement via le miroir jsDelivr pour éviter l'erreur réseau (exit code 6)
-          curl -L -s "https://jsdelivr.net" > raw_list.m3u
+          cat << 'EOF' > nettoyer.py
+          import urllib.request
+          import os
 
-          # Si le miroir échoue, tentative avec une commande de secours
-          if [ ! -s raw_list.m3u ]; then
-            curl -L -s "https://githubusercontent.com" > raw_list.m3u
+          # Vos 4 playlists configurées
+          PLAYLISTS = {
+              "playlist_france.m3u": "https://iptv-org.github.io/iptv/countries/fr.m3u",
+              "playlist_pluto_fr.m3u": "https://iptv-org.github.io/iptv/sources/fr_pluto.m3u",
+              "playlist_tvradiozap.m3u": "https://tvradiozap.eu/live/x/vlc/d/tvzeu.m3u",
+              "playlist_usa.m3u": "https://iptv-org.github.io/iptv/countries/us.m3u"
+          }
+
+          headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+
+          for nom_fichier, url in PLAYLISTS.items():
+              print(f"Début du traitement de : {nom_fichier}")
+              try:
+                  req = urllib.request.Request(url, headers=headers)
+                  
+                  # Lecture et écriture ligne par ligne pour éviter les crashs de mémoire
+                  with urllib.request.urlopen(req, timeout=30) as reponse, open(nom_fichier, 'w', encoding='utf-8') as fichier_propre:
+                      for ligne_octets in reponse:
+                          ligne = ligne_octets.decode('utf-8', errors='ignore')
+                          
+                          # RÈGLE DE NETTOYAGE : Suppression stricte de EXTVLCOPT
+                          if "#EXTVLCOPT" not in ligne:
+                              fichier_propre.write(ligne)
+                              
+                  print(f"Succès : {nom_fichier} a été créée.")
+              except Exception as e:
+                  print(f"Erreur sur {nom_fichier} : {e}")
+                  # Fichier de secours pour ne pas bloquer GitHub
+                  with open(nom_fichier, 'w', encoding='utf-8') as f:
+                      f.write("#EXTM3U\n# Erreur de téléchargement\n")
+
+          EOF
+          python3 nettoyer.py
+          rm nettoyer.py
+      - name: Sauvegarder et publier les playlists nettoyées
+        run: |
+          git config --local user.email "github-actions[bot]@://github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Ajout explicite des 4 fichiers sur GitHub
+          git add playlist_france.m3u
+          git add playlist_pluto_fr.m3u
+          git add playlist_tvradiozap.m3u
+          git add playlist_usa.m3u
+          
+          # Vérification s'il y a des changements avant de sauvegarder
+          if git diff --staged --quiet; then
+            echo "Aucune modification détectée dans les playlists."
+          else
+            git commit -m "Mise à jour automatique des 4 playlists IPTV"
+            git push
           fi
-
-          # Suppression stricte de toutes les lignes contenant EXTVLCOPT
-          sed '/#EXTVLCOPT/d' raw_list.m3u > playlist_propre.m3u
-
-          # Nettoyage du fichier temporaire
-          rm raw_list.m3u
-          
-          
-
-      
-    
-
