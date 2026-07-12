@@ -1,10 +1,34 @@
+name: Auto Clean IPTV Playlists
+
+on:
+  schedule:
+    # S'exécute automatiquement toutes les 24 heures à minuit UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # Permet de lancer le robot manuellement avec le bouton "Run workflow"
+
+permissions:
+  contents: write
+
+jobs:
+  clean-playlists:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le code du dépôt
+        uses: actions/checkout@v4
+
+      - name: Configurer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
       - name: Télécharger et nettoyer les 4 listes
         run: |
           cat << 'EOF' > nettoyer.py
           import urllib.request
           import os
 
-          # Vos 4 playlists configurées
           PLAYLISTS = {
               "playlist_france.m3u": "https://iptv-org.github.io/iptv/countries/fr.m3u",
               "playlist_pluto_fr.m3u": "https://iptv-org.github.io/iptv/sources/fr_pluto.m3u",
@@ -18,38 +42,30 @@
               print(f"Début du traitement de : {nom_fichier}")
               try:
                   req = urllib.request.Request(url, headers=headers)
-                  
-                  # Lecture et écriture ligne par ligne pour éviter les crashs de mémoire
                   with urllib.request.urlopen(req, timeout=30) as reponse, open(nom_fichier, 'w', encoding='utf-8') as fichier_propre:
                       for ligne_octets in reponse:
                           ligne = ligne_octets.decode('utf-8', errors='ignore')
-                          
-                          # RÈGLE DE NETTOYAGE : Suppression stricte de EXTVLCOPT
                           if "#EXTVLCOPT" not in ligne:
                               fichier_propre.write(ligne)
-                              
                   print(f"Succès : {nom_fichier} a été créée.")
               except Exception as e:
                   print(f"Erreur sur {nom_fichier} : {e}")
-                  # Fichier de secours pour ne pas bloquer GitHub
                   with open(nom_fichier, 'w', encoding='utf-8') as f:
                       f.write("#EXTM3U\n# Erreur de téléchargement\n")
-
           EOF
           python3 nettoyer.py
           rm nettoyer.py
+
       - name: Sauvegarder et publier les playlists nettoyées
         run: |
           git config --local user.email "github-actions[bot]@://github.com"
           git config --local user.name "github-actions[bot]"
           
-          # Ajout explicite des 4 fichiers sur GitHub
           git add playlist_france.m3u
           git add playlist_pluto_fr.m3u
           git add playlist_tvradiozap.m3u
           git add playlist_usa.m3u
           
-          # Vérification s'il y a des changements avant de sauvegarder
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
