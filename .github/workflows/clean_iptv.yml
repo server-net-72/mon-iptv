@@ -2,10 +2,8 @@ name: Auto Clean IPTV Playlists
 
 on:
   schedule:
-    # S'exécute automatiquement toutes les 24 heures à minuit UTC
     - cron: '0 0 * * *'
   workflow_dispatch:
-    # Permet de lancer le robot manuellement avec le bouton "Run workflow"
 
 permissions:
   contents: write
@@ -23,12 +21,13 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Télécharger et nettoyer les 4 listes
+      - name: Télécharger et nettoyer les listes
         run: |
           cat << 'EOF' > nettoyer.py
           import urllib.request
           import os
 
+          # Vos 4 playlists initiales (Liens complets et fonctionnels)
           PLAYLISTS = {
               "playlist_france.m3u": "https://iptv-org.github.io/iptv/countries/fr.m3u",
               "playlist_pluto_fr.m3u": "https://iptv-org.github.io/iptv/sources/fr_pluto.m3u",
@@ -38,6 +37,7 @@ jobs:
 
           headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
+          # 1. Traitement des 4 premières playlists normales
           for nom_fichier, url in PLAYLISTS.items():
               print(f"Début du traitement de : {nom_fichier}")
               try:
@@ -52,6 +52,38 @@ jobs:
                   print(f"Erreur sur {nom_fichier} : {e}")
                   with open(nom_fichier, 'w', encoding='utf-8') as f:
                       f.write("#EXTM3U\n# Erreur de téléchargement\n")
+
+          # 2. Traitement intelligent de la liste géante Free-TV (Filtrage)
+          url_freetv = "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+          print("Début du filtrage intelligent de la liste géante Free-TV...")
+          try:
+              req_free = urllib.request.Request(url_freetv, headers=headers)
+              with urllib.request.urlopen(req_free, timeout=45) as reponse, open("playlist_freetv_selection.m3u", 'w', encoding='utf-8') as fichier_selection:
+                  
+                  fichier_selection.write("#EXTM3U\n")
+                  tampon_extinf = ""
+                  
+                  # Mots-clés recherchés pour vos goûts (Arabe, Inde, Divertissement, Sport, Musique, Films)
+                  mots_cles = ["arabic", "arab", "india", "movie", "film", "music", "sport", "entertainment", "cinema"]
+                  
+                  for ligne_octets in reponse:
+                      ligne = ligne_octets.decode('utf-8', errors='ignore')
+                      
+                      if ligne.startswith("#EXTINF:"):
+                          tampon_extinf = ligne
+                      elif ligne.strip() and not ligne.startswith("#"):
+                          # Si la chaîne correspond à vos critères et ne contient pas EXTVLCOPT
+                          if tampon_extinf and any(mot in tampon_extinf.lower() for mot in mots_cles) and "#EXTVLCOPT" not in tampon_extinf:
+                              fichier_selection.write(tampon_extinf)
+                              fichier_selection.write(ligne)
+                          tampon_extinf = ""
+                          
+              print("Succès : La playlist filtrée Free-TV a été créée.")
+          except Exception as e:
+              print(f"Erreur sur Free-TV : {e}")
+              with open("playlist_freetv_selection.m3u", 'w', encoding='utf-8') as f:
+                  f.write("#EXTM3U\n# Erreur de téléchargement Free-TV\n")
+
           EOF
           python3 nettoyer.py
           rm nettoyer.py
@@ -65,10 +97,11 @@ jobs:
           git add playlist_pluto_fr.m3u
           git add playlist_tvradiozap.m3u
           git add playlist_usa.m3u
+          git add playlist_freetv_selection.m3u
           
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
-            git commit -m "Mise à jour automatique des 4 playlists IPTV"
+            git commit -m "Mise à jour des 4 playlists + Sélection Free-TV"
             git push
           fi
