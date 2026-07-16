@@ -27,7 +27,7 @@ jobs:
           import urllib.request
           import os
 
-          # Vos 4 playlists initiales (Liens complets exacts)
+          # Vos 4 playlists initiales (Liens complets exacts et fonctionnels)
           PLAYLISTS = {
               "playlist_france.m3u": "https://iptv-org.github.io/iptv/countries/fr.m3u",
               "playlist_pluto_fr.m3u": "https://iptv-org.github.io/iptv/sources/fr_pluto.m3u",
@@ -53,22 +53,24 @@ jobs:
                   with open(nom_fichier, 'w', encoding='utf-8') as f:
                       f.write("#EXTM3U\n# Erreur de téléchargement\n")
 
-          # 2. Traitement massif et intelligent de la liste géante Free-TV
-          url_freetv = "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
-          print("Début de l'extraction massive de la liste géante Free-TV...")
+          # 2. Traitement ciblé de l'INDEX MONDIAL GÉANT (VOTRE LIEN EXACT CORRIGÉ)
+          url_geante = "https://iptv-org.github.io/iptv/index.m3u"
+          print("Début de l'extraction ciblée depuis l'index mondial...")
           try:
-              req_free = urllib.request.Request(url_freetv, headers=headers)
-              with urllib.request.urlopen(req_free, timeout=45) as reponse, open("playlist_freetv_selection.m3u", 'w', encoding='utf-8') as fichier_selection:
+              req_geante = urllib.request.Request(url_geante, headers=headers)
+              with urllib.request.urlopen(req_geante, timeout=60) as reponse, open("playlist_monde_selection.m3u", 'w', encoding='utf-8') as fichier_selection:
                   
                   fichier_selection.write("#EXTM3U\n")
                   tampon_extinf = ""
                   
-                  # Liste d'exclusions des groupes ou pays dont vous n'avez pas besoin
-                  # Le robot élimine uniquement cela et GARDE TOUT LE RESTE (Cinéma, Sport, Arab, India, USA, France, etc.)
-                  pays_exclus = [
-                      "russia", "russian", "ukraine", "ukrainian", "china", "chinese", 
-                      "taiwan", "turkey", "turkish", "korea", "korean", "japan", "japanese",
-                      "vietnam", "indonesia", "thailand", "poland", "polish", "romania"
+                  # Liste stricte des pays, cultures et thématiques à CONSERVER
+                  autorises = [
+                      # Pays demandés
+                      "france", "united states", "usa", "canada", "spain", "italy", "germany", "india",
+                      # Mots-clés pour TOUS les pays arabes du Maghreb et Moyen-Orient
+                      "arabic", "arab", "morocco", "algeria", "tunisia", "egypt", "saudi", "uae", "lebanon", "jordan",
+                      # Thématiques de divertissement général mondial
+                      "movies", "music", "sports", "animation", "comedy", "documentary", "entertainment", "films"
                   ]
                   
                   for ligne_octets in reponse:
@@ -78,17 +80,17 @@ jobs:
                           tampon_extinf = ligne
                       elif ligne.strip() and not ligne.startswith("#"):
                           if tampon_extinf and "#EXTVLCOPT" not in tampon_extinf:
-                              # Stratégie inversée : On garde SAUF si le groupe fait partie des pays exclus
-                              if not any(pays in tampon_extinf.lower() for pays in pays_exclus):
+                              # Stratégie de préservation : On ne garde QUE si le texte contient un des éléments autorisés
+                              if any(critere in tampon_extinf.lower() for critere in autorises):
                                   fichier_selection.write(tampon_extinf)
                                   fichier_selection.write(ligne)
                           tampon_extinf = ""
                           
-              print("Succès : La playlist géante filtrée Free-TV a été créée.")
+              print("Succès : La playlist 'playlist_monde_selection.m3u' a été créée.")
           except Exception as e:
-              print(f"Erreur sur Free-TV : {e}")
-              with open("playlist_freetv_selection.m3u", 'w', encoding='utf-8') as f:
-                  f.write("#EXTM3U\n# Erreur de téléchargement Free-TV\n")
+              print(f"Erreur lors de l'extraction : {e}")
+              with open("playlist_monde_selection.m3u", 'w', encoding='utf-8') as f:
+                  f.write("#EXTM3U\n# Erreur de téléchargement Index Mondial\n")
 
           EOF
           python3 nettoyer.py
@@ -96,18 +98,18 @@ jobs:
 
       - name: Sauvegarder et publier les playlists nettoyées
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "github-actions[bot]@://github.com"
           git config --local user.name "github-actions[bot]"
           
           git add playlist_france.m3u
           git add playlist_pluto_fr.m3u
           git add playlist_tvradiozap.m3u
           git add playlist_usa.m3u
-          git add playlist_freetv_selection.m3u
+          git add playlist_monde_selection.m3u
           
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
-            git commit -m "Mise à jour des 4 playlists + Large Sélection Free-TV"
+            git commit -m "Extraction ciblée Monde/Arab/Inde sans Free-TV"
             git push
           fi
