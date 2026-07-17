@@ -27,7 +27,7 @@ jobs:
           import urllib.request
           import os
 
-          # Vos 4 playlists initiales (Liens complets exacts et fonctionnels)
+          # VOS 4 PLAYLISTS AVEC VOS LIENS EXACTS ET VÉRIFIÉS
           PLAYLISTS = {
               "playlist_france.m3u": "https://iptv-org.github.io/iptv/countries/fr.m3u",
               "playlist_pluto_fr.m3u": "https://iptv-org.github.io/iptv/sources/fr_pluto.m3u",
@@ -57,13 +57,11 @@ jobs:
           url_geante = "https://iptv-org.github.io/iptv/index.m3u"
           print("Début du téléchargement et du découpage de l'index mondial...")
           
-          # Liste des mots-clés thématiques exclusifs (sans pays)
-          criteres_thematiques = ["movies", "music", "sports", "animation", "comedy", "documentary", "entertainment", "films", "cinema"]
-          
-          # Liste complète et blindée des codes pays et noms pour vos choix cibles
-          codes_pays_cibles = [
-              "fr", "us", "ca", "es", "it", "de", "in", # France, USA, Canada, Espagne, Italie, Allemagne, Inde
-              "ae", "bh", "dj", "dz", "eg", "er", "il", "iq", "jo", "km", "kw", "lb", "ly", "ma", "mr", "om", "ps", "qa", "sa", "sd", "so", "sy", "td", "tn", "ye", "arabic", "arab" # Tous les pays arabes (Maroc, Algérie, Égypte...)
+          # Liste simplifiée et ultra-large des mots à chercher pour vos pays et les chaînes arabes
+          mots_pays = [
+              'tvg-country="de"', 'tvg-country="it"', 'tvg-country="fr"', 'tvg-country="us"', 'tvg-country="ca"', 'tvg-country="es"', 'tvg-country="in"',
+              'group-title="germany"', 'group-title="italy"', 'group-title="france"', 'group-title="united states"', 'group-title="canada"', 'group-title="spain"', 'group-title="india"',
+              'arabic', 'arab', 'morocco', 'algeria', 'tunisia', 'egypt', 'saudi', 'uae', 'lebanon', 'jordan', 'kuwait', 'qatar', 'oman', 'bahrain', 'palestine', 'syria', 'iraq', 'yemen', 'libya', 'sudan'
           ]
 
           try:
@@ -84,26 +82,21 @@ jobs:
                           if tampon_extinf and "#EXTVLCOPT" not in tampon_extinf:
                               texte_l = tampon_extinf.lower()
                               
-                              # Extraction du tag tvg-country="..." s'il existe pour un ciblage précis
-                              pays_tag = ""
-                              if 'tvg-country="' in texte_l:
-                                  pays_tag = texte_l.split('tvg-country="')[1].split('"')[0]
-                              
-                              # REGLE 1 : S'il s'agit d'un de vos pays cibles ou d'une chaîne arabe, elle va STRICTEMENT dans le fichier Pays
-                              if pays_tag in codes_pays_cibles or any(p in texte_l for p in ["france", "united states", "canada", "spain", "italy", "germany", "india", "arabic", "arab", "morocco", "algeria", "tunisia", "egypt", "saudi"]):
+                              # REGLE 1 : Si la ligne contient une mention de l'Allemagne, Italie, Inde ou Monde Arabe, elle va STRICTEMENT dans Pays
+                              if any(mot in texte_l for mot in mots_pays):
                                   f_pays.write(tampon_extinf)
                                   f_pays.write(ligne)
                               
-                              # REGLE 2 : Si ce n'est pas vos pays cibles, mais que c'est du divertissement mondial, ça va dans Divertissement
-                              elif any(thematique in texte_l for thematique in criteres_thematiques):
+                              # REGLE 2 : Sinon, elle va dans Divertissement mondial (Films, Sports, Musique...)
+                              else:
                                   f_div.write(tampon_extinf)
                                   f_div.write(ligne)
                                   
                           tampon_extinf = ""
                           
-              print("Succès : Les deux playlists équilibrées ont été générées.")
+              print("Succès : Les deux playlists ont été correctement séparées.")
           except Exception as e:
-              print(f"Erreur lors du découpage de l'index : {e}")
+              print(f"Erreur lors du découpage : {e}")
               for f_nom in ["playlist_selection_divertissement.m3u", "playlist_selection_pays.m3u"]:
                   with open(f_nom, 'w', encoding='utf-8') as f:
                       f.write("#EXTM3U\n# Erreur de traitement\n")
@@ -114,7 +107,7 @@ jobs:
 
       - name: Sauvegarder et publier les playlists nettoyées
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "github-actions[bot]@://github.com"
           git config --local user.name "github-actions[bot]"
           
           git add playlist_france.m3u
@@ -127,6 +120,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
-            git commit -m "Correction : Repartition équitable Pays et Thématiques"
+            git commit -m "Correction finale : Tri strict des pays et URL exactes"
             git push
           fi
