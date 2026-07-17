@@ -57,16 +57,20 @@ jobs:
           url_geante = "https://iptv-org.github.io/iptv/index.m3u"
           print("Début du téléchargement et du découpage de l'index mondial...")
           
-          criteres_thematiques = ["movies", "music", "sports", "animation", "comedy", "documentary", "entertainment", "films"]
-          criteres_pays = ["france", "united states", "usa", "canada", "spain", "italy", "germany", "india", "arabic", "arab", "morocco", "algeria", "tunisia", "egypt", "saudi", "uae", "lebanon", "jordan"]
+          # Liste des mots-clés thématiques exclusifs (sans pays)
+          criteres_thematiques = ["movies", "music", "sports", "animation", "comedy", "documentary", "entertainment", "films", "cinema"]
+          
+          # Liste complète et blindée des codes pays et noms pour vos choix cibles
+          codes_pays_cibles = [
+              "fr", "us", "ca", "es", "it", "de", "in", # France, USA, Canada, Espagne, Italie, Allemagne, Inde
+              "ae", "bh", "dj", "dz", "eg", "er", "il", "iq", "jo", "km", "kw", "lb", "ly", "ma", "mr", "om", "ps", "qa", "sa", "sd", "so", "sy", "td", "tn", "ye", "arabic", "arab" # Tous les pays arabes (Maroc, Algérie, Égypte...)
+          ]
 
           try:
               req_geante = urllib.request.Request(url_geante, headers=headers)
               with urllib.request.urlopen(req_geante, timeout=60) as reponse:
-                  # Lecture complète des lignes en mémoire pour le découpage
                   lignes_index = [l.decode('utf-8', errors='ignore') for l in reponse]
 
-              # Ouverture des deux fichiers de destination
               with open("playlist_selection_divertissement.m3u", 'w', encoding='utf-8') as f_div, open("playlist_selection_pays.m3u", 'w', encoding='utf-8') as f_pays:
                   f_div.write("#EXTM3U\n")
                   f_pays.write("#EXTM3U\n")
@@ -78,21 +82,26 @@ jobs:
                           tampon_extinf = ligne
                       elif ligne.strip() and not ligne.startswith("#"):
                           if tampon_extinf and "#EXTVLCOPT" not in tampon_extinf:
-                              texte_analyse = tampon_extinf.lower()
+                              texte_l = tampon_extinf.lower()
                               
-                              # Fichier 1 : Divertissement mondial
-                              if any(critere in texte_analyse for critere in criteres_thematiques):
-                                  f_div.write(tampon_extinf)
-                                  f_div.write(ligne)
+                              # Extraction du tag tvg-country="..." s'il existe pour un ciblage précis
+                              pays_tag = ""
+                              if 'tvg-country="' in texte_l:
+                                  pays_tag = texte_l.split('tvg-country="')[1].split('"')[0]
                               
-                              # Fichier 2 : Pays et cultures cibles
-                              elif any(critere in texte_analyse for critere in criteres_pays):
+                              # REGLE 1 : S'il s'agit d'un de vos pays cibles ou d'une chaîne arabe, elle va STRICTEMENT dans le fichier Pays
+                              if pays_tag in codes_pays_cibles or any(p in texte_l for p in ["france", "united states", "canada", "spain", "italy", "germany", "india", "arabic", "arab", "morocco", "algeria", "tunisia", "egypt", "saudi"]):
                                   f_pays.write(tampon_extinf)
                                   f_pays.write(ligne)
+                              
+                              # REGLE 2 : Si ce n'est pas vos pays cibles, mais que c'est du divertissement mondial, ça va dans Divertissement
+                              elif any(thematique in texte_l for thematique in criteres_thematiques):
+                                  f_div.write(tampon_extinf)
+                                  f_div.write(ligne)
                                   
                           tampon_extinf = ""
                           
-              print("Succès : Les deux playlists découpées ont été générées.")
+              print("Succès : Les deux playlists équilibrées ont été générées.")
           except Exception as e:
               print(f"Erreur lors du découpage de l'index : {e}")
               for f_nom in ["playlist_selection_divertissement.m3u", "playlist_selection_pays.m3u"]:
@@ -105,10 +114,9 @@ jobs:
 
       - name: Sauvegarder et publier les playlists nettoyées
         run: |
-          git config --local user.email "github-actions[bot]@://github.com"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # Enregistrement des 4 listes de base + des 2 nouvelles listes découpées
           git add playlist_france.m3u
           git add playlist_pluto_fr.m3u
           git add playlist_tvradiozap.m3u
@@ -119,6 +127,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
-            git commit -m "Découpage de l'index mondial en deux sous-listes"
+            git commit -m "Correction : Repartition équitable Pays et Thématiques"
             git push
           fi
