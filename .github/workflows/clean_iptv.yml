@@ -50,7 +50,7 @@ jobs:
                   with open(nom_fichier, 'w', encoding='utf-8') as f:
                       f.write("#EXTM3U\n# Erreur de téléchargement\n")
 
-          # 2. Filtrage global de l'index géant (Lien exact iptv-org.github.io)
+          # 2. Extraction et limitation mathématique stricte à 1300 chaînes par fichier
           url_geante = "https://iptv-org.github.io/iptv/index.m3u"
           print("Téléchargement de l'index mondial...")
           
@@ -65,39 +65,44 @@ jobs:
               with urllib.request.urlopen(req_geante, timeout=60) as reponse:
                   lignes_index = [l.decode('utf-8', errors='ignore') for l in reponse]
 
-              # Extraction de TOUTES les chaînes valides dans une liste temporaire
               toutes_chaines = []
+              urls_uniques = set()
               tampon_extinf = ""
               
               for ligne in lignes_index:
                   if ligne.startswith("#EXTINF:"):
                       tampon_extinf = ligne
                   elif ligne.strip() and not ligne.startswith("#"):
+                      url_flux = ligne.strip()
                       if tampon_extinf and "#EXTVLCOPT" not in tampon_extinf:
-                          if any(critere in tampon_extinf.lower() for critere in autorises):
-                              # On stocke le bloc complet (la ligne #EXTINF + la ligne du lien)
-                              toutes_chaines.append((tampon_extinf, ligne))
+                          # Suppression stricte des doublons de liens
+                          if url_flux not in urls_uniques:
+                              if any(critere in tampon_extinf.lower() for critere in autorises):
+                                  toutes_chaines.append((tampon_extinf, ligne))
+                                  urls_uniques.add(url_flux)
                       tampon_extinf = ""
 
-              total_chaines = len(toutes_chaines)
-              milieu = total_chaines // 2
-              print(f"Nombre total de chaînes trouvées : {total_chaines}. Coupe au milieu à : {milieu}")
+              # On limite le total à maximum 2600 chaînes (pour faire deux fichiers de 1300)
+              selection_limitee = toutes_chaines[:2600]
+              milieu = len(selection_limitee) // 2
+              
+              print(f"Total après nettoyage : {len(selection_limitee)} chaînes. Coupe à : {milieu}")
 
-              # Écriture de la première moitié (Fichier Pays)
+              # Fichier 1 : Exactement la première moitié (1300 chaînes / ~2600 lignes)
               with open("playlist_selection_pays.m3u", 'w', encoding='utf-8') as f_pays:
                   f_pays.write("#EXTM3U\n")
-                  for extinf, lien in toutes_chaines[:milieu]:
+                  for extinf, lien in selection_limitee[:milieu]:
                       f_pays.write(extinf)
                       f_pays.write(lien)
 
-              # Écriture de la seconde moitié (Fichier Divertissement)
+              # Fichier 2 : Exactement la seconde moitié (1300 chaînes / ~2600 lignes)
               with open("playlist_selection_divertissement.m3u", 'w', encoding='utf-8') as f_div:
                   f_div.write("#EXTM3U\n")
-                  for extinf, lien in toutes_chaines[milieu:]:
+                  for extinf, lien in selection_limitee[milieu:]:
                       f_div.write(extinf)
                       f_div.write(lien)
-
-              print("Succès : Les deux fichiers ont été divisés à parts égales.")
+                          
+              print("Succès : Les deux fichiers ont été calibrés à 1300 chaînes chacun.")
           except Exception as e:
               print(f"Erreur lors du traitement : {e}")
               for f_nom in ["playlist_selection_pays.m3u", "playlist_selection_divertissement.m3u"]:
@@ -123,6 +128,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
-            git commit -m "Decoupage mathematique strict en 2 fichiers egaux"
+            git commit -m "Calibrage strict à 1300 chaines maximum par fichier"
             git push
           fi
