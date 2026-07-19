@@ -27,7 +27,7 @@ jobs:
           import urllib.request
           import os
 
-          # VOS 4 PLAYLISTS AVEC VOS LIENS EXACTS ET VÉRIFIÉS
+          # Vos 4 playlists initiales (Modèle exact et vérifié)
           PLAYLISTS = {
               "playlist_france.m3u": "https://iptv-org.github.io/iptv/countries/fr.m3u",
               "playlist_pluto_fr.m3u": "https://iptv-org.github.io/iptv/sources/fr_pluto.m3u",
@@ -37,31 +37,27 @@ jobs:
 
           headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
-          # 1. Traitement des 4 premières playlists normales
+          # 1. Traitement de vos 4 playlists de base
           for nom_fichier, url in PLAYLISTS.items():
-              print(f"Début du traitement de : {nom_fichier}")
               try:
                   req = urllib.request.Request(url, headers=headers)
-                  with urllib.request.urlopen(req, timeout=30) as reponse, open(nom_fichier, 'w', encoding='utf-8') as fichier_propre:
-                      for ligne_octets in reponse:
-                          ligne = ligne_octets.decode('utf-8', errors='ignore')
+                  with urllib.request.urlopen(req, timeout=30) as reponse, open(nom_fichier, 'w', encoding='utf-8') as f_propre:
+                      for l_octets in reponse:
+                          ligne = l_octets.decode('utf-8', errors='ignore')
                           if "#EXTVLCOPT" not in ligne:
-                              fichier_propre.write(ligne)
-                  print(f"Succès : {nom_fichier} a été créée.")
+                              f_propre.write(ligne)
               except Exception as e:
-                  print(f"Erreur sur {nom_fichier} : {e}")
                   with open(nom_fichier, 'w', encoding='utf-8') as f:
                       f.write("#EXTM3U\n# Erreur de téléchargement\n")
 
-          # 2. Traitement et découpage intelligent de l'INDEX MONDIAL GÉANT
+          # 2. Filtrage global de l'index géant (Lien exact iptv-org.github.io)
           url_geante = "https://iptv-org.github.io/iptv/index.m3u"
-          print("Début du téléchargement et du découpage de l'index mondial...")
+          print("Téléchargement de l'index mondial...")
           
-          # Liste simplifiée et ultra-large des mots à chercher pour vos pays et les chaînes arabes
-          mots_pays = [
-              'tvg-country="de"', 'tvg-country="it"', 'tvg-country="fr"', 'tvg-country="us"', 'tvg-country="ca"', 'tvg-country="es"', 'tvg-country="in"',
-              'group-title="germany"', 'group-title="italy"', 'group-title="france"', 'group-title="united states"', 'group-title="canada"', 'group-title="spain"', 'group-title="india"',
-              'arabic', 'arab', 'morocco', 'algeria', 'tunisia', 'egypt', 'saudi', 'uae', 'lebanon', 'jordan', 'kuwait', 'qatar', 'oman', 'bahrain', 'palestine', 'syria', 'iraq', 'yemen', 'libya', 'sudan'
+          autorises = [
+              "france", "united states", "usa", "canada", "spain", "italy", "germany", "india",
+              "arabic", "arab", "morocco", "algeria", "tunisia", "egypt", "saudi", "uae", "lebanon", "jordan",
+              "movies", "music", "sports", "animation", "comedy", "documentary", "entertainment", "films", "cinema"
           ]
 
           try:
@@ -69,37 +65,44 @@ jobs:
               with urllib.request.urlopen(req_geante, timeout=60) as reponse:
                   lignes_index = [l.decode('utf-8', errors='ignore') for l in reponse]
 
-              with open("playlist_selection_divertissement.m3u", 'w', encoding='utf-8') as f_div, open("playlist_selection_pays.m3u", 'w', encoding='utf-8') as f_pays:
-                  f_div.write("#EXTM3U\n")
+              # Extraction de TOUTES les chaînes valides dans une liste temporaire
+              toutes_chaines = []
+              tampon_extinf = ""
+              
+              for ligne in lignes_index:
+                  if ligne.startswith("#EXTINF:"):
+                      tampon_extinf = ligne
+                  elif ligne.strip() and not ligne.startswith("#"):
+                      if tampon_extinf and "#EXTVLCOPT" not in tampon_extinf:
+                          if any(critere in tampon_extinf.lower() for critere in autorises):
+                              # On stocke le bloc complet (la ligne #EXTINF + la ligne du lien)
+                              toutes_chaines.append((tampon_extinf, ligne))
+                      tampon_extinf = ""
+
+              total_chaines = len(toutes_chaines)
+              milieu = total_chaines // 2
+              print(f"Nombre total de chaînes trouvées : {total_chaines}. Coupe au milieu à : {milieu}")
+
+              # Écriture de la première moitié (Fichier Pays)
+              with open("playlist_selection_pays.m3u", 'w', encoding='utf-8') as f_pays:
                   f_pays.write("#EXTM3U\n")
-                  
-                  tampon_extinf = ""
-                  
-                  for ligne in lignes_index:
-                      if ligne.startswith("#EXTINF:"):
-                          tampon_extinf = ligne
-                      elif ligne.strip() and not ligne.startswith("#"):
-                          if tampon_extinf and "#EXTVLCOPT" not in tampon_extinf:
-                              texte_l = tampon_extinf.lower()
-                              
-                              # REGLE 1 : Si la ligne contient une mention de l'Allemagne, Italie, Inde ou Monde Arabe, elle va STRICTEMENT dans Pays
-                              if any(mot in texte_l for mot in mots_pays):
-                                  f_pays.write(tampon_extinf)
-                                  f_pays.write(ligne)
-                              
-                              # REGLE 2 : Sinon, elle va dans Divertissement mondial (Films, Sports, Musique...)
-                              else:
-                                  f_div.write(tampon_extinf)
-                                  f_div.write(ligne)
-                                  
-                          tampon_extinf = ""
-                          
-              print("Succès : Les deux playlists ont été correctement séparées.")
+                  for extinf, lien in toutes_chaines[:milieu]:
+                      f_pays.write(extinf)
+                      f_pays.write(lien)
+
+              # Écriture de la seconde moitié (Fichier Divertissement)
+              with open("playlist_selection_divertissement.m3u", 'w', encoding='utf-8') as f_div:
+                  f_div.write("#EXTM3U\n")
+                  for extinf, lien in toutes_chaines[milieu:]:
+                      f_div.write(extinf)
+                      f_div.write(lien)
+
+              print("Succès : Les deux fichiers ont été divisés à parts égales.")
           except Exception as e:
-              print(f"Erreur lors du découpage : {e}")
-              for f_nom in ["playlist_selection_divertissement.m3u", "playlist_selection_pays.m3u"]:
+              print(f"Erreur lors du traitement : {e}")
+              for f_nom in ["playlist_selection_pays.m3u", "playlist_selection_divertissement.m3u"]:
                   with open(f_nom, 'w', encoding='utf-8') as f:
-                      f.write("#EXTM3U\n# Erreur de traitement\n")
+                      f.write("#EXTM3U\n# Erreur\n")
 
           EOF
           python3 nettoyer.py
@@ -120,6 +123,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
-            git commit -m "Correction finale : Tri strict des pays et URL exactes"
+            git commit -m "Decoupage mathematique strict en 2 fichiers egaux"
             git push
           fi
