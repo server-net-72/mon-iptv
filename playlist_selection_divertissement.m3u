@@ -1,4 +1,8 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="ILoveLucy.us@SD" tvg-logo="https://images.pluto.tv/channels/63a2f1dda0d69700078b7cba/colorLogoPNG.png" group-title="Classic;Comedy",I Love Lucy
+https://jmp2.uk/plu-634f3011f4fff20007431641.m3u8
+#EXTINF:-1 tvg-id="IberoamericaTV.es@SD" tvg-logo="https://i.imgur.com/N3K6PAG.png" group-title="Entertainment",IberoAmerica TV (1080p)
+https://limited39.todostreaming.es/live/salome-livestream.m3u8
 #EXTINF:-1 tvg-id="IBTVUSA.us@SD" tvg-logo="https://i.imgur.com/6z7znwz.png" group-title="General",IBTV USA (576p)
 http://tvsen7.aynascope.net/ibtvusa/index.m3u8
 #EXTINF:-1 tvg-id="ICCplus.us@SD" tvg-logo="" group-title="Movies",ICC Plus (1080p)
@@ -31,8 +35,8 @@ https://rcavlive.akamaized.net/hls/live/704023/cancktv/master.m3u8
 https://rcavlive.akamaized.net/hls/live/704019/cancbkft/master.m3u8
 #EXTINF:-1 tvg-id="CBAFTDT.ca@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/ICI_Acadie_logo_2018.svg/960px-ICI_Acadie_logo_2018.svg.png" group-title="General",Ici Radio-Canada Télé Terre-Neuve-et-Labrador (CBAFT-DT) [Geo-blocked]
 https://rcavlive.akamaized.net/hls/live/704014/cancbaft/master.m3u8
-#EXTINF:-1 tvg-id="ICTV2.ua@SD" tvg-logo="https://i.imgur.com/J4zlRGv.png" group-title="Entertainment",ICTV2 (1080p)
-http://176.122.125.10:8080/ictv2/index.m3u8
+#EXTINF:-1 tvg-id="ICTV2.ua@SD" tvg-logo="https://i.imgur.com/J4zlRGv.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Entertainment",ICTV2 (1080p)
+http://stream.mcquack.net/368/index.m3u8
 #EXTINF:-1 tvg-id="IdentiteTeleCaraibes.mq@SD" tvg-logo="https://i.imgur.com/Atsf6Cd.png" group-title="Music",Identité Télé Caraïbes (548p)
 https://vdo2.pro-fhi.net:3769/stream/play.m3u8
 #EXTINF:-1 tvg-id="IERTBCSCanal82.mx@SD" tvg-logo="https://i.imgur.com/R3icGuG.png" group-title="Entertainment",IERTBCS Canal 8.2 La Paz (1080p) [Not 24/7]
@@ -99,6 +103,8 @@ https://jmp2.uk/plu-60807fd5db701400078219c2.m3u8
 http://stream.mcquack.net/147/index.m3u8
 #EXTINF:-1 tvg-id="INSP.us@SD" tvg-logo="https://i.imgur.com/YgOC51j.png" group-title="Entertainment",INSP (720p)
 http://40.160.24.53/INSP/index.m3u8
+#EXTINF:-1 tvg-id="Insync.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Insync.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36" group-title="Music",Insync (576p)
+http://103.175.73.12:8080/live/160/master.m3u8
 #EXTINF:-1 tvg-id="InterradioTV.cl@SD" tvg-logo="https://i.imgur.com/3875n4G.png" group-title="Music",Interradio TV
 https://tv.arkeo.cl:1936/8002/8002/playlist.m3u8
 #EXTINF:-1 tvg-id="InterTV.ve@SD" tvg-logo="https://i.ibb.co/HG2DM8G/IMG-20230705-153952.jpg" group-title="Entertainment",interTV (1080p)
@@ -245,10 +251,10 @@ https://streams2.sofast.tv/ptnr-yupptv/title-JUST_FOR_LAUGHS_GAGS_YUPPTV/v1/mast
 https://jmp2.uk/plu-6304f20c941c5d00089634e7.m3u8
 #EXTINF:-1 tvg-id="JusticeCentralTV.us@SD" tvg-logo="https://i.imgur.com/peuHszg.png" group-title="Entertainment",Justice Central TV (720p)
 http://40.160.24.53/JUSTICE_CENTRAL/index.m3u8
-#EXTINF:-1 tvg-id="K1.ua@SD" tvg-logo="https://i.imgur.com/uuRGpEn.png" group-title="Entertainment",K1 (1080p)
-http://176.122.125.10:8080/k1/index.m3u8
-#EXTINF:-1 tvg-id="K2.ua@SD" tvg-logo="https://i.imgur.com/NMhydr5.png" group-title="Entertainment",K2 (1080p)
-http://176.122.125.10:8080/k2/index.m3u8
+#EXTINF:-1 tvg-id="K1.ua@SD" tvg-logo="https://i.imgur.com/uuRGpEn.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Entertainment",K1 (1080p)
+http://stream.mcquack.net/270/index.m3u8
+#EXTINF:-1 tvg-id="K2.ua@SD" tvg-logo="https://i.imgur.com/NMhydr5.png" group-title="Entertainment",K2 (720p)
+https://cdn15.live-tv.cloud/ua_infinitas_tv/k2-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="K19.at@SD" tvg-logo="https://i.imgur.com/l4atkvs.png" group-title="Sports",K19
 https://1853185335.rsc.cdn77.org/K192/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="KContentbyCJENM.us@SD" tvg-logo="https://i.imgur.com/lRy231d.png" group-title="Entertainment",K Content by CJ ENM (1080p)
@@ -627,12 +633,12 @@ https://jmp2.uk/plu-61c18f62f5acaf0007f83135.m3u8
 https://jmp2.uk/plu-61c19165decece0007e9b2f3.m3u8
 #EXTINF:-1 tvg-id="LyxfallanNorge.se@SE" tvg-logo="https://images.pluto.tv/channels/67f7d328efc5473b6b4ac5f4/colorLogoPNG_1745915912635.png" group-title="Entertainment",Lyxfällan Norge
 https://jmp2.uk/plu-67f7d328efc5473b6b4ac5f4.m3u8
-#EXTINF:-1 tvg-id="M1.ua@SD" tvg-logo="https://i.imgur.com/wbRdUw8.png" group-title="Music",M1 (1080p)
-http://176.122.125.10:8080/m1/index.m3u8
+#EXTINF:-1 tvg-id="M1.ua@SD" tvg-logo="https://i.imgur.com/wbRdUw8.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" group-title="Music",M1 (720p)
+http://158.101.222.193:88/georgia_play.php?id=m1
 #EXTINF:-1 tvg-id="M2.hu@SD" tvg-logo="https://i.imgur.com/B0nYT0l.png" group-title="Entertainment",M2 (1080p)
 http://88.212.15.19/live/m2_hun/index.m3u8
-#EXTINF:-1 tvg-id="M2.ua@SD" tvg-logo="https://i.imgur.com/AfcBWCg.png" group-title="Music",M2 (1080p)
-http://176.122.125.10:8080/m2/index.m3u8
+#EXTINF:-1 tvg-id="M2.ua@SD" tvg-logo="https://i.imgur.com/AfcBWCg.png" group-title="Music",M2 (540p)
+https://live.m2.tv/hls3/stream.m3u8
 #EXTINF:-1 tvg-id="m2oTV.it@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Radio_m2o_-_Logo_2019.svg/500px-Radio_m2o_-_Logo_2019.svg.png" group-title="Music",m2o TV (1080p)
 https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S62628868/uhdWBlkC1AoO/playlist.m3u8
 #EXTINF:-1 tvg-id="M4Sport.hu@SD" tvg-logo="https://i.imgur.com/TQ4uJZk.png" group-title="Sports",M4 Sport
@@ -1599,8 +1605,8 @@ https://orbitachiletv.org/hls/0/stream.m3u8
 https://cdn-4.pishow.tv/live/233/master.m3u8
 #EXTINF:-1 tvg-id="OSNMoviesAction.ae@SD" tvg-logo="https://i.imgur.com/uOzyKup.png" group-title="Movies",OSN Movies Action (1080p)
 http://116.90.120.151:8000/play/a0ax/index.m3u8
-#EXTINF:-1 tvg-id="OTSE.ua@SD" tvg-logo="https://i.imgur.com/SeRNJIS.png" group-title="Entertainment",OTSE (1080p)
-http://176.122.125.10:8080/oce/index.m3u8
+#EXTINF:-1 tvg-id="OTSE.ua@SD" tvg-logo="https://i.imgur.com/SeRNJIS.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Entertainment",OTSE (1080p)
+http://stream.mcquack.net/329/index.m3u8
 #EXTINF:-1 tvg-id="OTV.gh@SD" tvg-logo="https://pbs.twimg.com/profile_images/1034118312437919744/emeWo-ag_400x400.jpg" group-title="Entertainment",OTV (720p)
 https://5dcabf026b188.streamlock.net/OceansTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TDMMacauSatellite.mo@SD" tvg-logo="https://i.imgur.com/iIfZsD6.png" group-title="General",Ou-Mun Macau Satellite Ch. 96 (720p)
@@ -2479,12 +2485,14 @@ https://srspsn.live/live/livestream.m3u8
 https://cdn-1.pishow.tv/live/449/master.m3u8
 #EXTINF:-1 tvg-id="PTCMusic.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PTC_MUSIC/images/LOGO_HD/image.png" group-title="Music",PTC Music (720p)
 https://d2lk5u59tns74c.cloudfront.net/out/v1/f913cf893c594f73b114216e74a2efbc/index.m3u8
-#EXTINF:-1 tvg-id="PTCPunjabi.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PTC_PUNJABI/images/LOGO_HD/image.png" group-title="Entertainment",PTC Punjabi (1080p)
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/3e22a9c278db4e3eb779afd42e41b0a6/index.m3u8
+#EXTINF:-1 tvg-id="PTCPunjabi.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PTC_PUNJABI/images/LOGO_HD/image.png" group-title="Entertainment",PTC Punjabi (720p)
+http://103.213.31.109:90/ActionCinema/playlist.m3u8
 #EXTINF:-1 tvg-id="PTCPunjabiCanada.ca@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/8/88/PTC_Punjabi.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" group-title="Undefined",PTC Punjabi Canada (1080p)
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/ptc-punjabi-canada/index.m3u8?ads.vf=78XheDwhNDq
 #EXTINF:-1 tvg-id="PTCPunjabiGold.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PTC_PUNJABI_GOLD/images/LOGO_HD/image.png" group-title="Entertainment",PTC Punjabi Gold (1080p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/6e14bac6d0384e129521a4d005188bfb/index.m3u8
+#EXTINF:-1 tvg-id="PTCPunjabi.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PTC_PUNJABI/images/LOGO_HD/image.png" group-title="Entertainment",PTC Punjabi HD (1080p)
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/3e22a9c278db4e3eb779afd42e41b0a6/index.m3u8
 #EXTINF:-1 tvg-id="PTVSports.pk@SD" tvg-logo="https://i.imgur.com/CPm6GHA.png" group-title="Sports",PTV Sports (1080p)
 http://103.250.28.74:8000/play/a019/index.m3u8
 #EXTINF:-1 tvg-id="PublicMovies.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PUBLIC_MOVIES/images/LOGO_HD/image.png" group-title="Movies",Public Movies (576p)
@@ -2591,11 +2599,3 @@ https://amg00745-radioitailaspa-radioitalia-rakuten-sucsc.amagi.tv/hls/amagi_hls
 https://rjtvhls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="RadioJND.nl@SD" tvg-logo="https://i.imgur.com/nyVlZeL.png" group-title="Music",Radio JND (1080p)
 https://radiojnd.cdn.hostin.cc/radiojnd/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioKaraoke.fr@SD" tvg-logo="https://i.imgur.com/9uRggjD.png" group-title="Music",Radio Karaoke (288p)
-https://raw.githubusercontent.com/Sibprod/streams/main/ressources/dm/py/hls/radiokaraoke-2.m3u8
-#EXTINF:-1 tvg-id="RadioKarolinaTV.rs@SD" tvg-logo="https://i.imgur.com/g2HpLX1.png" group-title="Music",Radio Karolina TV (720p)
-https://peer2.tdiradio.com/static/streaming-playlists/hls/4207de1d-52e8-4591-ad9e-218069b864d1/0.m3u8
-#EXTINF:-1 tvg-id="RadioLaSerenaTV.cl@SD" tvg-logo="https://i.imgur.com/65ftM3v.png" group-title="Music",Radio La Serena TV (720p)
-https://5ff3d9babae13.streamlock.net/chrgkqgkyb/chrgkqgkyb/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioLolaTV.rs@SD" tvg-logo="https://i.imgur.com/41eE8fl.png" group-title="Music",Radio Lola (720p) [Not 24/7]
-https://peer2.tdiradio.com/static/streaming-playlists/hls/7c3ea8d3-49dc-4e1b-8b1e-dc6fab71f5cf/0.m3u8
