@@ -50,7 +50,7 @@ jobs:
                   with open(nom_fichier, 'w', encoding='utf-8') as f:
                       f.write("#EXTM3U\n# Erreur de téléchargement\n")
 
-          # 2. Traitement de l'index mondial avec découpage en 3 parties
+          # 2. Traitement de l'index mondial avec découpage allégé (850, 850, 900)
           url_geante = "https://iptv-org.github.io/iptv/index.m3u"
           print("Téléchargement de l'index mondial...")
           
@@ -77,47 +77,44 @@ jobs:
                   elif ligne.strip() and not ligne.startswith("#"):
                       url_flux = ligne.strip()
                       if tampon_extinf and "#EXTVLCOPT" not in tampon_extinf:
-                          # Nettoyage strict des doublons de liens
                           if url_flux not in urls_uniques:
                               texte_l = tampon_extinf.lower()
-                              # Double vérification : Contient un mot autorisé ET aucun mot exclus
                               if any(critere in texte_l for critere in autorises):
                                   if not any(bloque in texte_l for bloque in exclus):
                                       toutes_chaines.append((tampon_extinf, ligne))
                                       urls_uniques.add(url_flux)
                       tampon_extinf = ""
 
-              # Limitation stricte à la cible globale de 2600 chaînes
               selection_totale = toutes_chaines[:2600]
-              print(f"Total après nettoyage anti-intrus : {len(selection_totale)} chaînes.")
+              print(f"Total après nettoyage : {len(selection_totale)} chaînes.")
 
-              # Découpage numérique en 3 fichiers (900, 900, 800)
-              partie_1 = selection_totale[:900]
-              partie_2 = selection_totale[900:1800]
-              partie_3 = selection_totale[1800:]
+              # Nouveau découpage pour alléger la première playlist (850, 850, 900)
+              partie_1 = selection_totale[:850]
+              partie_2 = selection_totale[850:1700]
+              partie_3 = selection_totale[1700:]
 
-              # Écriture du Fichier 1 (900 chaînes / 1800 lignes)
+              # Écriture du Fichier 1 (850 chaînes)
               with open("playlist_selection_1.m3u", 'w', encoding='utf-8') as f1:
                   f1.write("#EXTM3U\n")
                   for extinf, lien in partie_1:
                       f1.write(extinf)
-                      f1.write(lien)
+                      f1.write(ligne)
 
-              # Écriture du Fichier 2 (900 chaînes / 1800 lignes)
+              # Écriture du Fichier 2 (850 chaînes)
               with open("playlist_selection_2.m3u", 'w', encoding='utf-8') as f2:
                   f2.write("#EXTM3U\n")
                   for extinf, lien in partie_2:
                       f2.write(extinf)
-                      f2.write(lien)
+                      f2.write(ligne)
 
-              # Écriture du Fichier 3 (800 chaînes / 1600 lignes)
+              # Écriture du Fichier 3 (900 chaînes)
               with open("playlist_selection_3.m3u", 'w', encoding='utf-8') as f3:
                   f3.write("#EXTM3U\n")
                   for extinf, lien in partie_3:
                       f3.write(extinf)
-                      f3.write(lien)
+                      f3.write(ligne)
                           
-              print("Succès : Les trois fichiers (900, 900, 800) ont été générés sans doublons ni radios.")
+              print("Succès : Les trois fichiers ont été calibrés à (850, 850, 900).")
           except Exception as e:
               print(f"Erreur lors du traitement : {e}")
               for f_nom in ["playlist_selection_1.m3u", "playlist_selection_2.m3u", "playlist_selection_3.m3u"]:
@@ -144,6 +141,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
-            git commit -m "Decoupage strict en 3 fichiers (900, 900, 800) et filtre anti-intrus"
+            git commit -m "Allègement stratégique de la première playlist"
             git push
           fi
