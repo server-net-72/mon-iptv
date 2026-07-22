@@ -50,7 +50,7 @@ jobs:
                   with open(nom_fichier, 'w', encoding='utf-8') as f:
                       f.write("#EXTM3U\n# Erreur de téléchargement\n")
 
-          # 2. Extraction et limitation mathématique stricte à 1300 chaînes par fichier
+          # 2. Traitement de l'index mondial avec découpage en 3 parties
           url_geante = "https://iptv-org.github.io/iptv/index.m3u"
           print("Téléchargement de l'index mondial...")
           
@@ -59,6 +59,8 @@ jobs:
               "arabic", "arab", "morocco", "algeria", "tunisia", "egypt", "saudi", "uae", "lebanon", "jordan",
               "movies", "music", "sports", "animation", "comedy", "documentary", "entertainment", "films", "cinema"
           ]
+
+          exclus = ["russia", "china", "iran", "romania", "radio", "taiwan", "turkey", "korea", "japan"]
 
           try:
               req_geante = urllib.request.Request(url_geante, headers=headers)
@@ -75,37 +77,50 @@ jobs:
                   elif ligne.strip() and not ligne.startswith("#"):
                       url_flux = ligne.strip()
                       if tampon_extinf and "#EXTVLCOPT" not in tampon_extinf:
-                          # Suppression stricte des doublons de liens
+                          # Nettoyage strict des doublons de liens
                           if url_flux not in urls_uniques:
-                              if any(critere in tampon_extinf.lower() for critere in autorises):
-                                  toutes_chaines.append((tampon_extinf, ligne))
-                                  urls_uniques.add(url_flux)
+                              texte_l = tampon_extinf.lower()
+                              # Double vérification : Contient un mot autorisé ET aucun mot exclus
+                              if any(critere in texte_l for critere in autorises):
+                                  if not any(bloque in texte_l for bloque in exclus):
+                                      toutes_chaines.append((tampon_extinf, ligne))
+                                      urls_uniques.add(url_flux)
                       tampon_extinf = ""
 
-              # On limite le total à maximum 2600 chaînes (pour faire deux fichiers de 1300)
-              selection_limitee = toutes_chaines[:2600]
-              milieu = len(selection_limitee) // 2
-              
-              print(f"Total après nettoyage : {len(selection_limitee)} chaînes. Coupe à : {milieu}")
+              # Limitation stricte à la cible globale de 2600 chaînes
+              selection_totale = toutes_chaines[:2600]
+              print(f"Total après nettoyage anti-intrus : {len(selection_totale)} chaînes.")
 
-              # Fichier 1 : Exactement la première moitié (1300 chaînes / ~2600 lignes)
-              with open("playlist_selection_pays.m3u", 'w', encoding='utf-8') as f_pays:
-                  f_pays.write("#EXTM3U\n")
-                  for extinf, lien in selection_limitee[:milieu]:
-                      f_pays.write(extinf)
-                      f_pays.write(lien)
+              # Découpage numérique en 3 fichiers (900, 900, 800)
+              partie_1 = selection_totale[:900]
+              partie_2 = selection_totale[900:1800]
+              partie_3 = selection_totale[1800:]
 
-              # Fichier 2 : Exactement la seconde moitié (1300 chaînes / ~2600 lignes)
-              with open("playlist_selection_divertissement.m3u", 'w', encoding='utf-8') as f_div:
-                  f_div.write("#EXTM3U\n")
-                  for extinf, lien in selection_limitee[milieu:]:
-                      f_div.write(extinf)
-                      f_div.write(lien)
+              # Écriture du Fichier 1 (900 chaînes / 1800 lignes)
+              with open("playlist_selection_1.m3u", 'w', encoding='utf-8') as f1:
+                  f1.write("#EXTM3U\n")
+                  for extinf, lien in partie_1:
+                      f1.write(extinf)
+                      f1.write(lien)
+
+              # Écriture du Fichier 2 (900 chaînes / 1800 lignes)
+              with open("playlist_selection_2.m3u", 'w', encoding='utf-8') as f2:
+                  f2.write("#EXTM3U\n")
+                  for extinf, lien in partie_2:
+                      f2.write(extinf)
+                      f2.write(lien)
+
+              # Écriture du Fichier 3 (800 chaînes / 1600 lignes)
+              with open("playlist_selection_3.m3u", 'w', encoding='utf-8') as f3:
+                  f3.write("#EXTM3U\n")
+                  for extinf, lien in partie_3:
+                      f3.write(extinf)
+                      f3.write(lien)
                           
-              print("Succès : Les deux fichiers ont été calibrés à 1300 chaînes chacun.")
+              print("Succès : Les trois fichiers (900, 900, 800) ont été générés sans doublons ni radios.")
           except Exception as e:
               print(f"Erreur lors du traitement : {e}")
-              for f_nom in ["playlist_selection_pays.m3u", "playlist_selection_divertissement.m3u"]:
+              for f_nom in ["playlist_selection_1.m3u", "playlist_selection_2.m3u", "playlist_selection_3.m3u"]:
                   with open(f_nom, 'w', encoding='utf-8') as f:
                       f.write("#EXTM3U\n# Erreur\n")
 
@@ -122,12 +137,13 @@ jobs:
           git add playlist_pluto_fr.m3u
           git add playlist_tvradiozap.m3u
           git add playlist_usa.m3u
-          git add playlist_selection_divertissement.m3u
-          git add playlist_selection_pays.m3u
+          git add playlist_selection_1.m3u
+          git add playlist_selection_2.m3u
+          git add playlist_selection_3.m3u
           
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
-            git commit -m "Calibrage strict à 1300 chaines maximum par fichier"
+            git commit -m "Decoupage strict en 3 fichiers (900, 900, 800) et filtre anti-intrus"
             git push
           fi
