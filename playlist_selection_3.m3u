@@ -1,4 +1,8 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="MerryChristmasfromViafree.se@DK" tvg-logo="https://images.pluto.tv/channels/63048147b09fd60007847a08/colorLogoPNG.png" group-title="Movies",Merry Christmas from Viafree
+http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="MerryChristmasfromViafree.se@NO" tvg-logo="https://images.pluto.tv/channels/63048147b09fd60007847a08/colorLogoPNG.png" group-title="Movies",Merry Christmas from Viafree
+http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="MerryChristmasfromViafree.se@SE" tvg-logo="https://images.pluto.tv/channels/63048147b09fd60007847a08/colorLogoPNG.png" group-title="Movies",Merry Christmas from Viafree
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="MessatidaTV.gr@SD" tvg-logo="https://i.imgur.com/WEYrIrC.png" group-title="Music",Messatida TV (720p)
@@ -103,6 +107,8 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="MontonesTV.do@HD" tvg-logo="https://montonestv.com/wp-content/uploads/2025/11/montones-logo.png" group-title="Music",Montones TV (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="MoozDance.ro@SD" tvg-logo="https://i.imgur.com/aX70RD2.png" http-referrer="https://mooz.tv/live-ro/#MoozDance" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Music",Mooz Dance
+http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="MorePlutoTVComedy.us@CA" tvg-logo="https://images.pluto.tv/channels/62e91c3add66e00007eeb24c/colorLogoPNG_1759310317971.png" group-title="Comedy",More Pluto TV Comedy
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="MoreThanSportsTV.de@SD" tvg-logo="https://i.imgur.com/SLrjImc.png" group-title="Sports",More Than Sports TV (1080p)
@@ -160,6 +166,10 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="MovistarDeportes.pe@SD" tvg-logo="https://i.imgur.com/Zt3iE86.png" group-title="Sports",Movistar Deportes (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="MovistarPlus.pe@SD" tvg-logo="https://i.imgur.com/yGQGDoi.png" group-title="Entertainment",Movistar Plus (576p)
+http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="MoziPlus.hu@SD" tvg-logo="https://i.imgur.com/LtCnPFJ.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Movies",Mozi+
+http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="Moziverzum.hu@SD" tvg-logo="https://i.imgur.com/NMifecQ.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Movies",Moziverzum
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="MrBeanLiveAction.uk@English" tvg-logo="https://d2yv6y0n3qsl5c.cloudfront.net/MBEANP/MrBeanLiveAction-LG_LOGO_800x200.png" group-title="Comedy;Kids",Mr Bean Live Action (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
@@ -455,6 +465,8 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="NationalGeographic.gr@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png" group-title="Documentary",National Geographic (720p)
 http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="NationalGeographic.hu@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Documentary",National Geographic
+http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="NationalGeographic.mx@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png" group-title="Documentary",National Geographic (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="NationalGeographic.ro@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Documentary",National Geographic (576p)
@@ -484,6 +496,8 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="NationalGeographicWild.fr@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Geographic_Wild_logo.svg/960px-National_Geographic_Wild_logo.svg.png" group-title="Documentary",National Geographic Wild (720p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="NationalGeographicWild.gr@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Geographic_Wild_logo.svg/960px-National_Geographic_Wild_logo.svg.png" group-title="Documentary",National Geographic Wild (720p)
+http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="NationalGeographicWild.hu@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Geographic_Wild_logo.svg/960px-National_Geographic_Wild_logo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Documentary",National Geographic Wild
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="NationalGeographicWild.ro@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Geographic_Wild_logo.svg/960px-National_Geographic_Wild_logo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Documentary",National Geographic Wild (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
@@ -1784,18 +1798,4 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Rakuten TV German Cinema (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="RakutenTVNordicFilms.es@Finland" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/ff79e878-3eea-45fc-b0cd-55d6acce9b18-width200-quality90.jpeg" group-title="Movies",Rakuten TV Nordic Films (1080p)
-http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Rakuten TV Romance Movies Finland (1080p)
-http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Rakuten TV Romance Movies Germany (1080p)
-http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Rakuten TV Romance Movies Italy (1080p)
-http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Rakuten TV Romance Movies Spain (1080p)
-http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Rakuten TV Romance Movies UK (1080p)
-http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Rakuten TV Sci-Fi Italy (1080p)
-http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Rakuten TV Sci-Fi Spain (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8

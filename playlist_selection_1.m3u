@@ -331,8 +331,6 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="AMCEurope.uk@CzechRepublic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Movies",AMC Europe Czech Republic
 http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="AMCEurope.uk@Hungary" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Movies",AMC Europe Hungary
-http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="AMCLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" group-title="Movies",AMC Latin America (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="AMCLatinAmerica.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" group-title="Movies",AMC Latin America (1080p)
@@ -653,13 +651,13 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="AXNBlack.us@CzechRepublic" tvg-logo="https://i.imgur.com/Peo1QiZ.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Movies",AXN Black Czech Republic
 http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="AXNCEE.es@Hungary" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Movies",AXN CEE
-http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="AXNCEE.es@Bulgary" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Movies",AXN CEE Bulgary
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="AXNCEE.es@CzechRepublic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Movies",AXN CEE Czech Republic
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="AXNLatinAmerica.us@CentralAmerica" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Movies",AXN Latin America (1080p)
+http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="AXNLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Movies",AXN Latin America (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="AXNLatinAmerica.us@Andes" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Movies",AXN Latin America Andes (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
@@ -685,7 +683,7 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="AzCinema.mx@SD" tvg-logo="https://i.imgur.com/B5UN7C8.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" group-title="Movies",Az Cinema (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="AztecaDeportesNetwork.mx@SD" tvg-logo="https://match-images.icdb.tv/5913207f2494844101287828e87625eb.jpg" group-title="Sports",Azteca Deportes Network (720p)
+#EXTINF:-1 tvg-id="AztecaDeportesNetwork.mx@SD" tvg-logo="https://match-images.icdb.tv/5913207f2494844101287828e87625eb.jpg" group-title="Sports",Azteca Deportes Network (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="AztecaInternacional.mx@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/eb/Azteca_Internacional_logo_2023.png" group-title="Entertainment",Azteca Internacional (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
@@ -782,6 +780,8 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="BeavisandButtHead.se@SE" tvg-logo="https://images.pluto.tv/channels/6486e8984cfc2c0008b6844e/colorLogoPNG.png" group-title="Comedy",Beavis and Butt-Head
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="Becker.de@DACH" tvg-logo="https://images.pluto.tv/channels/630348a54c48ce00077eb6c7/colorLogoPNG.png" group-title="Comedy",Becker
+http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="beINSportsenEspanol.qa@SD" tvg-logo="https://i.imgur.com/J5aurrb.png" group-title="Sports",beIN Sports en Espanol (1080p) [Not 24/7]
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="beINSportsHaber.tr@SD" tvg-logo="https://i.imgur.com/QWo0x7S.jpg" group-title="Sports",beIN Sports Haber (720p)
 http://118.81.195.79:9003/hls/31/index.m3u8
@@ -1269,6 +1269,8 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="CinemaratonMoldova.md@SD" tvg-logo="https://i.imgur.com/XuDlweg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Movies",Cinemaraton Moldova
 http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="CinemaWorld.my@SD" tvg-logo="https://i.imgur.com/D2qNVZ7.png" group-title="Movies",CinemaWorld (720p)
+http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="CineMo.ph@SD" tvg-logo="https://i.imgur.com/rGAOD3f.png" group-title="Movies",Cinemo (480p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="CineramaTelevision.bo@SD" tvg-logo="https://play-lh.googleusercontent.com/RJ49IeJve4VPALBXqrqJGeAYOEoLQIZZ4zWwtJhofisng6ZYwGemZ-VXCx9ZQ-u7fw" group-title="Entertainment",Cinerama Television (720p)
@@ -1696,6 +1698,4 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="DTRZona1.ru@HD" tvg-logo="https://i.imgur.com/ddPUnpQ.png" group-title="Entertainment",DTR Zona 1 (720p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="DTRZona2.ru@HD" tvg-logo="https://i.imgur.com/odKqEZu.png" group-title="Entertainment",DTR Zona 2 (720p)
-http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="DuniaSinema.my@SD" tvg-logo="" group-title="Movies",Dunia Sinema (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8

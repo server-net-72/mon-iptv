@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="DuniaSinema.my@SD" tvg-logo="" group-title="Movies",Dunia Sinema (1080p)
+http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="Dvojka.sk@SD" tvg-logo="https://i.imgur.com/ft10wQn.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" group-title="Documentary",Dvojka
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="DW.de@Arabic" tvg-logo="https://i.imgur.com/8MRNFb9.png" group-title="News",DW Arabic (1080p)
@@ -299,11 +301,11 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="Film1Premiere.nl@SD" tvg-logo="https://i.imgur.com/Kn9LX8i.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Movies",Film1 Premiere
 http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="FilmArts.ar@Panregional" tvg-logo="https://i.imgur.com/ukdmEKD.png" group-title="Movies",Film & Arts (720p)
-http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="FilmMania.hu@SD" tvg-logo="https://i.imgur.com/crhsomk.png" group-title="Movies",Film Mania
+#EXTINF:-1 tvg-id="FilmArts.ar@Panregional" tvg-logo="https://i.imgur.com/ukdmEKD.png" group-title="Movies",Film & Arts (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="FilmNow.ro@SD" tvg-logo="https://i.imgur.com/sSoRvGz.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Movies",Film Now (720p)
+http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="FilmPlus.cz@SD" tvg-logo="https://i.imgur.com/OBYuY3S.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Movies",Film+
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="Filmax.pk@SD" tvg-logo="https://i.imgur.com/eLmdZ6k.png" group-title="Movies",Filmax (576p)
 http://118.81.195.79:9003/hls/31/index.m3u8
@@ -433,7 +435,7 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Fox Sports (720p)
 http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="FoxSports.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/960px-FOX_Sports_logo.svg.png" group-title="Sports",FOX Sports (720p)
+#EXTINF:-1 tvg-id="FoxSports.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/960px-FOX_Sports_logo.svg.png" group-title="Sports",Fox Sports (720p) [Not 24/7]
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="FoxSports1.us@HD" tvg-logo="https://i.imgur.com/O9BapV9.png" group-title="Sports",Fox Sports 1 (720p)
 http://118.81.195.79:9003/hls/31/index.m3u8
@@ -811,6 +813,8 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="History.cz@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Documentary",History
 http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="History.hu@SD" tvg-logo="https://i.imgur.com/OWIK7FJ.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Documentary",History
+http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="History.ro@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Documentary",History (576p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="History.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png" group-title="Documentary",History (720p)
@@ -1165,6 +1169,8 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="KhushbooBangla.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_KHUSHBOO_BANGLA/images/LOGO_HD/image.png" group-title="Entertainment",Khushboo Bangla (720p)
 http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="KidOO.us@SD" tvg-logo="https://digitaltv.prensariozone.com/wp-content/uploads/2022/11/Logo-KidOO.png" group-title="Animation;Kids",KidOO (1080p)
+http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="KidsMovieClub.us@SD" tvg-logo="https://i.imgur.com/avFk0Tt.png" group-title="Kids;Movies",Kids Movie Club
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="KidsFlix.us@SD" tvg-logo="https://i.imgur.com/4Pn0ADQ.png" group-title="Kids;Movies",KidsFlix (1080p) [Not 24/7]
@@ -1483,8 +1489,6 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="M4Sport.hu@SD" tvg-logo="https://i.imgur.com/TQ4uJZk.png" group-title="Sports",M4 Sport
 http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="M4SportPlus.hu@SD" tvg-logo="https://i.imgur.com/0wrFYdN.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Sports",M4 Sport+
-http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="M6.fr@HD" tvg-logo="https://i.imgur.com/7GVp3fW.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Entertainment",M6 (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="M6Music.fr@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/c/c9/M6_Music_%282012%29.png" group-title="Music",M6 Music (720p)
@@ -1694,8 +1698,4 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="PlutoTVMelrosePlace.us@Spain" tvg-logo="https://i.imgur.com/hXDj0fV.png" group-title="Undefined",Melrose Place
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="MeridianoTV.ve@SD" tvg-logo="https://i.imgur.com/I6gsUqD.png" group-title="Sports",Meridiano TV (576p)
-http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="MerryChristmasfromViafree.se@DK" tvg-logo="https://images.pluto.tv/channels/63048147b09fd60007847a08/colorLogoPNG.png" group-title="Movies",Merry Christmas from Viafree
-http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="MerryChristmasfromViafree.se@NO" tvg-logo="https://images.pluto.tv/channels/63048147b09fd60007847a08/colorLogoPNG.png" group-title="Movies",Merry Christmas from Viafree
 http://118.81.195.79:9003/hls/31/index.m3u8
