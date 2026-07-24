@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="DTRZona2.ru@HD" tvg-logo="https://i.imgur.com/odKqEZu.png" group-title="Entertainment",DTR Zona 2 (720p)
+http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="DuniaSinema.my@SD" tvg-logo="" group-title="Movies",Dunia Sinema (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="Dvojka.sk@SD" tvg-logo="https://i.imgur.com/ft10wQn.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" group-title="Documentary",Dvojka
@@ -667,9 +669,9 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="GodStandsTV.pk@Arabic" tvg-logo="https://i.imgur.com/EO6cYUI.png" group-title="Religious",God Stands TV Arabic
 http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="Gol.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Gol.svg/960px-Gol.svg.png" group-title="Sports",Gol (720p)
-http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="GolClassics.es@SD" tvg-logo="https://golstadium.com/_next/image?url=%2Fimg%2Fhome%2Fchannels%2Fthumb-gol-classics.jpg&w=1920&q=75" group-title="Sports",Gol Classics (1080p)
+http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="Gol.es@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Gol.svg/960px-Gol.svg.png" group-title="Sports",Gol HD (720p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="GolazoNetwork.us@SD" tvg-logo="https://images.pluto.tv/channels/63a0e33a45264d000850ed7e/colorLogoPNG_1731835813404.png" group-title="Sports",Golazo Network (720p)
 http://118.81.195.79:9003/hls/31/index.m3u8
@@ -841,11 +843,7 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="HitMixMusic.bg@SD" tvg-logo="https://i.imgur.com/Gbaxq6P.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Music",Hit Mix Music
 http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="HITS.sg@SD" tvg-logo="https://i.imgur.com/IM8Gy1l.png" group-title="Entertainment",HITS (720p)
-http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="Hits360TV.do@SD" tvg-logo="https://i.imgur.com/Cx5V233.jpg" group-title="Music",Hits 360 TV (720p) [Not 24/7]
-http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="HITSMovies.sg@HD" tvg-logo="https://i.imgur.com/kyE3vXf.png" group-title="Movies",HITS Movies HD (720p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="HitzTV.bz@SD" tvg-logo="https://i.imgur.com/SbZgsDh.png" group-title="Music",Hitz TV (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
@@ -1698,4 +1696,6 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="PlutoTVMelrosePlace.us@Spain" tvg-logo="https://i.imgur.com/hXDj0fV.png" group-title="Undefined",Melrose Place
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="MeridianoTV.ve@SD" tvg-logo="https://i.imgur.com/I6gsUqD.png" group-title="Sports",Meridiano TV (576p)
+http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="MerryChristmasfromViafree.se@DK" tvg-logo="https://images.pluto.tv/channels/63048147b09fd60007847a08/colorLogoPNG.png" group-title="Movies",Merry Christmas from Viafree
 http://118.81.195.79:9003/hls/31/index.m3u8

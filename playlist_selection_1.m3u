@@ -797,6 +797,10 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="BelRTL.be@SD" tvg-logo="https://i.imgur.com/0DUprIW.png" group-title="Music",Bel RTL (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="Belarus2.by@HD" tvg-logo="https://i.imgur.com/BpEHpPS.png" group-title="Entertainment",Belarus-2 HD (1080p)
+http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 tvg-id="Belarus5.by@SD" tvg-logo="https://i.imgur.com/NJsRFud.png" group-title="Sports",Belarus-5 (1080p) [Not 24/7]
+http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="Belarus5.by@HD" tvg-logo="https://i.imgur.com/NJsRFud.png" group-title="Sports",Belarus-5 HD (1080p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="BellatorMMA.us@SD" tvg-logo="https://i.imgur.com/VBKoLHk.png" group-title="Sports",Bellator MMA
@@ -1146,8 +1150,6 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="ChannelC.lk@SD" tvg-logo="https://i.imgur.com/CnFdLaf.png" group-title="Music",Channel C (720p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="ChannelK.mm@SD" tvg-logo="https://i.imgur.com/6PqxuhF.png" group-title="Entertainment",Channel K (720p)
-http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="ChannelU.sg@SD" tvg-logo="https://i.imgur.com/9MzEjoY.png" group-title="Entertainment",Channel U
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="ChaosCity.us@Germany" tvg-logo="https://i.imgur.com/1UZNdRH.png" group-title="Series",Chaos City
 http://118.81.195.79:9003/hls/31/index.m3u8
@@ -1696,6 +1698,4 @@ http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="DTRMusic1.ru@HD" tvg-logo="https://i.imgur.com/3picWDA.png" group-title="Music",DTR Music 1 (720p)
 http://118.81.195.79:9003/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="DTRZona1.ru@HD" tvg-logo="https://i.imgur.com/ddPUnpQ.png" group-title="Entertainment",DTR Zona 1 (720p)
-http://118.81.195.79:9003/hls/31/index.m3u8
-#EXTINF:-1 tvg-id="DTRZona2.ru@HD" tvg-logo="https://i.imgur.com/odKqEZu.png" group-title="Entertainment",DTR Zona 2 (720p)
 http://118.81.195.79:9003/hls/31/index.m3u8

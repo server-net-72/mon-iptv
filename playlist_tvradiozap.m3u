@@ -89,7 +89,7 @@ https://tvradiozap.eu/742
 https://tvradiozap.eu/1220
 #EXTINF:-1 tvg-id="" tvg-name="Système D" tvg-logo="https://www.media-participations.com/fichiers/logos/presse/logo_systemeD.png" tvg-country="France" group-title="Art de vivre",Système D
 https://tvradiozap.eu/972
-#EXTINF:-1 tvg-id="" tvg-name="TV5Monde+ Chefs (CH)" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR1300003HM_20250811T172926SQUARE.png" tvg-country="Suisse" group-title="Art de vivre",TV5Monde+ Chefs (CH)
+#EXTINF:-1 tvg-id="" tvg-name="TV5Monde+ Chefs" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR1300003HM_20250811T172926SQUARE.png" tvg-country="France" group-title="Art de vivre",TV5Monde+ Chefs
 https://tvradiozap.eu/1094
 #EXTINF:-1,-------------- Cinéma
 https://httpbin.org/status/404
