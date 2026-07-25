@@ -27,7 +27,7 @@ jobs:
           import urllib.request
           import os
 
-          # Vos 4 playlists initiales (Modèle exact et vérifié)
+          # Vos 4 playlists initiales parfaites et stables
           PLAYLISTS = {
               "playlist_france.m3u": "https://iptv-org.github.io/iptv/countries/fr.m3u",
               "playlist_pluto_fr.m3u": "https://iptv-org.github.io/iptv/sources/fr_pluto.m3u",
@@ -37,7 +37,6 @@ jobs:
 
           headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
-          # 1. Traitement de vos 4 playlists de base
           for nom_fichier, url in PLAYLISTS.items():
               try:
                   req = urllib.request.Request(url, headers=headers)
@@ -46,80 +45,10 @@ jobs:
                           ligne = l_octets.decode('utf-8', errors='ignore')
                           if "#EXTVLCOPT" not in ligne:
                               f_propre.write(ligne)
+                  print(f"Succès : {nom_fichier} a été mise à jour.")
               except Exception as e:
                   with open(nom_fichier, 'w', encoding='utf-8') as f:
                       f.write("#EXTM3U\n# Erreur de téléchargement\n")
-
-          # 2. Traitement de l'index mondial avec découpage allégé (850, 850, 900)
-          url_geante = "https://iptv-org.github.io/iptv/index.m3u"
-          print("Téléchargement de l'index mondial...")
-          
-          autorises = [
-              "france", "united states", "usa", "canada", "spain", "italy", "germany", "india",
-              "arabic", "arab", "morocco", "algeria", "tunisia", "egypt", "saudi", "uae", "lebanon", "jordan",
-              "movies", "music", "sports", "animation", "comedy", "documentary", "entertainment", "films", "cinema"
-          ]
-
-          exclus = ["russia", "china", "iran", "romania", "radio", "taiwan", "turkey", "korea", "japan"]
-
-          try:
-              req_geante = urllib.request.Request(url_geante, headers=headers)
-              with urllib.request.urlopen(req_geante, timeout=60) as reponse:
-                  lignes_index = [l.decode('utf-8', errors='ignore') for l in reponse]
-
-              toutes_chaines = []
-              urls_uniques = set()
-              tampon_extinf = ""
-              
-              for ligne in lignes_index:
-                  if ligne.startswith("#EXTINF:"):
-                      tampon_extinf = ligne
-                  elif ligne.strip() and not ligne.startswith("#"):
-                      url_flux = ligne.strip()
-                      if tampon_extinf and "#EXTVLCOPT" not in tampon_extinf:
-                          if url_flux not in urls_uniques:
-                              texte_l = tampon_extinf.lower()
-                              if any(critere in texte_l for critere in autorises):
-                                  if not any(bloque in texte_l for bloque in exclus):
-                                      toutes_chaines.append((tampon_extinf, ligne))
-                                      urls_uniques.add(url_flux)
-                      tampon_extinf = ""
-
-              selection_totale = toutes_chaines[:2600]
-              print(f"Total après nettoyage : {len(selection_totale)} chaînes.")
-
-              # Nouveau découpage pour alléger la première playlist (850, 850, 900)
-              partie_1 = selection_totale[:850]
-              partie_2 = selection_totale[850:1700]
-              partie_3 = selection_totale[1700:]
-
-              # Écriture du Fichier 1 (850 chaînes)
-              with open("playlist_selection_1.m3u", 'w', encoding='utf-8') as f1:
-                  f1.write("#EXTM3U\n")
-                  for extinf, lien in partie_1:
-                      f1.write(extinf)
-                      f1.write(ligne)
-
-              # Écriture du Fichier 2 (850 chaînes)
-              with open("playlist_selection_2.m3u", 'w', encoding='utf-8') as f2:
-                  f2.write("#EXTM3U\n")
-                  for extinf, lien in partie_2:
-                      f2.write(extinf)
-                      f2.write(ligne)
-
-              # Écriture du Fichier 3 (900 chaînes)
-              with open("playlist_selection_3.m3u", 'w', encoding='utf-8') as f3:
-                  f3.write("#EXTM3U\n")
-                  for extinf, lien in partie_3:
-                      f3.write(extinf)
-                      f3.write(ligne)
-                          
-              print("Succès : Les trois fichiers ont été calibrés à (850, 850, 900).")
-          except Exception as e:
-              print(f"Erreur lors du traitement : {e}")
-              for f_nom in ["playlist_selection_1.m3u", "playlist_selection_2.m3u", "playlist_selection_3.m3u"]:
-                  with open(f_nom, 'w', encoding='utf-8') as f:
-                      f.write("#EXTM3U\n# Erreur\n")
 
           EOF
           python3 nettoyer.py
@@ -134,13 +63,10 @@ jobs:
           git add playlist_pluto_fr.m3u
           git add playlist_tvradiozap.m3u
           git add playlist_usa.m3u
-          git add playlist_selection_1.m3u
-          git add playlist_selection_2.m3u
-          git add playlist_selection_3.m3u
           
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
-            git commit -m "Allègement stratégique de la première playlist"
+            git commit -m "Retour aux 4 playlists initiales stables"
             git push
           fi
