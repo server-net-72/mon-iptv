@@ -39,6 +39,8 @@ https://tvradiozap.eu/858
 https://tvradiozap.eu/963
 #EXTINF:-1 tvg-id="France24.fr" tvg-name="France 24" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/2/24/Logos_FRANCE24_RVB_2013.svg/330px-Logos_FRANCE24_RVB_2013.svg.png" tvg-country="France" group-title="TNT/Top",France 24
 https://tvradiozap.eu/671
+#EXTINF:-1 tvg-id="" tvg-name="Red Bull" tvg-logo="https://cdn.imgbin.com/21/3/24/imgbin-red-bull-tv-television-film-streaming-media-red-bull-02Jy28szeKm0wszFQpU57gWtY.jpg" tvg-country="France" group-title="TNT/Top",Red Bull
+https://tvradiozap.eu/1522
 #EXTINF:-1 tvg-id="SportEnFrance.fr" tvg-name="Sport en France" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/8/83/Sport_en_France_Logo.png/330px-Sport_en_France_Logo.png" tvg-country="France" group-title="TNT/Top",Sport en France
 https://tvradiozap.eu/703
 #EXTINF:-1 tvg-id="01TV.fr" tvg-name="Tech&Co" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/8/83/Tech_%26_Co.svg/500px-Tech_%26_Co.svg.png" tvg-country="France" group-title="TNT/Top",Tech&Co
