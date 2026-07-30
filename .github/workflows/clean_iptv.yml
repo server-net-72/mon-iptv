@@ -26,8 +26,10 @@ jobs:
           cat << 'EOF' > nettoyer.py
           import urllib.request
           import os
+          import json
+          import gzip
 
-          # Vos 4 playlists initiales parfaites et stables
+          # Vos 4 playlists initiales (Modèle exact, complet et vérifié)
           PLAYLISTS = {
               "playlist_france.m3u": "https://iptv-org.github.io/iptv/countries/fr.m3u",
               "playlist_pluto_fr.m3u": "https://iptv-org.github.io/iptv/sources/fr_pluto.m3u",
@@ -37,6 +39,7 @@ jobs:
 
           headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
+          # 1. Traitement de vos 4 playlists de base
           for nom_fichier, url in PLAYLISTS.items():
               try:
                   req = urllib.request.Request(url, headers=headers)
@@ -49,6 +52,46 @@ jobs:
               except Exception as e:
                   with open(nom_fichier, 'w', encoding='utf-8') as f:
                       f.write("#EXTM3U\n# Erreur de téléchargement\n")
+
+          # 2. Extraction sécurisée du catalogue Samsung TV Plus via l'index officiel GitHub
+          url_index_samsung = "https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/SamsungTVPlus/.channels.json.gz"
+          print("Téléchargement et décodage de l'index Samsung TV Plus officiel...")
+          
+          try:
+              req_samsung = urllib.request.Request(url_index_samsung, headers=headers)
+              with urllib.request.urlopen(req_samsung, timeout=45) as reponse:
+                  # Décompression du fichier GZ en mémoire pour lire le JSON brut
+                  donnees_brutes = gzip.decompress(reponse.read())
+                  catalogue = json.loads(donnees_brutes.decode('utf-8'))
+
+              # On cible uniquement vos 3 pays : US, DE, IT
+              pays_cibles = ["us", "de", "it"]
+              
+              with open("playlist_samsung_world.m3u", 'w', encoding='utf-8') as f_samsung:
+                  f_samsung.write("#EXTM3U\n")
+                  compteur = 0
+                  
+                  # Parcours de l'index officiel pour extraire proprement les chaînes du jour
+                  for channel_id, info in catalogue.items():
+                      # Vérification si la chaîne appartient à l'un de vos 3 pays choisis
+                      ch_regions = info.get("regions", [])
+                      if any(rg.lower() in pays_cibles for rg in ch_regions):
+                          nom = info.get("name", "Samsung TV Channel")
+                          logo = info.get("logo", "")
+                          group = info.get("group", "Samsung TV Plus")
+                          url_video = info.get("url", "")
+                          
+                          if url_video and not url_video.startswith("#"):
+                              # Construction d'une balise standard M3U propre
+                              f_samsung.write(f'#EXTINF:-1 tvg-id="{channel_id}" tvg-logo="{logo}" group-title="Samsung {group}", {nom}\n')
+                              f_samsung.write(f'{url_video}\n')
+                              compteur += 1
+                              
+              print(f"Succès : La playlist 'playlist_samsung_world.m3u' a été créée avec {compteur} chaînes.")
+          except Exception as e:
+              print(f"Erreur lors de la génération du fichier Samsung : {e}")
+              with open("playlist_samsung_world.m3u", 'w', encoding='utf-8') as f:
+                  f.write("#EXTM3U\n# Erreur d'index officiel Samsung\n")
 
           EOF
           python3 nettoyer.py
@@ -63,10 +106,11 @@ jobs:
           git add playlist_pluto_fr.m3u
           git add playlist_tvradiozap.m3u
           git add playlist_usa.m3u
+          git add playlist_samsung_world.m3u
           
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
-            git commit -m "Retour aux 4 playlists initiales stables"
+            git commit -m "Mise à jour des 4 listes et du catalogue Samsung mondial"
             git push
           fi
