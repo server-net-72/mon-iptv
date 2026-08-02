@@ -52,11 +52,10 @@ jobs:
                   with open(nom_fichier, 'w', encoding='utf-8') as f:
                       f.write("#EXTM3U\n# Erreur\n")
 
-          # 2. Filtrage chirurgical de la playlist internationale
+          # 2. Filtrage profond et découpage numérique de la liste internationale
           url_international = "https://iptv-org.github.io/iptv/countries/int.m3u"
-          print("Filtrage profond de la liste internationale...")
+          print("Filtrage profond et découpage de la liste internationale...")
           
-          # Liste noire étendue (Radios, News, et Religions non-islamiques)
           mots_bannis = ["news", "info", "actu", "journal", "radio", "press", "church", "christian", "bible", "god", "gospel", "buddha", "hindu"]
           mots_islam = ["islam", "quran", "koran", "sunnah", "makkah", "madinah"]
 
@@ -65,50 +64,59 @@ jobs:
               with urllib.request.urlopen(req_int, timeout=45) as reponse:
                   lignes_brutes = [l.decode('utf-8', errors='ignore') for l in reponse]
 
-              with open("playlist_international.m3u", 'w', encoding='utf-8') as f_int:
-                  f_int.write("#EXTM3U\n")
-                  
-                  noms_uniques = set()
-                  urls_uniques = set()
-                  tampon_extinf = ""
-                  compteur = 0
-                  
-                  for ligne in lignes_brutes:
-                      if ligne.startswith("#EXTINF:"):
-                          tampon_extinf = ligne
-                      elif ligne.strip() and not ligne.startswith("#"):
-                          url_flux = ligne.strip()
-                          if tampon_extinf and "#EXTVLCOPT" not in tampon_extinf:
-                              texte_l = tampon_extinf.lower()
-                              
-                              # Extraction grossière du nom de la chaîne pour éviter les doublons textuels
-                              nom_chaine = texte_l.split(",")[-1].strip() if "," in texte_l else texte_l
-                              
-                              # On vérifie les doublons d'URL et de Nom
-                              if url_flux not in urls_uniques and nom_chaine not in noms_uniques:
+              chaines_filtrees = []
+              noms_uniques = set()
+              urls_uniques = set()
+              tampon_extinf = ""
+              
+              for ligne in lignes_brutes:
+                  if ligne.startswith("#EXTINF:"):
+                      tampon_extinf = ligne
+                  elif ligne.strip() and not ligne.startswith("#"):
+                      url_flux = ligne.strip()
+                      if tampon_extinf and "#EXTVLCOPT" not in tampon_extinf:
+                          texte_l = tampon_extinf.lower()
+                          nom_chaine = texte_l.split(",")[-1].strip() if "," in texte_l else texte_l
+                          
+                          if url_flux not in urls_uniques and nom_chaine not in noms_uniques:
+                              # Règle Islam
+                              if any(m_is in texte_l for m_is in mots_islam):
+                                  chaines_filtrees.append((tampon_extinf, ligne))
+                                  urls_uniques.add(url_flux)
+                                  noms_uniques.add(nom_chaine)
+                              # Règle Générale (sans mots bannis)
+                              elif not any(banni in texte_l for banni in mots_bannis):
+                                  chaines_filtrees.append((tampon_extinf, ligne))
+                                  urls_uniques.add(url_flux)
+                                  noms_uniques.add(nom_chaine)
                                   
-                                  # RÈGLE RELIGIEUSE : Si c'est de l'Islam, on valide directement sans passer par les exclusions
-                                  if any(m_is in texte_l for m_is in mots_islam):
-                                      f_int.write(tampon_extinf)
-                                      f_int.write(ligne)
-                                      urls_uniques.add(url_flux)
-                                      noms_uniques.add(nom_chaine)
-                                      compteur += 1
-                                  
-                                  # RÈGLE GÉNÉRALE : On garde si aucun mot banni n'est présent
-                                  elif not any(banni in texte_l for banni in mots_bannis):
-                                      f_int.write(tampon_extinf)
-                                      f_int.write(ligne)
-                                      urls_uniques.add(url_flux)
-                                      noms_uniques.add(nom_chaine)
-                                      compteur += 1
-                                      
-                          tampon_extinf = ""
-              print(f"Succès : Playlist filtrée avec {compteur} chaînes uniques et épurées.")
+                      tampon_extinf = ""
+
+              # Division mathématique en 2 parties égales
+              total_chaines = len(chaines_filtrees)
+              milieu = total_chaines // 2
+              print(f"Total obtenu : {total_chaines} chaînes. Division à : {milieu}")
+
+              # Fichier 1
+              with open("playlist_international_1.m3u", 'w', encoding='utf-8') as f1:
+                  f1.write("#EXTM3U\n")
+                  for extinf, lien in chaines_filtrees[:milieu]:
+                      f1.write(extinf)
+                      f1.write(lien)
+
+              # Fichier 2
+              with open("playlist_international_2.m3u", 'w', encoding='utf-8') as f2:
+                  f2.write("#EXTM3U\n")
+                  for extinf, lien in chaines_filtrees[milieu:]:
+                      f2.write(extinf)
+                      f2.write(lien)
+                          
+              print("Succès : Les deux sous-listes internationales ont été créées.")
           except Exception as e:
               print(f"Erreur internationale : {e}")
-              with open("playlist_international.m3u", 'w', encoding='utf-8') as f:
-                  f.write("#EXTM3U\n# Erreur de traitement\n")
+              for f_nom in ["playlist_international_1.m3u", "playlist_international_2.m3u"]:
+                  with open(f_nom, 'w', encoding='utf-8') as f:
+                      f.write("#EXTM3U\n# Erreur\n")
 
           EOF
           python3 nettoyer.py
@@ -123,11 +131,12 @@ jobs:
           git add playlist_pluto_fr.m3u
           git add playlist_tvradiozap.m3u
           git add playlist_usa.m3u
-          git add playlist_international.m3u
+          git add playlist_international_1.m3u
+          git add playlist_international_2.m3u
           
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
-            git commit -m "Nettoyage en profondeur doublons, news, radios et religions"
+            git commit -m "Decoupage de la liste internationale en 2 fichiers legers"
             git push
           fi
