@@ -27,8 +27,7 @@ jobs:
           import urllib.request
           import os
 
-          # CONFIGURATION DE VOS PLAYLISTS
-          # REMPLACEZ LES QUATRE PREMIERS LIENS PAR VOS URLS EXACTES ET VÉRIFIÉES
+          # CONFIGURATION DE VOS PLAYLISTS INITIALES
           PLAYLISTS = {
               "playlist_france.m3u": "https://iptv-org.github.io/iptv/countries/fr.m3u",
               "playlist_pluto_fr.m3u": "https://iptv-org.github.io/iptv/sources/fr_pluto.m3u",
@@ -38,10 +37,9 @@ jobs:
 
           headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
-          # 1. Nettoyage standard de vos 4 premières listes
+          # 1. Nettoyage de vos 4 premières listes
           for nom_fichier, url in PLAYLISTS.items():
               if "METTEZ_ICI" in url:
-                  print(f"Saut de {nom_fichier} : URL non configurée par l'utilisateur.")
                   continue
               try:
                   req = urllib.request.Request(url, headers=headers)
@@ -50,50 +48,67 @@ jobs:
                           ligne = l_octets.decode('utf-8', errors='ignore')
                           if "#EXTVLCOPT" not in ligne:
                               f_propre.write(ligne)
-                  print(f"Succès : {nom_fichier} a été mise à jour.")
               except Exception as e:
                   with open(nom_fichier, 'w', encoding='utf-8') as f:
-                      f.write("#EXTM3U\n# Erreur de téléchargement\n")
+                      f.write("#EXTM3U\n# Erreur\n")
 
-          # 2. Traitement et filtrage strict de la nouvelle liste internationale (Votre URL exacte)
+          # 2. Filtrage chirurgical de la playlist internationale
           url_international = "https://iptv-org.github.io/iptv/countries/int.m3u"
-          print("Début du nettoyage de la playlist internationale...")
+          print("Filtrage profond de la liste internationale...")
           
-          # Mots-clés interdits (News et Radios)
-          mots_bannis = ["news", "info", "actu", "journal", "radio", "press"]
+          # Liste noire étendue (Radios, News, et Religions non-islamiques)
+          mots_bannis = ["news", "info", "actu", "journal", "radio", "press", "church", "christian", "bible", "god", "gospel", "buddha", "hindu"]
+          mots_islam = ["islam", "quran", "koran", "sunnah", "makkah", "madinah"]
 
           try:
               req_int = urllib.request.Request(url_international, headers=headers)
-              with urllib.request.urlopen(req_int, timeout=45) as reponse, open("playlist_international.m3u", 'w', encoding='utf-8') as f_int:
+              with urllib.request.urlopen(req_int, timeout=45) as reponse:
+                  lignes_brutes = [l.decode('utf-8', errors='ignore') for l in reponse]
+
+              with open("playlist_international.m3u", 'w', encoding='utf-8') as f_int:
                   f_int.write("#EXTM3U\n")
                   
+                  noms_uniques = set()
                   urls_uniques = set()
                   tampon_extinf = ""
                   compteur = 0
                   
-                  for l_octets in reponse:
-                      ligne = l_octets.decode('utf-8', errors='ignore')
-                      
+                  for ligne in lignes_brutes:
                       if ligne.startswith("#EXTINF:"):
                           tampon_extinf = ligne
                       elif ligne.strip() and not ligne.startswith("#"):
                           url_flux = ligne.strip()
                           if tampon_extinf and "#EXTVLCOPT" not in tampon_extinf:
-                              # On élimine les doublons de liens
-                              if url_flux not in urls_uniques:
-                                  texte_l = tampon_extinf.lower()
-                                  # Filtre strict : Aucun mot banni ne doit être dans le titre
-                                  if not any(banni in texte_l for banni in mots_bannis):
+                              texte_l = tampon_extinf.lower()
+                              
+                              # Extraction grossière du nom de la chaîne pour éviter les doublons textuels
+                              nom_chaine = texte_l.split(",")[-1].strip() if "," in texte_l else texte_l
+                              
+                              # On vérifie les doublons d'URL et de Nom
+                              if url_flux not in urls_uniques and nom_chaine not in noms_uniques:
+                                  
+                                  # RÈGLE RELIGIEUSE : Si c'est de l'Islam, on valide directement sans passer par les exclusions
+                                  if any(m_is in texte_l for m_is in mots_islam):
                                       f_int.write(tampon_extinf)
                                       f_int.write(ligne)
                                       urls_uniques.add(url_flux)
+                                      noms_uniques.add(nom_chaine)
                                       compteur += 1
+                                  
+                                  # RÈGLE GÉNÉRALE : On garde si aucun mot banni n'est présent
+                                  elif not any(banni in texte_l for banni in mots_bannis):
+                                      f_int.write(tampon_extinf)
+                                      f_int.write(ligne)
+                                      urls_uniques.add(url_flux)
+                                      noms_uniques.add(nom_chaine)
+                                      compteur += 1
+                                      
                           tampon_extinf = ""
-              print(f"Succès : 'playlist_international.m3u' créée avec {compteur} chaînes épurées.")
+              print(f"Succès : Playlist filtrée avec {compteur} chaînes uniques et épurées.")
           except Exception as e:
               print(f"Erreur internationale : {e}")
               with open("playlist_international.m3u", 'w', encoding='utf-8') as f:
-                  f.write("#EXTM3U\n# Erreur de traitement international\n")
+                  f.write("#EXTM3U\n# Erreur de traitement\n")
 
           EOF
           python3 nettoyer.py
@@ -113,6 +128,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
-            git commit -m "Ajout de la playlist internationale filtree sans news ni radios"
+            git commit -m "Nettoyage en profondeur doublons, news, radios et religions"
             git push
           fi
