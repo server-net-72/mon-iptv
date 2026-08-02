@@ -26,6 +26,7 @@ jobs:
           cat << 'EOF' > nettoyer.py
           import urllib.request
           import os
+          import re
 
           # CONFIGURATION DE VOS PLAYLISTS INITIALES
           PLAYLISTS = {
@@ -52,12 +53,16 @@ jobs:
                   with open(nom_fichier, 'w', encoding='utf-8') as f:
                       f.write("#EXTM3U\n# Erreur\n")
 
-          # 2. Filtrage profond et découpage numérique de la liste internationale
+          # 2. Filtrage en profondeur de la liste internationale
           url_international = "https://iptv-org.github.io/iptv/countries/int.m3u"
-          print("Filtrage profond et découpage de la liste internationale...")
+          print("Filtrage chirurgical de la liste internationale...")
           
-          mots_bannis = ["news", "info", "actu", "journal", "radio", "press", "church", "christian", "bible", "god", "gospel", "buddha", "hindu"]
+          # Catégories et mots banni (News, Radios, Shop, et Religions non-islamiques)
+          mots_bannis = ["news", "info", "actu", "journal", "radio", "press", "religious", "church", "christian", "bible", "god", "gospel", "shop"]
           mots_islam = ["islam", "quran", "koran", "sunnah", "makkah", "madinah"]
+
+          # Chaînes d'information mondiales célèbres cachées sans le mot "news"
+          chaines_news_cachees = ["cnn", "bbc", "al jazeera", "euronews", "france 24", "dw", "bloomberg", "reuters", "cctv", "sky news", "cnbc", "rt "]
 
           try:
               req_int = urllib.request.Request(url_international, headers=headers)
@@ -79,23 +84,35 @@ jobs:
                           nom_chaine = texte_l.split(",")[-1].strip() if "," in texte_l else texte_l
                           
                           if url_flux not in urls_uniques and nom_chaine not in noms_uniques:
-                              # Règle Islam
-                              if any(m_is in texte_l for m_is in mots_islam):
-                                  chaines_filtrees.append((tampon_extinf, ligne))
-                                  urls_uniques.add(url_flux)
-                                  noms_uniques.add(nom_chaine)
-                              # Règle Générale (sans mots bannis)
-                              elif not any(banni in texte_l for banni in mots_bannis):
-                                  chaines_filtrees.append((tampon_extinf, ligne))
-                                  urls_uniques.add(url_flux)
-                                  noms_uniques.add(nom_chaine)
+                              
+                              # ÉTAPE 1 : PROTECTION DE L'ISLAM
+                              is_islam = any(m_is in texte_l for m_is in mots_islam)
+                              
+                              # ÉTAPE 2 : EXCLUSIONS STRICTES (si ce n'est pas de l'Islam)
+                              if not is_islam:
+                                  if any(banni in texte_l for banni in mots_bannis):
+                                      tampon_extinf = ""
+                                      continue
+                                  if any(news in nom_chaine for news in chaines_news_cachees):
+                                      tampon_extinf = ""
+                                      continue
+                              
+                              # ÉTAPE 3 : RACCOURCISSEMENT DES LIGNES POUR OTTPLAYER
+                              # On supprime les étiquettes lourdes (tvg-logo géants, etc.) pour raccourcir la ligne
+                              ligne_courte = tampon_extinf
+                              if 'tvg-logo="' in ligne_courte:
+                                  ligne_courte = re.sub(r'tvg-logo="[^"]*"', '', ligne_courte)
+                              
+                              chaines_filtrees.append((ligne_courte, ligne))
+                              urls_uniques.add(url_flux)
+                              noms_uniques.add(nom_chaine)
                                   
                       tampon_extinf = ""
 
               # Division mathématique en 2 parties égales
               total_chaines = len(chaines_filtrees)
               milieu = total_chaines // 2
-              print(f"Total obtenu : {total_chaines} chaînes. Division à : {milieu}")
+              print(f"Total obtenu après filtrage réel : {total_chaines} chaînes. Division à : {milieu}")
 
               # Fichier 1
               with open("playlist_international_1.m3u", 'w', encoding='utf-8') as f1:
@@ -111,7 +128,7 @@ jobs:
                       f2.write(extinf)
                       f2.write(lien)
                           
-              print("Succès : Les deux sous-listes internationales ont été créées.")
+              print("Succès : Les deux sous-listes internationales ont été épurées et raccourcies.")
           except Exception as e:
               print(f"Erreur internationale : {e}")
               for f_nom in ["playlist_international_1.m3u", "playlist_international_2.m3u"]:
@@ -124,7 +141,7 @@ jobs:
 
       - name: Sauvegarder et publier les playlists nettoyées
         run: |
-          git config --local user.email "github-actions[bot]@://github.com"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
           git add playlist_france.m3u
@@ -137,6 +154,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
-            git commit -m "Decoupage de la liste internationale en 2 fichiers legers"
+            git commit -m "Raccourcissement des lignes et filtrage reel group-title"
             git push
           fi
