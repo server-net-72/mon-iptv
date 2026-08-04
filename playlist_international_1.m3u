@@ -473,6 +473,8 @@ https://tv.gunaz.tv/hls/live.m3u8
 https://jmp2.uk/plu-68503d1736c9361b191e7d89.m3u8
 #EXTINF:-1 tvg-id="GustoTV.ca@SD"  group-title="Cooking",Gusto TV (1080p)
 https://e75fc053c0d2406fb74cdd71d77e1a7f.mediatailor.us-east-1.amazonaws.com/v1/master/f4e8c53a8367a5b58e20ce054ea3ce25a3e904d3/RakutenTV-eu_GustoTV/playlist.m3u8
+#EXTINF:-1 tvg-id="HAHATV.sk@SD"  group-title="Comedy",HAHA TV
+https://dash3.antik.sk/live/test_haha_tv/playlist.m3u8
 #EXTINF:-1 tvg-id="HarPalGeo.pk@SD"  group-title="Culture",HarPal Geo (360p)
 https://jk3lz82elw79-hls-live.5centscdn.com/harPalGeo/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="HellenicTV.uk@SD"  group-title="Undefined",Hellenic TV (720p) [Not 24/7]
@@ -535,7 +537,7 @@ http://8.243.126.131:8000/play/a0mn/index.m3u8
 https://kjhls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PlutoTVKaraokeporStingray.us@LatAm"  group-title="Music",Karaoke por Stingray (720p)
 https://jmp2.uk/plu-5f85cf621d6d2200079f1de0.m3u8
-#EXTINF:-1 tvg-id="KBSWorld.kr@SD"  group-title="General",KBS World (720p)
+#EXTINF:-1 tvg-id="KBSWorld.kr@SD"  http-referrer="https://cinerama.uz/" group-title="General",KBS World (720p)
 https://stream8.cinerama.uz/1448/playlist.m3u8
 #EXTINF:-1 tvg-id="KenanKel.us@LatAm"  group-title="Series",Kenan y Kel
 https://jmp2.uk/plu-5fcea93ffcf94500071c4b2f.m3u8
