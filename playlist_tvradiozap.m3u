@@ -3,6 +3,14 @@
 https://httpbin.org/status/404
 #EXTINF:-1 tvg-id="TF1.fr" tvg-name="TF1" tvg-logo="https://companieslogo.com/img/orig/TFI.PA-8c6da426.png" tvg-country="France" group-title="TNT/Top",TF1
 https://tvradiozap.eu/890
+#EXTINF:-1 tvg-id="France2.fr" tvg-name="France 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/France_2_2018.svg/330px-France_2_2018.svg.png" tvg-country="France" group-title="TNT/Top",France 2
+https://tvradiozap.eu/887
+#EXTINF:-1 tvg-id="France3.fr" tvg-name="France 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/France_3_2018.svg/langfr-1920px-France_3_2018.svg.png" tvg-country="France" group-title="TNT/Top",France 3
+https://tvradiozap.eu/892
+#EXTINF:-1 tvg-id="France4.fr" tvg-name="France 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/France_4_2018.svg/330px-France_4_2018.svg.png" tvg-country="France" group-title="TNT/Top",France 4
+https://tvradiozap.eu/893
+#EXTINF:-1 tvg-id="France5.fr" tvg-name="France 5" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/France_5_2018.svg/langfr-1920px-France_5_2018.svg.png" tvg-country="France" group-title="TNT/Top",France 5
+https://tvradiozap.eu/891
 #EXTINF:-1 tvg-id="Arte.fr" tvg-name="Arte" tvg-logo="https://images.squarespace-cdn.com/content/v1/553f926ce4b0a46bddb4baf6/1561374992682-AQP12A8997URCIOMDY5I/ARTE-seul-2.png" tvg-country="France" group-title="TNT/Top",Arte
 https://tvradiozap.eu/640
 #EXTINF:-1 tvg-id="TMC.fr" tvg-name="TMC" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/a/a8/TMC_logo_2016.svg/330px-TMC_logo_2016.svg.png" tvg-country="France" group-title="TNT/Top",TMC

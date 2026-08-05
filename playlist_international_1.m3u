@@ -307,8 +307,12 @@ https://dash3.antik.sk/live/duck_tv/index.m3u8
 http://88.212.15.19/live/duna_world_hun/index.m3u8
 #EXTINF:-1 tvg-id="Dynasty.de@GB"  group-title="Classic;Series",Dynasty
 https://jmp2.uk/plu-622f48de713e510007f85808.m3u8
-#EXTINF:-1 tvg-id="EInternational.id@Asia"  group-title="General",E International Asia (480p)
-https://vodcdn.bamboo-cloud.com/livehls/69a123b780c99d28cc0f0016/master.m3u8
+#EXTINF:-1 tvg-id="EInternational.id@America"  group-title="General",E International (576p)
+https://gist.githubusercontent.com/iptvonlinetv/cf56ccf36d1c0827e4dc470db7b7912d/raw/066b1c9755b2496805575f16d413bd1207ca8117/udp120.510.450:6060.m3u8
+#EXTINF:-1 tvg-id="EInternational.id@Asia"  group-title="General",E International Asia (576p)
+https://gist.githubusercontent.com/iptvonlinetv/cf56ccf36d1c0827e4dc470db7b7912d/raw/066b1c9755b2496805575f16d413bd1207ca8117/udp315.520.789:8060.m3u8
+#EXTINF:-1 tvg-id="EInternational.id@Europe"  group-title="General",E International Europe (576p)
+https://gist.githubusercontent.com/iptvonlinetv/cf56ccf36d1c0827e4dc470db7b7912d/raw/066b1c9755b2496805575f16d413bd1207ca8117/udp410.310.578:2020.m3u8
 #EXTINF:-1 tvg-id="EEurope.nl@SD"  http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" group-title="Entertainment",E! Europe
 https://lb.dstvmultimedia.com/E!/index.m3u8
 #EXTINF:-1 tvg-id="EbS.be@SD"  group-title="Legislative",EBS (1080p)
@@ -749,3 +753,5 @@ https://stream8.cinerama.uz/1502/playlist.m3u8
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=2380
 #EXTINF:-1 tvg-id="Now90s00s.uk@Poland"  group-title="Music",NOW 90s00s (1080p)
 https://amg01076-amg01076c19-rakuten-gb-8653.playouts.now.amagi.tv/playlist/amg01076-lightning-now90s00s-rakutengb/playlist.m3u8
+#EXTINF:-1 tvg-id="NRK1.no@SD"  group-title="General",NRK 1 (1080i) [Geo-blocked]
+https://nrk-live-no.akamaized.net/nrk1/muxed.m3u8
