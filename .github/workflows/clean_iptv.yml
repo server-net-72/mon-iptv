@@ -53,15 +53,12 @@ jobs:
                   with open(nom_fichier, 'w', encoding='utf-8') as f:
                       f.write("#EXTM3U\n# Erreur\n")
 
-          # 2. Filtrage en profondeur de la liste internationale
+          # 2. Filtrage et séparation logique de la liste internationale
           url_international = "https://iptv-org.github.io/iptv/countries/int.m3u"
-          print("Filtrage chirurgical de la liste internationale...")
+          print("Filtrage profond de la liste internationale...")
           
-          # Catégories et mots banni (News, Radios, Shop, et Religions non-islamiques)
-          mots_bannis = ["news", "info", "actu", "journal", "radio", "press", "religious", "church", "christian", "bible", "god", "gospel", "shop"]
+          mots_bannis = ["news", "info", "actu", "journal", "radio", "press", "religious", "church", "christian", "bible", "god", "gospel", "buddha", "hindu", "shop"]
           mots_islam = ["islam", "quran", "koran", "sunnah", "makkah", "madinah"]
-
-          # Chaînes d'information mondiales célèbres cachées sans le mot "news"
           chaines_news_cachees = ["cnn", "bbc", "al jazeera", "euronews", "france 24", "dw", "bloomberg", "reuters", "cctv", "sky news", "cnbc", "rt "]
 
           try:
@@ -69,7 +66,10 @@ jobs:
               with urllib.request.urlopen(req_int, timeout=45) as reponse:
                   lignes_brutes = [l.decode('utf-8', errors='ignore') for l in reponse]
 
-              chaines_filtrees = []
+              # Listes de stockage thématique
+              liste_general = []
+              liste_sports_musique = []
+              
               noms_uniques = set()
               urls_uniques = set()
               tampon_extinf = ""
@@ -84,11 +84,8 @@ jobs:
                           nom_chaine = texte_l.split(",")[-1].strip() if "," in texte_l else texte_l
                           
                           if url_flux not in urls_uniques and nom_chaine not in noms_uniques:
-                              
-                              # ÉTAPE 1 : PROTECTION DE L'ISLAM
                               is_islam = any(m_is in texte_l for m_is in mots_islam)
                               
-                              # ÉTAPE 2 : EXCLUSIONS STRICTES (si ce n'est pas de l'Islam)
                               if not is_islam:
                                   if any(banni in texte_l for banni in mots_bannis):
                                       tampon_extinf = ""
@@ -97,41 +94,40 @@ jobs:
                                       tampon_extinf = ""
                                       continue
                               
-                              # ÉTAPE 3 : RACCOURCISSEMENT DES LIGNES POUR OTTPLAYER
-                              # On supprime les étiquettes lourdes (tvg-logo géants, etc.) pour raccourcir la ligne
+                              # Raccourcissement de la ligne de description (logo, etc.)
                               ligne_courte = tampon_extinf
                               if 'tvg-logo="' in ligne_courte:
                                   ligne_courte = re.sub(r'tvg-logo="[^"]*"', '', ligne_courte)
                               
-                              chaines_filtrees.append((ligne_courte, ligne))
+                              # TRI LOGIQUE : Sport et Musique vont dans un fichier à part
+                              if "sport" in texte_l or "music" in texte_l or "clips" in texte_l:
+                                  liste_sports_musique.append((ligne_courte, ligne))
+                              else:
+                                  liste_general.append((ligne_courte, ligne))
+                                  
                               urls_uniques.add(url_flux)
                               noms_uniques.add(nom_chaine)
                                   
                       tampon_extinf = ""
 
-              # Division mathématique en 2 parties égales
-              total_chaines = len(chaines_filtrees)
-              milieu = total_chaines // 2
-              print(f"Total obtenu après filtrage réel : {total_chaines} chaînes. Division à : {milieu}")
+              # Écriture du Fichier 1 : Général (Films, Séries, Divertissement, Islam)
+              with open("playlist_international_general.m3u", 'w', encoding='utf-8') as f_gen:
+                  f_gen.write("#EXTM3U\n")
+                  for extinf, lien in liste_general:
+                      f_gen.write(extinf)
+                      f_gen.write(lien)
 
-              # Fichier 1
-              with open("playlist_international_1.m3u", 'w', encoding='utf-8') as f1:
-                  f1.write("#EXTM3U\n")
-                  for extinf, lien in chaines_filtrees[:milieu]:
-                      f1.write(extinf)
-                      f1.write(lien)
-
-              # Fichier 2
-              with open("playlist_international_2.m3u", 'w', encoding='utf-8') as f2:
-                  f2.write("#EXTM3U\n")
-                  for extinf, lien in chaines_filtrees[milieu:]:
-                      f2.write(extinf)
-                      f2.write(lien)
+              # Écriture du Fichier 2 : Thématique (Sports et Musique)
+              with open("playlist_international_sports_musique.m3u", 'w', encoding='utf-8') as f_sm:
+                  f_sm.write("#EXTM3U\n")
+                  for extinf, lien in liste_sports_musique:
+                      f_sm.write(extinf)
+                      f_sm.write(lien)
                           
-              print("Succès : Les deux sous-listes internationales ont été épurées et raccourcies.")
+              print(f"Succès : {len(liste_general)} chaînes Générales et {len(liste_sports_musique)} chaînes Sport/Musique.")
           except Exception as e:
-              print(f"Erreur internationale : {e}")
-              for f_nom in ["playlist_international_1.m3u", "playlist_international_2.m3u"]:
+              print(f"Erreur : {e}")
+              for f_nom in ["playlist_international_general.m3u", "playlist_international_sports_musique.m3u"]:
                   with open(f_nom, 'w', encoding='utf-8') as f:
                       f.write("#EXTM3U\n# Erreur\n")
 
@@ -148,12 +144,12 @@ jobs:
           git add playlist_pluto_fr.m3u
           git add playlist_tvradiozap.m3u
           git add playlist_usa.m3u
-          git add playlist_international_1.m3u
-          git add playlist_international_2.m3u
+          git add playlist_international_general.m3u
+          git add playlist_international_sports_musique.m3u
           
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
-            git commit -m "Raccourcissement des lignes et filtrage reel group-title"
+            git commit -m "Séparation logique International Général et Sports/Musique"
             git push
           fi
