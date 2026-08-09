@@ -17,8 +17,8 @@ https://jmp2.uk/plu-65a67dd13af63d0008257f17.m3u8
 https://amg01117-amg01117c1-amgplt0029.playout.now3.amagi.tv/playlist/amg01117-amg01117c1-amgplt0029/playlist.m3u8
 #EXTINF:-1 tvg-id="A2iTV.it@SD"  group-title="General",A2i TV (1080p)
 https://stream.sen-gt.com/A2itv/myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="AE.us@East"  group-title="Entertainment",A&E (1080p)
-https://gpuserver3.tier1streams.com/AE/index.m3u8
+#EXTINF:-1 tvg-id="AE.us@East"  group-title="Entertainment",A&E (720p)
+http://23.239.31.26:8989/aande/index.m3u8
 #EXTINF:-1 tvg-id="AELatinAmerica.us@Panregional"  group-title="Entertainment",A&E Latin America (1080p)
 http://138.121.15.230:9002/A&E/index.m3u8
 #EXTINF:-1 tvg-id="AamarBangla.in@SD"  group-title="Entertainment",Aamar Bangla (720p)
@@ -611,6 +611,8 @@ http://149.71.34.166:8002/play/a012/index.m3u8
 https://amg00090-blueantllc-lovenature-au-samsungau-wggcn.amagi.tv/playlist/amg00090-blueantllc-lovenature-au-samsungau/playlist.m3u8
 #EXTINF:-1 tvg-id="NatureTime.ca@LATAM"  group-title="Documentary",NatureTime (684p)
 https://jmp2.uk/plu-681ba2729624e6275efe0044.m3u8
+#EXTINF:-1 tvg-id="NBTWorld.th@SD"  group-title="General",NBT World (1080p)
+https://cdn-edge.iiptvcdn.com/live_event/smil:d36f-93c1-9c58-fdcc-427f.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NCIS.us@LatAm"  group-title="Series",NCIS
 https://jmp2.uk/plu-63eb947c4e83e70008ab877b.m3u8
 #EXTINF:-1 tvg-id="NDRFernsehenInternational.de@SD"  group-title="General",NDR Fernsehen International (720p)
@@ -1227,8 +1229,6 @@ https://5caf24a595d94.streamlock.net:1937/8132/8132/playlist.m3u8
 https://amg01415-waterbearnetwor-waterbear-samsunguk-1h0y8.amagi.tv/playlist/amg01415-waterbearnetwor-waterbear-samsunguk/playlist.m3u8
 #EXTINF:-1 tvg-id="WildEarth.za@SD"  group-title="Documentary;Education;Outdoor;Relax",WildEarth (1080p)
 https://dqga3jatxofgx.cloudfront.net/WildEarth.m3u8
-#EXTINF:-1 tvg-id="WOWKidz.in@Hindi"  group-title="Animation;Kids",WOW Kidz (720p)
-https://yuppparoriglin.akamaized.net/181224/smil:wowkidzhindi.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-id="WOWTV.sv@SD"  group-title="General",WOW TV (1080p)
 https://cdn-edge1.cef-technology.com/wow/wow_tv/playlist.m3u8
 #EXTINF:-1 tvg-id="YOLTV.de@SD"  group-title="General",YOL TV
