@@ -555,8 +555,8 @@ https://void.greenhosting.ru/MovifyKino_Mpeg4/index.m3u8
 https://amg00627-amg00627c23-samsung-au-4110.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="MTV.fr@SD"  group-title="Entertainment",MTV (720p)
 http://41.205.70.146/MTVFRANCE/index.m3u8
-#EXTINF:-1 tvg-id="MTV.in@SD"  group-title="Entertainment",MTV (1080p)
-http://103.72.101.252:8080/live/248.m3u8
+#EXTINF:-1 tvg-id="MTV.in@SD"  http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Entertainment",MTV
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:mtvindia.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MTVCatfish.us@LatAm"  group-title="Entertainment",MTV Catfish (720p)
 https://jmp2.uk/plu-625461ef01f27a0007976ad1.m3u8
 #EXTINF:-1 tvg-id="MTVCatfishTVShow.de@DACH"  group-title="Entertainment",MTV Catfish TV Show (720p)
