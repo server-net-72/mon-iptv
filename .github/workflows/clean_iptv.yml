@@ -26,9 +26,8 @@ jobs:
           cat << 'EOF' > nettoyer.py
           import urllib.request
           import os
-          import re
 
-          # CONFIGURATION DE VOS PLAYLISTS INITIALES
+          # Vos 4 playlists de base stables et performantes
           PLAYLISTS = {
               "playlist_france.m3u": "https://iptv-org.github.io/iptv/countries/fr.m3u",
               "playlist_pluto_fr.m3u": "https://iptv-org.github.io/iptv/sources/fr_pluto.m3u",
@@ -38,7 +37,6 @@ jobs:
 
           headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
-          # 1. Nettoyage de vos 4 premières listes
           for nom_fichier, url in PLAYLISTS.items():
               if "METTEZ_ICI" in url:
                   continue
@@ -49,87 +47,10 @@ jobs:
                           ligne = l_octets.decode('utf-8', errors='ignore')
                           if "#EXTVLCOPT" not in ligne:
                               f_propre.write(ligne)
+                  print(f"Succès : {nom_fichier} a été mise à jour.")
               except Exception as e:
                   with open(nom_fichier, 'w', encoding='utf-8') as f:
-                      f.write("#EXTM3U\n# Erreur\n")
-
-          # 2. Filtrage et séparation logique de la liste internationale
-          url_international = "https://iptv-org.github.io/iptv/countries/int.m3u"
-          print("Filtrage profond de la liste internationale...")
-          
-          mots_bannis = ["news", "info", "actu", "journal", "radio", "press", "religious", "church", "christian", "bible", "god", "gospel", "buddha", "hindu", "shop"]
-          mots_islam = ["islam", "quran", "koran", "sunnah", "makkah", "madinah"]
-          chaines_news_cachees = ["cnn", "bbc", "al jazeera", "euronews", "france 24", "dw", "bloomberg", "reuters", "cctv", "sky news", "cnbc", "rt "]
-
-          try:
-              req_int = urllib.request.Request(url_international, headers=headers)
-              with urllib.request.urlopen(req_int, timeout=45) as reponse:
-                  lignes_brutes = [l.decode('utf-8', errors='ignore') for l in reponse]
-
-              # Listes de stockage thématique
-              liste_general = []
-              liste_sports_musique = []
-              
-              noms_uniques = set()
-              urls_uniques = set()
-              tampon_extinf = ""
-              
-              for ligne in lignes_brutes:
-                  if ligne.startswith("#EXTINF:"):
-                      tampon_extinf = ligne
-                  elif ligne.strip() and not ligne.startswith("#"):
-                      url_flux = ligne.strip()
-                      if tampon_extinf and "#EXTVLCOPT" not in tampon_extinf:
-                          texte_l = tampon_extinf.lower()
-                          nom_chaine = texte_l.split(",")[-1].strip() if "," in texte_l else texte_l
-                          
-                          if url_flux not in urls_uniques and nom_chaine not in noms_uniques:
-                              is_islam = any(m_is in texte_l for m_is in mots_islam)
-                              
-                              if not is_islam:
-                                  if any(banni in texte_l for banni in mots_bannis):
-                                      tampon_extinf = ""
-                                      continue
-                                  if any(news in nom_chaine for news in chaines_news_cachees):
-                                      tampon_extinf = ""
-                                      continue
-                              
-                              # Raccourcissement de la ligne de description (logo, etc.)
-                              ligne_courte = tampon_extinf
-                              if 'tvg-logo="' in ligne_courte:
-                                  ligne_courte = re.sub(r'tvg-logo="[^"]*"', '', ligne_courte)
-                              
-                              # TRI LOGIQUE : Sport et Musique vont dans un fichier à part
-                              if "sport" in texte_l or "music" in texte_l or "clips" in texte_l:
-                                  liste_sports_musique.append((ligne_courte, ligne))
-                              else:
-                                  liste_general.append((ligne_courte, ligne))
-                                  
-                              urls_uniques.add(url_flux)
-                              noms_uniques.add(nom_chaine)
-                                  
-                      tampon_extinf = ""
-
-              # Écriture du Fichier 1 : Général (Films, Séries, Divertissement, Islam)
-              with open("playlist_international_general.m3u", 'w', encoding='utf-8') as f_gen:
-                  f_gen.write("#EXTM3U\n")
-                  for extinf, lien in liste_general:
-                      f_gen.write(extinf)
-                      f_gen.write(lien)
-
-              # Écriture du Fichier 2 : Thématique (Sports et Musique)
-              with open("playlist_international_sports_musique.m3u", 'w', encoding='utf-8') as f_sm:
-                  f_sm.write("#EXTM3U\n")
-                  for extinf, lien in liste_sports_musique:
-                      f_sm.write(extinf)
-                      f_sm.write(lien)
-                          
-              print(f"Succès : {len(liste_general)} chaînes Générales et {len(liste_sports_musique)} chaînes Sport/Musique.")
-          except Exception as e:
-              print(f"Erreur : {e}")
-              for f_nom in ["playlist_international_general.m3u", "playlist_international_sports_musique.m3u"]:
-                  with open(f_nom, 'w', encoding='utf-8') as f:
-                      f.write("#EXTM3U\n# Erreur\n")
+                      f.write("#EXTM3U\n# Erreur de téléchargement\n")
 
           EOF
           python3 nettoyer.py
@@ -137,19 +58,17 @@ jobs:
 
       - name: Sauvegarder et publier les playlists nettoyées
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "github-actions[bot]@://github.com"
           git config --local user.name "github-actions[bot]"
           
           git add playlist_france.m3u
           git add playlist_pluto_fr.m3u
           git add playlist_tvradiozap.m3u
           git add playlist_usa.m3u
-          git add playlist_international_general.m3u
-          git add playlist_international_sports_musique.m3u
           
           if git diff --staged --quiet; then
             echo "Aucune modification détectée dans les playlists."
           else
-            git commit -m "Séparation logique International Général et Sports/Musique"
+            git commit -m "Retour definitif aux 4 playlists stables"
             git push
           fi
