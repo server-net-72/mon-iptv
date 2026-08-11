@@ -327,8 +327,6 @@ https://tvradiozap.eu/1286
 https://tvradiozap.eu/1518
 #EXTINF:-1 tvg-id="" tvg-name="K-Pop" tvg-logo="https://ugc.production.linktr.ee/a2BerHbRiyenqJnkiK86_UT8IPKfPoBtSUwfG?io=true&size=avatar-v3_0" tvg-country="France" group-title="Musique",K-Pop
 https://tvradiozap.eu/1295
-#EXTINF:-1 tvg-id="" tvg-name="KPop (US)" tvg-logo="https://i.imgur.com/Tf0vweF.png" tvg-country="USA" group-title="Musique",KPop (US)
-https://tvradiozap.eu/1535
 #EXTINF:-1 tvg-id="" tvg-name="Littoral FM TV" tvg-logo="https://images.lesindesradios.fr/fit-in/300x2000/radios/littoral/images/logo_XVXnlAO28F.png" tvg-country="France" group-title="Musique",Littoral FM TV
 https://tvradiozap.eu/301
 #EXTINF:-1 tvg-id="" tvg-name="Madras FM TV" tvg-logo="https://www.madrasfm.tv/wp-content/uploads/2021/02/cropped-ffffddsss2.png" tvg-country="France" group-title="Musique",Madras FM TV
@@ -505,6 +503,8 @@ https://tvradiozap.eu/837
 https://tvradiozap.eu/685
 #EXTINF:-1,-------------- Reportages
 https://httpbin.org/status/404
+#EXTINF:-1 tvg-id="" tvg-name="Au coeur du danger" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR3900002FW_20260310T031715SQUARE.png" tvg-country="France" group-title="Reportages",Au coeur du danger
+https://tvradiozap.eu/1074
 #EXTINF:-1 tvg-id="" tvg-name="Crime Scene" tvg-logo="https://image.xumo.com/v1/channels/channel/99994448/600x200.png?type=white_cropped" tvg-country="France" group-title="Reportages",Crime Scene
 https://tvradiozap.eu/1155
 #EXTINF:-1 tvg-id="100docs.fr" tvg-name="Docs & Enquêtes Society+" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR15000010E_20260528T055328SQUARE.png" tvg-country="France" group-title="Reportages",Docs & Enquêtes Society+
@@ -519,6 +519,8 @@ https://tvradiozap.eu/81
 https://tvradiozap.eu/1293
 #EXTINF:-1 tvg-id="" tvg-name="Love Crime & History" tvg-logo="https://images.plex.tv/photo?size=small-120&scale=3&url=https%3A%2F%2Fprovider-static.plex.tv%2Fepg%2Fcms%2Fproduction%2F6f2c8bea-d8e2-4d2f-b72d-af7539f1f435%2FLogo_Love_Crime_History_1500x1000_DarkBackground_-_David_Mar__n.png" tvg-country="France" group-title="Reportages",Love Crime & History
 https://tvradiozap.eu/262
+#EXTINF:-1 tvg-id="" tvg-name="Mayday Catastrophes Aériennes" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/3b014c48-5490-4318-8b8e-7dc4e4861ef3/variants/49f6b89bd291722c227e312eaa7d04e4380b4c0b7611bf68a82c328d2c00fcb9-width308-quality90.webp" tvg-country="France" group-title="Reportages",Mayday Catastrophes Aériennes
+https://tvradiozap.eu/879
 #EXTINF:-1 tvg-id="" tvg-name="Mission Intervention" tvg-logo="https://pbs.twimg.com/media/HK6tvfZX0AA8_rY.jpg?format=jpg" tvg-country="France" group-title="Reportages",Mission Intervention
 https://tvradiozap.eu/1172
 #EXTINF:-1 tvg-id="RMCAlerteSecours.fr" tvg-name="RMC Alerte Secours" tvg-logo="https://static-cdn.tv.sfr.net/data/img/apps/edito/attachment/animation/tile/imgrectangle1920RMCAlertesecours.jpg" tvg-country="France" group-title="Reportages",RMC Alerte Secours
