@@ -503,6 +503,8 @@ https://tvradiozap.eu/837
 https://tvradiozap.eu/685
 #EXTINF:-1,-------------- Reportages
 https://httpbin.org/status/404
+#EXTINF:-1 tvg-id="" tvg-name="Adrénaline" tvg-logo="https://provider-static.plex.tv/epg/cms/production/8fb17498-49c7-4b4b-9149-dd92d51a8516/Adrenaline_logo_1500x1000_all_white_for_attribution.png" tvg-country="France" group-title="Reportages",Adrénaline
+https://tvradiozap.eu/1228
 #EXTINF:-1 tvg-id="" tvg-name="Au coeur du danger" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR3900002FW_20260310T031715SQUARE.png" tvg-country="France" group-title="Reportages",Au coeur du danger
 https://tvradiozap.eu/1074
 #EXTINF:-1 tvg-id="" tvg-name="Crime Scene" tvg-logo="https://image.xumo.com/v1/channels/channel/99994448/600x200.png?type=white_cropped" tvg-country="France" group-title="Reportages",Crime Scene
