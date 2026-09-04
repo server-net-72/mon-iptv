@@ -1,67 +1,107 @@
-import requests
+name: IPTV Playlist Cleaner
 
-# Configuration stricte de vos 5 listes de base fonctionnelles
-PLAYLIST_SOURCES = {
-    "France": "https://iptv-org.github.io/iptv/countries/fr.m3u",
-    "Pluto_FR": "https://iptv-org.github.io/iptv/sources/fr_pluto.m3u",
-    "TVRadioZap": "https://tvradiozap.eu/live/x/vlc/d/tvzeu.m3u",
-    "USA": "https://iptv-org.github.io/iptv/countries/us.m3u",
-    "Arabe": "https://iptv-org.github.io/iptv/languages/ara.m3u"
-}
+on:
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
 
-def clean_playlist(raw_text):
-    """Nettoie la playlist en supprimant strictement les doublons d'URL."""
-    lines = raw_text.splitlines()
-    cleaned_lines = ["#EXTM3U"]
-    seen_urls = set()
-    
-    i = 1
-    while i < len(lines):
-        line = lines[i].strip()
-        if line.startswith("#EXTINF"):
-            info_line = line
-            url_line = ""
-            
-            # Récupération de la ligne d'URL suivante
-            if i + 1 < len(lines):
-                url_line = lines[i+1].strip()
-            
-            if url_line and not url_line.startswith("#"):
-                # Vérification du dédoublonnage pour OttPlayer
-                if url_line not in seen_urls:
-                    cleaned_lines.append(info_line)
-                    cleaned_lines.append(url_line)
-                    seen_urls.add(url_line)
-                    
-            i += 2
-        else:
-            i += 1
-            
-    return "\n".join(cleaned_lines)
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-def main():
-    for name, url in PLAYLIST_SOURCES.items():
-        # Ignorer les listes si vous n'avez pas encore remplacé les textes d'exemple par vos vraies URL
-        if "URL_DE_VOTRE_LISTE" in url:
-            print(f"Saut de {name} : Veuillez configurer sa véritable URL source.")
-            continue
+    steps:
+    - name: Extraction du code du dépôt
+      uses: actions/checkout@v4
+
+    - name: Configuration de Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Installation des dépendances
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    - name: Nettoyage des Playlists
+      shell: python
+      run: |
+        import requests
+        import os
+
+        # Vos 5 listes avec les URL exactes intégrées
+        PLAYLIST_SOURCES = {
+            "France": "https://iptv-org.github.io/iptv/countries/fr.m3u",
+            "Pluto_FR": "https://iptv-org.github.io/iptv/sources/fr_pluto.m3u",
+            "TVRadioZap": "https://tvradiozap.eu/live/x/vlc/d/tvzeu.m3u",
+            "USA": "https://iptv-org.github.io/iptv/countries/us.m3u",
+            "Arabe": "https://iptv-org.github.io/iptv/languages/ara.m3u"
+        }
+
+        def clean_playlist(raw_text):
+            lines = raw_text.splitlines()
+            cleaned_lines = ["#EXTM3U"]
+            seen_urls = set()
             
-        try:
-            print(f"Téléchargement et nettoyage de : {name}...")
-            response = requests.get(url, timeout=15)
-            response.raise_for_status()
-            
-            # Application du nettoyage par dédoublonnage
-            result = clean_playlist(response.text)
+            i = 1
+            while i < len(lines):
+                line = lines[i].strip()
                 
-            # Sauvegarde locale du fichier nettoyé
-            filename = f"{name.lower()}_clean.m3u8"
-            with open(filename, "w", encoding="utf-8") as f:
-                f.write(result)
-            print(f"Fichier {filename} généré avec succès.")
-            
-        except Exception as e:
-            print(f"Erreur lors du traitement de {name}: {e}")
+                # Ignorer purement et simplement les tags bloquants #EXTVLCOPT
+                if line.startswith("#EXTVLCOPT"):
+                    i += 1
+                    continue
+                    
+                if line.startswith("#EXTINF"):
+                    info_line = line
+                    url_line = ""
+                    
+                    # Chercher la ligne d'URL suivante en sautant les éventuels #EXTVLCOPT intercalés
+                    next_idx = i + 1
+                    while next_idx < len(lines):
+                        next_line = lines[next_idx].strip()
+                        if next_line.startswith("#EXTVLCOPT"):
+                            next_idx += 1
+                        else:
+                            url_line = next_line
+                            break
+                    
+                    if url_line and not url_line.startswith("#"):
+                        # Dédoublonnage strict par URL pour OttPlayer
+                        if url_line not in seen_urls:
+                            cleaned_lines.append(info_line)
+                            cleaned_lines.append(url_line)
+                            seen_urls.add(url_line)
+                    
+                    i = next_idx + 1
+                else:
+                    i += 1
+                    
+            return "\n".join(cleaned_lines)
 
-if __name__ == "__main__":
-    main()
+        # Exécution du téléchargement et du filtrage
+        for name, url in PLAYLIST_SOURCES.items():
+            if "REMPLACEZ_PAR_VOTRE_URL" in url:
+                print(f"Saut de {name} : URL non configurée.")
+                continue
+            try:
+                print(f"Traitement de : {name}...")
+                response = requests.get(url, timeout=15)
+                response.raise_for_status()
+                
+                result = clean_playlist(response.text)
+                
+                filename = f"{name.lower()}_clean.m3u8"
+                with open(filename, "w", encoding="utf-8") as f:
+                    f.write(result)
+                print(f"Fichier {filename} généré.")
+            except Exception as e:
+                print(f"Erreur sur {name}: {e}")
+
+    - name: Sauvegarde et Push des playlists nettoyées
+      run: |
+        git config --local user.email "github-actions[bot]@://github.com"
+        git config --local user.name "github-actions[bot]"
+        git add *.m3u8
+        git diff-index --quiet HEAD || git commit -m "Mise à jour automatique des playlists IPTV (sans EXTVLCOPT)"
+        git push
