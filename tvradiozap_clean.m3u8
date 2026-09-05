@@ -209,6 +209,8 @@ https://tvradiozap.eu/1278
 https://tvradiozap.eu/665
 #EXTINF:-1 tvg-id="BFM2.fr" tvg-name="BFM2" tvg-logo="https://th.bing.com/th/id/OIP.fez30n7UjPAbkbu95Z0YWgHaEK?w=640&h=360&c=1&dpr=1.5" tvg-country="France" group-title="Info",BFM2
 https://tvradiozap.eu/1110
+#EXTINF:-1 tvg-id="" tvg-name="Le Monde en 24 H" tvg-logo="https://i0.wp.com/lemondeen24h.com/wp-content/uploads/2025/01/Logo-Blanc-1-LE-MONDE-EN-24H-rt-1.png?resize=640" tvg-country="France" group-title="Info",Le Monde en 24 H
+https://tvradiozap.eu/1183
 #EXTINF:-1 tvg-id="MonacoInfo.mc" tvg-name="Monaco Info  (MC)" tvg-logo="https://monacoinfo.com/wp-content/themes/monacoinfo_v4/assets/img/monacoinfo-color.png" tvg-country="Monaco" group-title="Info",Monaco Info  (MC)
 https://tvradiozap.eu/676
 #EXTINF:-1 tvg-id="RMCTalkInfo.fr" tvg-name="RMC Talk Info" tvg-logo="https://static-cdn.tv.sfr.net/data/img/apps/edito/attachment/animation/tile/imgrectangle1920RMCTalkinfo.jpg" tvg-country="France" group-title="Info",RMC Talk Info
