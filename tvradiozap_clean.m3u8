@@ -81,8 +81,6 @@ https://tvradiozap.eu/1096
 https://tvradiozap.eu/650
 #EXTINF:-1 tvg-id="Mieux.fr" tvg-name="Mieux" tvg-logo="https://www.francetvpub.fr/wp-content/uploads/2025/08/bandeau-site-mieux-768x243.png" tvg-country="France" group-title="Art de vivre",Mieux
 https://tvradiozap.eu/1362
-#EXTINF:-1 tvg-id="" tvg-name="Motorvision TV" tvg-logo="https://motorvision.tv/wp-content/uploads/2023/09/MV_Logo_positive_light_background-2.png" tvg-country="France" group-title="Art de vivre",Motorvision TV
-https://tvradiozap.eu/742
 #EXTINF:-1 tvg-id="" tvg-name="Rustica" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd1pcqPtOUwEsvh_Pd99Kak6RR6eJH66qfwGEAtFvy8zgfo38mEvvw&usqp=CAE&s" tvg-country="France" group-title="Art de vivre",Rustica
 https://tvradiozap.eu/1220
 #EXTINF:-1 tvg-id="" tvg-name="Système D" tvg-logo="https://www.media-participations.com/fichiers/logos/presse/logo_systemeD.png" tvg-country="France" group-title="Art de vivre",Système D
@@ -233,6 +231,8 @@ https://tvradiozap.eu/802
 https://tvradiozap.eu/1055
 #EXTINF:-1 tvg-id="FRBD5100002NL" tvg-name="Supertoons" tvg-logo="https://time2replay.com/wp-content/uploads/2023/05/supertoons-direct.jpg" tvg-country="France" group-title="Jeunesse",Supertoons
 https://tvradiozap.eu/1218
+#EXTINF:-1 tvg-id="" tvg-name="Wasabi" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/b2d8fc10-ce23-4c02-a72f-8fd81ff219fd-width200-quality90.jpeg" tvg-country="France" group-title="Jeunesse",Wasabi
+https://tvradiozap.eu/652
 #EXTINF:-1 tvg-id="FR7000045E" tvg-name="Yu-Gi-Oh!" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/a/a5/Yu-Gi-Oh_Logo.JPG" tvg-country="Corée du Sud" group-title="Jeunesse",Yu-Gi-Oh!
 https://tvradiozap.eu/850
 #EXTINF:-1 tvg-id="" tvg-name="iXPé (BE)" tvg-logo="https://static-content.rtbf.be/article/image/1248x702/3/d/d/3740c9c5a9266241f4b10deff5478baf-1633607270.jpg" tvg-country="Belgique" group-title="Jeux",iXPé (BE)
