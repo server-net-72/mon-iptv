@@ -481,6 +481,8 @@ https://tvradiozap.eu/685
 https://tvradiozap.eu/1228
 #EXTINF:-1 tvg-id="" tvg-name="Au coeur du danger" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR3900002FW_20260310T031715SQUARE.png" tvg-country="France" group-title="Reportages",Au coeur du danger
 https://tvradiozap.eu/1074
+#EXTINF:-1 tvg-id="" tvg-name="Crime Enquêtes & Faits divers" tvg-logo="https://img1.oqee.net/channel_pictures/3738/w300" tvg-country="France" group-title="Reportages",Crime Enquêtes & Faits divers
+https://tvradiozap.eu/81
 #EXTINF:-1 tvg-id="" tvg-name="Crime Scene" tvg-logo="https://image.xumo.com/v1/channels/channel/99994448/600x200.png?type=white_cropped" tvg-country="France" group-title="Reportages",Crime Scene
 https://tvradiozap.eu/1155
 #EXTINF:-1 tvg-id="100docs.fr" tvg-name="Docs & Enquêtes Society+" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR15000010E_20260528T055328SQUARE.png" tvg-country="France" group-title="Reportages",Docs & Enquêtes Society+
@@ -489,8 +491,6 @@ https://tvradiozap.eu/1054
 https://tvradiozap.eu/541
 #EXTINF:-1 tvg-id="FR:La.chaine.du.fait.divers.fr" tvg-name="Homicide" tvg-logo="https://provider-static.plex.tv/epg/cms/production/84791923-c240-4b13-99c5-cafab9931e33/HOMICIDE_ARTWORK_VERTICAL__-_richard_maroko.jpg" tvg-country="France" group-title="Reportages",Homicide
 https://tvradiozap.eu/1023
-#EXTINF:-1 tvg-id="" tvg-name="Immersion Crime & Justice" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR600002ZR_20250408T021840SQUARE.png" tvg-country="France" group-title="Reportages",Immersion Crime & Justice
-https://tvradiozap.eu/81
 #EXTINF:-1 tvg-id="" tvg-name="Into Crime" tvg-logo="https://images.plex.tv/photo?size=small-60&scale=2&url=https://provider-static.plex.tv/epg/cms/production/82ee42cc-ff1b-4faa-97df-d99ff9b9b7e2/INTOCRIMELRED_WHITE_TEXTRDX.png" tvg-country="France" group-title="Reportages",Into Crime
 https://tvradiozap.eu/1293
 #EXTINF:-1 tvg-id="" tvg-name="Love Crime & History" tvg-logo="https://images.plex.tv/photo?size=small-120&scale=3&url=https%3A%2F%2Fprovider-static.plex.tv%2Fepg%2Fcms%2Fproduction%2F6f2c8bea-d8e2-4d2f-b72d-af7539f1f435%2FLogo_Love_Crime_History_1500x1000_DarkBackground_-_David_Mar__n.png" tvg-country="France" group-title="Reportages",Love Crime & History
