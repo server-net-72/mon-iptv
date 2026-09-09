@@ -299,6 +299,8 @@ https://tvradiozap.eu/1007
 https://tvradiozap.eu/1286
 #EXTINF:-1 tvg-id="" tvg-name="iHeartCountry Classics (US)" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/3395d3b6c6e895a495fd12a2c719b21c/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1728501104207_260x147_Image_HUD_2.png" tvg-country="USA" group-title="Musique",iHeartCountry Classics (US)
 https://tvradiozap.eu/1518
+#EXTINF:-1 tvg-id="" tvg-name="K-Dance Vibes" tvg-logo="https://www.giniko.com/logos/190x110/1571.jpg" tvg-country="Corée du Sud" group-title="Musique",K-Dance Vibes
+https://tvradiozap.eu/1550
 #EXTINF:-1 tvg-id="" tvg-name="K-Pop" tvg-logo="https://ugc.production.linktr.ee/a2BerHbRiyenqJnkiK86_UT8IPKfPoBtSUwfG?io=true&size=avatar-v3_0" tvg-country="France" group-title="Musique",K-Pop
 https://tvradiozap.eu/1295
 #EXTINF:-1 tvg-id="" tvg-name="KPop (US)" tvg-logo="https://i.imgur.com/Tf0vweF.png" tvg-country="USA" group-title="Musique",KPop (US)
@@ -469,6 +471,8 @@ https://tvradiozap.eu/1008
 https://tvradiozap.eu/859
 #EXTINF:-1 tvg-id="TelePaese.fr" tvg-name="TelePaese (Corse)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/09/Logo_T%C3%A9l%C3%A9_Paese_%282024%29.png" tvg-country="France" group-title="Régional",TelePaese (Corse)
 https://tvradiozap.eu/889
+#EXTINF:-1 tvg-id="TeleGrenobleIsere.fr" tvg-name="TG+ (Télé Grenoble)" tvg-logo="https://tgplus.fr/wp-content/uploads/2025/12/LOGOTYPES-RVB-TG-02-scaled-e1762939545843_6949472a9ff3c.png" tvg-country="France" group-title="Régional",TG+ (Télé Grenoble)
+https://tvradiozap.eu/280
 #EXTINF:-1 tvg-id="TahitiNuiTV.fr" tvg-name="TNTV Tahiti TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4d/Logo_TNTV_2017.png" tvg-country="Polynésie française" group-title="Régional",TNTV Tahiti TV
 https://tvradiozap.eu/902
 #EXTINF:-1 tvg-id="TVVendee.fr" tvg-name="TV Vendée" tvg-logo="https://i.imgur.com/YW7JKcw.png" tvg-country="France" group-title="Régional",TV Vendée
@@ -581,8 +585,6 @@ https://tvradiozap.eu/877
 https://tvradiozap.eu/1523
 #EXTINF:-1 tvg-id="AfterFootTV.fr" tvg-name="After Foot TV" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/1/1d/After-foot-logo-2023.svg/330px-After-foot-logo-2023.svg.png" tvg-country="France" group-title="Sport",After Foot TV
 https://tvradiozap.eu/1260
-#EXTINF:-1 tvg-id="BordoTV.fr" tvg-name="Bordo TV Sport" tvg-logo="https://bordofm.com/wp-content/uploads/2023/03/LOGO-BORDO-MEDIA-GROUP-BLANC-ET-ROUGE-RECTANGULAIRE.png" tvg-country="France" group-title="Sport",Bordo TV Sport
-https://tvradiozap.eu/1077
 #EXTINF:-1 tvg-id="Equidia.fr" tvg-name="Equidia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d3/Equidia_logo_2018.png" tvg-country="France" group-title="Sport",Equidia
 https://tvradiozap.eu/911
 #EXTINF:-1 tvg-id="" tvg-name="Equidia R1" tvg-logo="https://i.imgur.com/slLJJXj.png" tvg-country="France" group-title="Sport",Equidia R1
