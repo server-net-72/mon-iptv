@@ -303,8 +303,6 @@ https://tvradiozap.eu/1518
 https://tvradiozap.eu/1550
 #EXTINF:-1 tvg-id="" tvg-name="K-Pop" tvg-logo="https://ugc.production.linktr.ee/a2BerHbRiyenqJnkiK86_UT8IPKfPoBtSUwfG?io=true&size=avatar-v3_0" tvg-country="France" group-title="Musique",K-Pop
 https://tvradiozap.eu/1295
-#EXTINF:-1 tvg-id="" tvg-name="KPop (US)" tvg-logo="https://i.imgur.com/Tf0vweF.png" tvg-country="USA" group-title="Musique",KPop (US)
-https://tvradiozap.eu/1535
 #EXTINF:-1 tvg-id="" tvg-name="Littoral FM TV" tvg-logo="https://images.lesindesradios.fr/fit-in/300x2000/radios/littoral/images/logo_XVXnlAO28F.png" tvg-country="France" group-title="Musique",Littoral FM TV
 https://tvradiozap.eu/301
 #EXTINF:-1 tvg-id="" tvg-name="Madras FM TV" tvg-logo="https://www.madrasfm.tv/wp-content/uploads/2021/02/cropped-ffffddsss2.png" tvg-country="France" group-title="Musique",Madras FM TV
@@ -361,30 +359,18 @@ https://tvradiozap.eu/939
 https://tvradiozap.eu/1509
 #EXTINF:-1 tvg-id="TVM3.ch" tvg-name="TVM3 (CH)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/96/Logo_TVM3_2015.png" tvg-country="Suisse" group-title="Musique",TVM3 (CH)
 https://tvradiozap.eu/313
-#EXTINF:-1 tvg-id="" tvg-name="Vevo 2K (US)" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/94759dbd58a65682bcc573932f725f46/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1675113375186_Info_HUD_Logo_260X147_center_%252819%2529.png" tvg-country="USA" group-title="Musique",Vevo 2K (US)
-https://tvradiozap.eu/1516
 #EXTINF:-1 tvg-id="" tvg-name="Vevo 70 & 80's (UK)" tvg-logo="https://images.samsung.com/is/image/samsung/assets/nz/tvs/smart-tv/samsung-tv-plus/all-channels/Vevo-70s_1837.png" tvg-country="Royaume-Uni" group-title="Musique",Vevo 70 & 80's (UK)
 https://tvradiozap.eu/1115
-#EXTINF:-1 tvg-id="" tvg-name="Vevo 70's (US)" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/e5dcad2b1c055d4d86a9f7bba9438da7/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1675112924287_Info_HUD_Logo_260X147_center_%252818%2529.png" tvg-country="USA" group-title="Musique",Vevo 70's (US)
-https://tvradiozap.eu/1088
-#EXTINF:-1 tvg-id="" tvg-name="Vevo 80's (US)" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/fd8d765f98605129914b581147e7e8b2/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1675112947403_Info_HUD_Logo_260X147_center_%252817%2529.png" tvg-country="USA" group-title="Musique",Vevo 80's (US)
-https://tvradiozap.eu/1511
 #EXTINF:-1 tvg-id="" tvg-name="Vevo 90 & 00's" tvg-logo="https://i.ibb.co/3CtD77v/vevo90.png" tvg-country="France" group-title="Musique",Vevo 90 & 00's
 https://tvradiozap.eu/901
-#EXTINF:-1 tvg-id="" tvg-name="Vevo 90's (US)" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/4c0772ef75e1565183843b37e91591f8/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1675113345580_Info_HUD_Logo_260X147_center_%252816%2529.png" tvg-country="USA" group-title="Musique",Vevo 90's (US)
-https://tvradiozap.eu/1514
-#EXTINF:-1 tvg-id="" tvg-name="Vevo Country (US)" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/1db9c603bb4e5d87b015f9963da1093e/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1675113404058_Info_HUD_Logo_260X147_center_%25284%2529.png" tvg-country="USA" group-title="Musique",Vevo Country (US)
-https://tvradiozap.eu/1512
 #EXTINF:-1 tvg-id="" tvg-name="Vevo Hip-Hop & RnB" tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/db9a9040-b456-419f-8ca3-5d4895b81291-width320-quality90.jpeg" tvg-country="France" group-title="Musique",Vevo Hip-Hop & RnB
 https://tvradiozap.eu/1170
 #EXTINF:-1 tvg-id="" tvg-name="Vevo Pop" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/0ffe1995-3778-4619-a7c4-85af6b788e61-width320-quality90.jpeg" tvg-country="France" group-title="Musique",Vevo Pop
 https://tvradiozap.eu/863
-#EXTINF:-1 tvg-id="" tvg-name="Vevo Reggaeton & Trap (US)" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/60db737695c95b599dad50d2c5595fe3/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1675113591743_Info_HUD_Logo_260X147_center_%25281%2529_%25281%2529.png" tvg-country="USA" group-title="Musique",Vevo Reggaeton & Trap (US)
-https://tvradiozap.eu/1515
 #EXTINF:-1 tvg-id="" tvg-name="Vevo Retro Rock" tvg-logo="https://www.fionnbreen.com/assets/vevo/vevo-case-study-brand-1x1_20220516.jpg" tvg-country="France" group-title="Musique",Vevo Retro Rock
 https://tvradiozap.eu/855
-#EXTINF:-1 tvg-id="" tvg-name="Vevo RnB (US)" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/6be3083b8ec2508495684e5087f8f86a/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1675113546717_Info_HUD_Logo_260X147_center_%252813%2529.png" tvg-country="USA" group-title="Musique",Vevo RnB (US)
-https://tvradiozap.eu/1513
+#EXTINF:-1 tvg-id="" tvg-name="VIIB (UK)" tvg-logo="https://www.vibee.tv/wp-content/uploads/2025/06/viib-v2beat-logo-neon-1280-x-720.jpg" tvg-country="Royaume-Uni" group-title="Musique",VIIB (UK)
+https://tvradiozap.eu/1512
 #EXTINF:-1 tvg-id="" tvg-name="XITE 80s Flashback (US)" tvg-logo="https://12core-tus-ingestion.s3.amazonaws.com/7a2b5ba4efe166b39b4127f5cdb79fe8" tvg-country="USA" group-title="Musique",XITE 80s Flashback (US)
 https://tvradiozap.eu/1471
 #EXTINF:-1 tvg-id="" tvg-name="XITE 90s Throwback (US)" tvg-logo="https://assets.teleon.tv/180_webp/xite-90s-throwback-nl.webp" tvg-country="USA" group-title="Musique",XITE 90s Throwback (US)
