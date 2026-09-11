@@ -75,7 +75,7 @@ https://tvradiozap.eu/723
 https://tvradiozap.eu/716
 #EXTINF:-1 tvg-id="" tvg-name="750G" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/750g_logo.png/330px-750g_logo.png" tvg-country="France" group-title="Art de vivre",750G
 https://tvradiozap.eu/1101
-#EXTINF:-1 tvg-id="FR: Drive TV" tvg-name="Drive TV" tvg-logo="https://tvradiozap.eu/tv/logos/drive.jpg" tvg-country="Royaume-Uni" group-title="Art de vivre",Drive TV
+#EXTINF:-1 tvg-id="FR: Drive TV" tvg-name="Drive TV" tvg-logo="https://tvradiozap.eu/tv/logos/drive.jpg" tvg-country="France" group-title="Art de vivre",Drive TV
 https://tvradiozap.eu/1096
 #EXTINF:-1 tvg-id="" tvg-name="LMF5 La Maison France 5" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/8/8b/La_maison_France_5_2010_logo.png" tvg-country="France" group-title="Art de vivre",LMF5 La Maison France 5
 https://tvradiozap.eu/650
@@ -443,8 +443,6 @@ https://tvradiozap.eu/977
 https://tvradiozap.eu/684
 #EXTINF:-1 tvg-id="MaTele.be" tvg-name="Matélé (Dinant BE)" tvg-logo="https://www.matele.be/layouts/defaut/ALL/files/matele-logo-couleur.png" tvg-country="Belgique" group-title="Régional",Matélé (Dinant BE)
 https://tvradiozap.eu/696
-#EXTINF:-1 tvg-id="MoselleTV.fr" tvg-name="Moselle TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Logo_Moselle_TV_2023.png/330px-Logo_Moselle_TV_2023.png" tvg-country="France" group-title="Régional",Moselle TV
-https://tvradiozap.eu/686
 #EXTINF:-1 tvg-id="NoTele.be" tvg-name="Notélé  (Wallonie picarde BE)" tvg-logo="https://i.imgur.com/fGS55nR.png" tvg-country="Belgique" group-title="Régional",Notélé  (Wallonie picarde BE)
 https://tvradiozap.eu/697
 #EXTINF:-1 tvg-id="" tvg-name="Outre-Mer la 1ère" tvg-logo="https://pictures.live.franceinfo.fr/HKuU2WNBKxcAUIdMD6N8wuYlYuQ/100x100/avatars/martinique-la1ere-1699454391546.png" tvg-country="France" group-title="Régional",Outre-Mer la 1ère
@@ -459,8 +457,6 @@ https://tvradiozap.eu/859
 https://tvradiozap.eu/889
 #EXTINF:-1 tvg-id="TeleGrenobleIsere.fr" tvg-name="TG+ (Télé Grenoble)" tvg-logo="https://tgplus.fr/wp-content/uploads/2025/12/LOGOTYPES-RVB-TG-02-scaled-e1762939545843_6949472a9ff3c.png" tvg-country="France" group-title="Régional",TG+ (Télé Grenoble)
 https://tvradiozap.eu/280
-#EXTINF:-1 tvg-id="TahitiNuiTV.fr" tvg-name="TNTV Tahiti TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4d/Logo_TNTV_2017.png" tvg-country="Polynésie française" group-title="Régional",TNTV Tahiti TV
-https://tvradiozap.eu/902
 #EXTINF:-1 tvg-id="TVVendee.fr" tvg-name="TV Vendée" tvg-logo="https://i.imgur.com/YW7JKcw.png" tvg-country="France" group-title="Régional",TV Vendée
 https://tvradiozap.eu/682
 #EXTINF:-1 tvg-id="TV7Bordeaux.fr" tvg-name="TV7 Bordeaux" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/LOGO_-_TV7_Bordeaux.png/330px-LOGO_-_TV7_Bordeaux.png" tvg-country="France" group-title="Régional",TV7 Bordeaux
