@@ -35,10 +35,10 @@ https://tvradiozap.eu/656
 https://tvradiozap.eu/91
 #EXTINF:-1 tvg-id="FR:.Brefcinema.fr" tvg-name="BrefCinéma" tvg-logo="https://images.samsung.com/is/image/samsung/assets/fr/smart-tv/samsung-tv-plus/all-channels/Brefcinema.png?$330_186_PNG$" tvg-country="France" group-title="TNT-Top",BrefCinéma
 https://tvradiozap.eu/858
-#EXTINF:-1 tvg-id="FRBC3900004DS" tvg-name="Cap Terre" tvg-logo="https://lookaa.net/live/tv/capterre.jpeg" tvg-country="France" group-title="TNT-Top",Cap Terre
-https://tvradiozap.eu/963
 #EXTINF:-1 tvg-id="France24.fr" tvg-name="France 24" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/2/24/Logos_FRANCE24_RVB_2013.svg/330px-Logos_FRANCE24_RVB_2013.svg.png" tvg-country="France" group-title="TNT-Top",France 24
 https://tvradiozap.eu/671
+#EXTINF:-1 tvg-id="TVFrancophonie.fr" tvg-name="Francophonie24" tvg-logo="https://tvfrancophonie.org/templates/tvfranco_accueil_j5/images/header.jpg" tvg-country="France" group-title="TNT-Top",Francophonie24
+https://tvradiozap.eu/962
 #EXTINF:-1 tvg-id="" tvg-name="Red Bull" tvg-logo="https://cdn.imgbin.com/21/3/24/imgbin-red-bull-tv-television-film-streaming-media-red-bull-02Jy28szeKm0wszFQpU57gWtY.jpg" tvg-country="France" group-title="TNT-Top",Red Bull
 https://tvradiozap.eu/1522
 #EXTINF:-1 tvg-id="SportEnFrance.fr" tvg-name="Sport en France" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/8/83/Sport_en_France_Logo.png/330px-Sport_en_France_Logo.png" tvg-country="France" group-title="TNT-Top",Sport en France
@@ -67,6 +67,8 @@ https://tvradiozap.eu/1044
 https://tvradiozap.eu/675
 #EXTINF:-1 tvg-id="NoovoCinema.ca" tvg-name="Noovo Cinéma  (CA)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/52/Noovo_logo.png" tvg-country="Canada" group-title="TNT-Top",Noovo Cinéma  (CA)
 https://tvradiozap.eu/1140
+#EXTINF:-1 tvg-id="FR3200001NQ" tvg-name="BBC Earth (GB)" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR3200001NQ_20241015T040214SQUARE.png" tvg-country="Royaume-Uni" group-title="TNT-Top",BBC Earth (GB)
+https://tvradiozap.eu/1145
 #EXTINF:-1 tvg-id="FR: INA 70s" tvg-name="INA 70" tvg-logo="https://images.pluto.tv/series/651fe0613099fc00084bd30e/featuredImage.jpg" tvg-country="France" group-title="Archives",INA 70
 https://tvradiozap.eu/935
 #EXTINF:-1 tvg-id="FR:.Ardivision.fr" tvg-name="INA Ardivision" tvg-logo="https://www.planetecsat.com/wp-content/uploads/2024/04/lancement-ardivision-480x270.png" tvg-country="France" group-title="Archives",INA Ardivision
@@ -151,8 +153,6 @@ https://tvradiozap.eu/1231
 https://tvradiozap.eu/1235
 #EXTINF:-1 tvg-id="FRBC9000041F" tvg-name="Trailers" tvg-logo="https://fusion.molotov.tv/arts/i/446x588/Ch8SHQoUGtx_ZRxaopyLp0C7zJzbOEkUYpoSA2pwZxgBCh8IARIbChT4oSV5pd7up1uvhFfjqSRJNbNAshIDcG5n/jpg" tvg-country="France" group-title="Cinéma",Trailers
 https://tvradiozap.eu/1012
-#EXTINF:-1 tvg-id="TVFrancophonie.fr" tvg-name="Francophonie24" tvg-logo="https://tvfrancophonie.org/templates/tvfranco_accueil_j5/images/header.jpg" tvg-country="France" group-title="Culture",Francophonie24
-https://tvradiozap.eu/962
 #EXTINF:-1 tvg-id="" tvg-name="Savoir Media  (CA)" tvg-logo="https://beacon.playback.api.brightcove.com/savoirmedia/uploads/settings/2_e11b729e19a45b1c3f677217c5410c25_images_logo-h100_w100.png" tvg-country="Canada" group-title="Culture",Savoir Media  (CA)
 https://tvradiozap.eu/660
 #EXTINF:-1 tvg-id="tcm-tv.ca" tvg-name="TCM-TV   (CA)" tvg-logo="https://teleculturelle.com/wp-content/uploads/2024/01/tcm_logo_transparent-300x99.png" tvg-country="Canada" group-title="Culture",TCM-TV   (CA)
@@ -393,8 +393,8 @@ https://tvradiozap.eu/1463
 https://tvradiozap.eu/1458
 #EXTINF:-1 tvg-id="zoukla.fm" tvg-name="Zoukla" tvg-logo="https://www.telezoukla.com/gallery_gen/354e5710b3a20b6ec2a926cfffe15241_610x226_fit.png" tvg-country="France Martinique" group-title="Musique",Zoukla
 https://tvradiozap.eu/1104
-#EXTINF:-1 tvg-id="FR3200001NQ" tvg-name="BBC Earth (GB)" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR3200001NQ_20241015T040214SQUARE.png" tvg-country="Royaume-Uni" group-title="Nature",BBC Earth (GB)
-https://tvradiozap.eu/1145
+#EXTINF:-1 tvg-id="FRBC3900004DS" tvg-name="Cap Terre" tvg-logo="https://lookaa.net/live/tv/capterre.jpeg" tvg-country="France" group-title="Nature",Cap Terre
+https://tvradiozap.eu/963
 #EXTINF:-1 tvg-id="FRBC4000001IO" tvg-name="Destination Nature" tvg-logo="https://images.samsung.com/is/image/samsung/assets/fr/smart-tv/samsung-tv-plus/all-channels/Destination_Nature_1000x1000_Circle_300_DPI-20220915-141455.png?$330_186_PNG$" tvg-country="France" group-title="Nature",Destination Nature
 https://tvradiozap.eu/910
 #EXTINF:-1 tvg-id="FR:.Nature.Time.fr" tvg-name="Nature time" tvg-logo="https://images.samsung.com/is/image/samsung/assets/be_fr/smart-tv/samsung-tv-plus/all-channels/NatureTime_circle_1000x1000.png?$330_186_PNG$" tvg-country="France" group-title="Nature",Nature time
