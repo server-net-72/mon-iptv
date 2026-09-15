@@ -299,7 +299,7 @@ https://tvradiozap.eu/1007
 https://tvradiozap.eu/1286
 #EXTINF:-1 tvg-id="" tvg-name="iHeartCountry Classics (US)" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/3395d3b6c6e895a495fd12a2c719b21c/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1728501104207_260x147_Image_HUD_2.png" tvg-country="USA" group-title="Musique",iHeartCountry Classics (US)
 https://tvradiozap.eu/1518
-#EXTINF:-1 tvg-id="" tvg-name="K-Dance Vibes" tvg-logo="https://www.giniko.com/logos/190x110/1571.jpg" tvg-country="Corée du Sud" group-title="Musique",K-Dance Vibes
+#EXTINF:-1 tvg-id="Dance" tvg-name="K-Dance Vibes" tvg-logo="https://www.giniko.com/logos/190x110/1571.jpg" tvg-country="Corée du Sud" group-title="Musique",K-Dance Vibes
 https://tvradiozap.eu/1550
 #EXTINF:-1 tvg-id="" tvg-name="K-Pop" tvg-logo="https://ugc.production.linktr.ee/a2BerHbRiyenqJnkiK86_UT8IPKfPoBtSUwfG?io=true&size=avatar-v3_0" tvg-country="France" group-title="Musique",K-Pop
 https://tvradiozap.eu/1295
