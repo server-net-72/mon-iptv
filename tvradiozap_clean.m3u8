@@ -547,8 +547,6 @@ https://tvradiozap.eu/1173
 https://tvradiozap.eu/1028
 #EXTINF:-1 tvg-id="" tvg-name="Zee One" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/6e44fbc4-7921-4fbc-b215-f90c74cf207e-width640-quality90.jpeg" tvg-country="France" group-title="Séries-Films",Zee One
 https://tvradiozap.eu/1249
-#EXTINF:-1 tvg-id="BAM.be" tvg-name="BAM (BE)" tvg-logo="https://le-de.cdn-website.com/894133b4cadc4c66aa2a5f508c2b66fd/dms3rep/multi/opt/LogoBAM-1920w.png" tvg-country="Belgique" group-title="Sociétal",BAM (BE)
-https://tvradiozap.eu/941
 #EXTINF:-1 tvg-id="CPAC.ca" tvg-name="CPAC (CA)" tvg-logo="https://logowik.com/content/uploads/images/cpac-tv-20169103.logowik.com.webp" tvg-country="Canada" group-title="Sociétal",CPAC (CA)
 https://tvradiozap.eu/1180
 #EXTINF:-1 tvg-id="FusionTV.mq" tvg-name="Fusion TV" tvg-logo="https://radiofusion.fr/wp-content/uploads/2025/02/fusion-600.png" tvg-country="France Martinique" group-title="Sociétal",Fusion TV
