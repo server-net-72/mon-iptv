@@ -219,6 +219,8 @@ https://tvradiozap.eu/1384
 https://tvradiozap.eu/978
 #EXTINF:-1 tvg-id="FR4800002NE" tvg-name="Caillou" tvg-logo="https://m.media-amazon.com/images/S/pv-target-images/61633a60b83c39718b80c718ad9b6a346a73cb3961813446fc0da382b71d02a6.jpg" tvg-country="France" group-title="Jeunesse",Caillou
 https://tvradiozap.eu/905
+#EXTINF:-1 tvg-id="Cartoonito.fr" tvg-name="Cartoonito" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cartoonito_-_Logo_2021.svg/330px-Cartoonito_-_Logo_2021.svg.png" tvg-country="France" group-title="Jeunesse",Cartoonito
+https://tvradiozap.eu/1391
 #EXTINF:-1 tvg-id="" tvg-name="Japanim TV (BE)" tvg-logo="https://ekladata.com/K8Gx6T-GSrtfiCpdtfstXEhLWZ0.jpg" tvg-country="Belgique" group-title="Jeunesse",Japanim TV (BE)
 https://tvradiozap.eu/1063
 #EXTINF:-1 tvg-id="" tvg-name="Les Schtroumpfs" tvg-logo="https://images.pluto.tv/channels/68b16d2282862c1f067dc763/thumbnail_1760383271593.jpg" tvg-country="France" group-title="Jeunesse",Les Schtroumpfs
@@ -253,6 +255,8 @@ https://tvradiozap.eu/1125
 https://tvradiozap.eu/1152
 #EXTINF:-1 tvg-id="Csur.ca" tvg-name="Csur  (CA)" tvg-logo="https://csur.tv/wp-content/themes/csurtv/dist/images/logo-csur-new.png" tvg-country="Canada" group-title="Local",Csur  (CA)
 https://tvradiozap.eu/1174
+#EXTINF:-1 tvg-id="ctbTV.ca" tvg-name="CTB TV  (CA)" tvg-logo="https://ctbtv.ca/wp-content/uploads/2018/04/ctb-tv-logo-2018-s.png" tvg-country="Canada" group-title="Local",CTB TV  (CA)
+https://tvradiozap.eu/1178
 #EXTINF:-1 tvg-id="DCMTV.fr" tvg-name="DCM TV (91)" tvg-logo="https://i0.wp.com/www.dcmtv.fr/wp-content/uploads/2022/06/Nouveau-projet.png" tvg-country="France" group-title="Local",DCM TV (91)
 https://tvradiozap.eu/1079
 #EXTINF:-1 tvg-id="ILTV.fr" tvg-name="ILTV  (Hénin-Carvin)" tvg-logo="https://i.imgur.com/fVhrJHK.png" tvg-country="France" group-title="Local",ILTV  (Hénin-Carvin)
@@ -277,9 +281,13 @@ https://tvradiozap.eu/942
 https://tvradiozap.eu/907
 #EXTINF:-1 tvg-id="TV7Colmar.fr" tvg-name="TV7 Colmar" tvg-logo="https://play-lh.googleusercontent.com/ueU1-Uf0-gY6ktpgJ3GE6wfcaG05ud8a6plswApnT9xiP0nKqQZICLAoo6eEJkFO4w0=w480-h960-rw" tvg-country="France" group-title="Local",TV7 Colmar
 https://tvradiozap.eu/690
+#EXTINF:-1 tvg-id="TVCArgenteuil.fr" tvg-name="TVC Argenteuil (CA)" tvg-logo="https://www.tvcargenteuil.com/wp-content/uploads/2017/05/logo-footer.png" tvg-country="Canada" group-title="Local",TVC Argenteuil (CA)
+https://tvradiozap.eu/1176
 #EXTINF:-1 tvg-id="tvcBF.ca" tvg-name="TVCBF  (CA)" tvg-logo="https://www.tvcbf.tv/images/logo-tvcbf-menu-2024.png" tvg-country="Canada" group-title="Local",TVCBF  (CA)
 https://tvradiozap.eu/1177
-#EXTINF:-1 tvg-id="" tvg-name="Alive My TV" tvg-logo="https://tvradiozap.eu/tv/logos/alivemytv.jpg" tvg-country="France" group-title="Musique",Alive My TV
+#EXTINF:-1 tvg-id="TVPI.fr" tvg-name="TVPI (40+64)" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/9/92/TVPI_logo.png" tvg-country="France" group-title="Local",TVPI (40+64)
+https://tvradiozap.eu/975
+#EXTINF:-1 tvg-id="" tvg-name="Alive My TV" tvg-logo="https://yt3.googleusercontent.com/7Gnis2rzL24Na9c-MhScl0JXecYTQZlZEf1_x356tA6YfH3s_toWM9WXsOtZj4SJ9JgdeIdqoQ=s160-c-k-c0x00ffffff-no-rj" tvg-country="France" group-title="Musique",Alive My TV
 https://tvradiozap.eu/1432
 #EXTINF:-1 tvg-id="" tvg-name="Classica (Stingray)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Stingray-classica-alternative-logo.png/960px-Stingray-classica-alternative-logo.png" tvg-country="Canada" group-title="Musique",Classica (Stingray)
 https://tvradiozap.eu/846
