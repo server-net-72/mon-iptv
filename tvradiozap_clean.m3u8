@@ -289,6 +289,8 @@ https://tvradiozap.eu/975
 https://tvradiozap.eu/1432
 #EXTINF:-1 tvg-id="" tvg-name="Classica (Stingray)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Stingray-classica-alternative-logo.png/960px-Stingray-classica-alternative-logo.png" tvg-country="Canada" group-title="Musique",Classica (Stingray)
 https://tvradiozap.eu/846
+#EXTINF:-1 tvg-id="" tvg-name="CMC TV (USA)" tvg-logo="https://i.imgur.com/FCb7Ag2.png" tvg-country="USA" group-title="Musique",CMC TV (USA)
+https://tvradiozap.eu/1553
 #EXTINF:-1 tvg-id="cr.fr" tvg-name="CR Concept Radio" tvg-logo="https://www.radiodoublexx.com/images/logo_concept_radio_1.png" tvg-country="France" group-title="Musique",CR Concept Radio
 https://tvradiozap.eu/1092
 #EXTINF:-1 tvg-id="" tvg-name="Djazz (Stingray)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Stingray_Djazz.png/960px-Stingray_Djazz.png" tvg-country="Canada" group-title="Musique",Djazz (Stingray)
@@ -305,8 +307,6 @@ https://tvradiozap.eu/1007
 https://tvradiozap.eu/1286
 #EXTINF:-1 tvg-id="" tvg-name="iHeartCountry Classics (US)" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/3395d3b6c6e895a495fd12a2c719b21c/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1728501104207_260x147_Image_HUD_2.png" tvg-country="USA" group-title="Musique",iHeartCountry Classics (US)
 https://tvradiozap.eu/1518
-#EXTINF:-1 tvg-id="Dance" tvg-name="K-Dance Vibes" tvg-logo="https://www.giniko.com/logos/190x110/1571.jpg" tvg-country="Corée du Sud" group-title="Musique",K-Dance Vibes
-https://tvradiozap.eu/1550
 #EXTINF:-1 tvg-id="" tvg-name="K-Pop" tvg-logo="https://ugc.production.linktr.ee/a2BerHbRiyenqJnkiK86_UT8IPKfPoBtSUwfG?io=true&size=avatar-v3_0" tvg-country="France" group-title="Musique",K-Pop
 https://tvradiozap.eu/1295
 #EXTINF:-1 tvg-id="" tvg-name="Littoral FM TV" tvg-logo="https://images.lesindesradios.fr/fit-in/300x2000/radios/littoral/images/logo_XVXnlAO28F.png" tvg-country="France" group-title="Musique",Littoral FM TV
@@ -569,6 +569,8 @@ https://tvradiozap.eu/1191
 https://tvradiozap.eu/877
 #EXTINF:-1 tvg-id="" tvg-name="Zen!th" tvg-logo="https://tvradiozap.eu/tv/logos/zenith.jpg" tvg-country="France" group-title="Sociétal",Zen!th
 https://tvradiozap.eu/1523
+#EXTINF:-1 tvg-id="" tvg-name="Zitata" tvg-logo="https://zitata.tv/wp-content/uploads/2026/03/cropped-Logo-Zitata-or-400.png" tvg-country="France Martinique" group-title="Sociétal",Zitata
+https://tvradiozap.eu/1026
 #EXTINF:-1 tvg-id="AfterFootTV.fr" tvg-name="After Foot TV" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/1/1d/After-foot-logo-2023.svg/330px-After-foot-logo-2023.svg.png" tvg-country="France" group-title="Sport",After Foot TV
 https://tvradiozap.eu/1260
 #EXTINF:-1 tvg-id="Equidia.fr" tvg-name="Equidia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d3/Equidia_logo_2018.png" tvg-country="France" group-title="Sport",Equidia
