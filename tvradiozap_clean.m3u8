@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1, 01 ---------- TNT-Top
+#EXTINF:-1 group-title="TNT-Top",01 ---------- TNT-Top
 https://httpbin.org/status/404
 #EXTINF:-1 tvg-id="TF1.fr" tvg-name="TF1" tvg-logo="https://companieslogo.com/img/orig/TFI.PA-8c6da426.png" tvg-country="France" group-title="TNT-Top",TF1
 https://tvradiozap.eu/890
@@ -333,6 +333,8 @@ https://tvradiozap.eu/1163
 https://tvradiozap.eu/678
 #EXTINF:-1 tvg-id="" tvg-name="RSDT TV" tvg-logo="https://radio-soleil-des-tropiques.fr/img/upload/logosoleil19.png" tvg-country="France" group-title="Musique",RSDT TV
 https://tvradiozap.eu/1038
+#EXTINF:-1 tvg-id="" tvg-name="Show Champion" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/ad/Logo_sub.png?utm_source=fr.wikipedia.org" tvg-country="Corée du Sud" group-title="Musique",Show Champion
+https://tvradiozap.eu/1562
 #EXTINF:-1 tvg-id="" tvg-name="Skyrock TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Skyrock_2011_logo.png/330px-Skyrock_2011_logo.png" tvg-country="France" group-title="Musique",Skyrock TV
 https://tvradiozap.eu/1198
 #EXTINF:-1 tvg-id="" tvg-name="Stingray Free Riding" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/d90a57a66251fdda967c2e2b9e6aa25d/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1753727436599_StingrayFreeRiding_HUDlogo_centered_260x147.png" tvg-country="Canada" group-title="Musique",Stingray Free Riding
