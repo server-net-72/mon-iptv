@@ -45,8 +45,8 @@ https://tvradiozap.eu/1522
 https://tvradiozap.eu/703
 #EXTINF:-1 tvg-id="01TV.fr" tvg-name="Tech&Co" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/8/83/Tech_%26_Co.svg/500px-Tech_%26_Co.svg.png" tvg-country="France" group-title="01. TNT-Top",Tech&Co
 https://tvradiozap.eu/878
-#EXTINF:-1 tvg-id="BX1.be" tvg-name="BX1 (Bruxelles BE)" tvg-logo="https://bx1.be/wp-content/themes/BX1-2017/img/logo.png" tvg-country="Belgique" group-title="01. TNT-Top",BX1 (Bruxelles BE)
-https://tvradiozap.eu/283
+#EXTINF:-1 tvg-id="TrendsZ.be" tvg-name="Trends Z (BE)" tvg-logo="https://www.csa.be/wp-content/uploads/2009/07/Trends-Z-Blauw.png" tvg-country="Belgique" group-title="01. TNT-Top",Trends Z (BE)
+https://tvradiozap.eu/1271
 #EXTINF:-1 tvg-id="TVMonaco.mc" tvg-name="TV Monaco (MC)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/TV_Monaco_logo.png/960px-TV_Monaco_logo.png" tvg-country="Monaco" group-title="01. TNT-Top",TV Monaco (MC)
 https://tvradiozap.eu/886
 #EXTINF:-1 tvg-id="RougeTV.ch" tvg-name="Carac1 (CH)" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/7/74/CARAC1_logo_2023.svg/330px-CARAC1_logo_2023.svg.png" tvg-country="Suisse" group-title="01. TNT-Top",Carac1 (CH)
@@ -189,8 +189,6 @@ https://tvradiozap.eu/1016
 https://tvradiozap.eu/873
 #EXTINF:-1 tvg-id="BFMBusiness.fr" tvg-name="BFM Business" tvg-logo="https://static-cdn.tv.sfr.net/data/img/apps/edito/attachment/animation/tile/logoschaines169bfmbusinesscouleursnew.png" tvg-country="France" group-title="08. Economie",BFM Business
 https://tvradiozap.eu/874
-#EXTINF:-1 tvg-id="TrendsZ.be" tvg-name="Trends Z (BE)" tvg-logo="https://www.csa.be/wp-content/uploads/2009/07/Trends-Z-Blauw.png" tvg-country="Belgique" group-title="08. Economie",Trends Z (BE)
-https://tvradiozap.eu/1271
 #EXTINF:-1 tvg-id="Brut.fr" tvg-name="Brut" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brut_logo.svg/330px-Brut_logo.svg.png" tvg-country="France" group-title="09. Généraliste",Brut
 https://tvradiozap.eu/1501
 #EXTINF:-1 tvg-id="CanalPlus.fr" tvg-name="Canal+ (plages en clair)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Canal-Logo.png/960px-Canal-Logo.png" tvg-country="France" group-title="09. Généraliste",Canal+ (plages en clair)
@@ -207,6 +205,8 @@ https://tvradiozap.eu/665
 https://tvradiozap.eu/1110
 #EXTINF:-1 tvg-id="Euronews.fr" tvg-name="Euronews" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Euronews._2016_alternative_logo.png/330px-Euronews._2016_alternative_logo.png" tvg-country="Paneurope" group-title="10. Info",Euronews
 https://tvradiozap.eu/643
+#EXTINF:-1 tvg-id="FigaroLive.fr" tvg-name="Figaro Live" tvg-logo="https://i.f1g.fr/media/cms/1200x630_crop/2022/07/01/56c2aa1bdd0afe4366b6bca8d6d31b044052bd0653c41b916efc438990f1cf6a.png" tvg-country="France" group-title="10. Info",Figaro Live
+https://tvradiozap.eu/870
 #EXTINF:-1 tvg-id="MonacoInfo.mc" tvg-name="Monaco Info  (MC)" tvg-logo="https://monacoinfo.com/wp-content/themes/monacoinfo_v4/assets/img/monacoinfo-color.png" tvg-country="Monaco" group-title="10. Info",Monaco Info  (MC)
 https://tvradiozap.eu/676
 #EXTINF:-1 tvg-id="RMCTalkInfo.fr" tvg-name="RMC Talk Info" tvg-logo="https://static-cdn.tv.sfr.net/data/img/apps/edito/attachment/animation/tile/imgrectangle1920RMCTalkinfo.jpg" tvg-country="France" group-title="10. Info",RMC Talk Info
@@ -323,6 +323,8 @@ https://tvradiozap.eu/729
 https://tvradiozap.eu/639
 #EXTINF:-1 tvg-id="BipTV.fr" tvg-name="BIP TV (Berry)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a8/Logo_Bip_TV.png" tvg-country="France" group-title="15. Régional",BIP TV (Berry)
 https://tvradiozap.eu/672
+#EXTINF:-1 tvg-id="BX1.be" tvg-name="BX1 (Bruxelles BE)" tvg-logo="https://bx1.be/wp-content/themes/BX1-2017/img/logo.png" tvg-country="Belgique" group-title="15. Régional",BX1 (Bruxelles BE)
+https://tvradiozap.eu/283
 #EXTINF:-1 tvg-id="Canal32.fr" tvg-name="Canal 32 (Troyes)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Logo_C32_couleur.png/250px-Logo_C32_couleur.png" tvg-country="France" group-title="15. Régional",Canal 32 (Troyes)
 https://tvradiozap.eu/647
 #EXTINF:-1 tvg-id="CanalAlphaJura.ch" tvg-name="Canal Alpha Jura (CH)" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/7/77/Logo_Canal_Alpha_Noire_2.jpg" tvg-country="Suisse" group-title="15. Régional",Canal Alpha Jura (CH)
