@@ -327,9 +327,9 @@ https://tvradiozap.eu/672
 https://tvradiozap.eu/283
 #EXTINF:-1 tvg-id="Canal32.fr" tvg-name="Canal 32 (Troyes)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Logo_C32_couleur.png/250px-Logo_C32_couleur.png" tvg-country="France" group-title="15. Régional",Canal 32 (Troyes)
 https://tvradiozap.eu/647
-#EXTINF:-1 tvg-id="CanalAlphaJura.ch" tvg-name="Canal Alpha Jura (CH)" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/7/77/Logo_Canal_Alpha_Noire_2.jpg" tvg-country="Suisse" group-title="15. Régional",Canal Alpha Jura (CH)
+#EXTINF:-1 tvg-id="CanalAlphaJura.ch" tvg-name="Canal Alpha Jura (CH)" tvg-logo="https://canalalpha.ch/og-image-canal-alpha.png" tvg-country="Suisse" group-title="15. Régional",Canal Alpha Jura (CH)
 https://tvradiozap.eu/847
-#EXTINF:-1 tvg-id="CanalAlphaNeuchatel.ch" tvg-name="Canal Alpha Neuchatel (CH)" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/7/77/Logo_Canal_Alpha_Noire_2.jpg" tvg-country="Suisse" group-title="15. Régional",Canal Alpha Neuchatel (CH)
+#EXTINF:-1 tvg-id="CanalAlphaNeuchatel.ch" tvg-name="Canal Alpha Neuchatel (CH)" tvg-logo="https://canalalpha.ch/og-image-canal-alpha.png" tvg-country="Suisse" group-title="15. Régional",Canal Alpha Neuchatel (CH)
 https://tvradiozap.eu/848
 #EXTINF:-1 tvg-id="LaTele.ch" tvg-name="La Télé  (Fribourg CH)" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/5/5c/Logo_La_Tele_Vaud_Fribourg.svg/330px-Logo_La_Tele_Vaud_Fribourg.svg.png" tvg-country="Suisse" group-title="15. Régional",La Télé  (Fribourg CH)
 https://tvradiozap.eu/699
