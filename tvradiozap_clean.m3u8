@@ -143,8 +143,6 @@ https://tvradiozap.eu/1227
 https://tvradiozap.eu/1335
 #EXTINF:-1 tvg-id="FR:.ScreamIN.fr" tvg-name="ScreamIN" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/9632cedb-5638-4010-9528-3ebf0071d631-screamin-1639988850-width200-quality90.jpeg" tvg-country="France" group-title="04. Cinéma",ScreamIN
 https://tvradiozap.eu/841
-#EXTINF:-1 tvg-id="" tvg-name="Shark TV" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/b6889e80-6761-46b9-b2d7-1e38aef66577-width400-quality90.jpeg" tvg-country="France" group-title="04. Cinéma",Shark TV
-https://tvradiozap.eu/1171
 #EXTINF:-1 tvg-id="" tvg-name="Sony One Hits Action" tvg-logo="https://static.frequency.com/studio/sony/channels/FR_LG_FAST_ActionHits_ChannelLogo_Horizontal.png" tvg-country="France" group-title="04. Cinéma",Sony One Hits Action
 https://tvradiozap.eu/1230
 #EXTINF:-1 tvg-id="" tvg-name="Sony One Hits Comédie" tvg-logo="https://static.frequency.com/studio/sony/channels/FR_LG_FAST_ComedyHits_ChannelLogo_Horizontal.png" tvg-country="France" group-title="04. Cinéma",Sony One Hits Comédie
@@ -429,6 +427,8 @@ https://tvradiozap.eu/1117
 https://tvradiozap.eu/839
 #EXTINF:-1 tvg-id="Runtime.fr" tvg-name="Run:Time Film et Séries" tvg-logo="https://provider-static.plex.tv/epg/cms/production/ce0f2744-65eb-4872-999b-85eb0684e3cd/Runtime_France_Dark_Mode_Logordx.png" tvg-country="France" group-title="18. Séries-Films",Run:Time Film et Séries
 https://tvradiozap.eu/986
+#EXTINF:-1 tvg-id="" tvg-name="Shark TV" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/b6889e80-6761-46b9-b2d7-1e38aef66577-width400-quality90.jpeg" tvg-country="France" group-title="18. Séries-Films",Shark TV
+https://tvradiozap.eu/1171
 #EXTINF:-1 tvg-id="" tvg-name="Sony One Blacklist" tvg-logo="https://static.frequency.com/studio/sony/channels/FR_LG_FAST_Blacklist_ChannelLogo_Horizontal.png" tvg-country="France" group-title="18. Séries-Films",Sony One Blacklist
 https://tvradiozap.eu/1237
 #EXTINF:-1 tvg-id="" tvg-name="Sony One Favoris" tvg-logo="https://static.frequency.com/studio/sony/channels/FR_LG_FAST_Faves_ChannelLogo_Horizontal.png" tvg-country="France" group-title="18. Séries-Films",Sony One Favoris
