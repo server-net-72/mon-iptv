@@ -473,6 +473,8 @@ https://tvradiozap.eu/990
 https://tvradiozap.eu/1020
 #EXTINF:-1 tvg-id="" tvg-name="Equidia Racing Trot" tvg-logo="https://static.equidia.fr/equidia/logo/201118_EQUIDIA%20RACING_TROT_FB.svg" tvg-country="France" group-title="20. Sport",Equidia Racing Trot
 https://tvradiozap.eu/1021
+#EXTINF:-1 tvg-id="FRBD4100013LN" tvg-name="Motor Racing" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR900002B4_20261013T053902SQUARE.png" tvg-country="France" group-title="20. Sport",Motor Racing
+https://tvradiozap.eu/851
 #EXTINF:-1 tvg-id="pancraceTV.fr" tvg-name="Pancrace TV" tvg-logo="https://pancrace.tv/uploads/images/logo_site_1485347386.jpg" tvg-country="France" group-title="20. Sport",Pancrace TV
 https://tvradiozap.eu/1245
 #EXTINF:-1 tvg-id="" tvg-name="Tennis Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4c/Logo_Tennis_Channel.svg/250px-Logo_Tennis_Channel.svg.png" tvg-country="France" group-title="20. Sport",Tennis Channel
