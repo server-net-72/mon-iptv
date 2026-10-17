@@ -151,6 +151,8 @@ https://tvradiozap.eu/1235
 https://tvradiozap.eu/1012
 #EXTINF:-1 tvg-id="" tvg-name="FilmRise" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Filmrise.svg/330px-Filmrise.svg.png" tvg-country="Canada" group-title="04. Cinéma",FilmRise
 https://tvradiozap.eu/1239
+#EXTINF:-1 tvg-id="PlutoTVHistoire.fr" tvg-name="Plu.TV Histoire" tvg-logo="https://images.pluto.tv/channels/611e771e2f5f180007002224/thumbnail.jpg" tvg-country="France" group-title="05. Culture",Plu.TV Histoire
+https://tvradiozap.eu/788
 #EXTINF:-1 tvg-id="" tvg-name="TVD (CH)" tvg-logo="https://tvdecouverte.ch/wp-content/uploads/2022/11/Couleur_2_TVDecouverte-1024x184.png" tvg-country="Suisse" group-title="05. Culture",TVD (CH)
 https://tvradiozap.eu/1383
 #EXTINF:-1 tvg-id="" tvg-name="Savoir Media  (CA)" tvg-logo="https://beacon.playback.api.brightcove.com/savoirmedia/uploads/settings/2_e11b729e19a45b1c3f677217c5410c25_images_logo-h100_w100.png" tvg-country="Canada" group-title="05. Culture",Savoir Media  (CA)
@@ -219,7 +221,7 @@ https://tvradiozap.eu/978
 https://tvradiozap.eu/905
 #EXTINF:-1 tvg-id="Cartoonito.fr" tvg-name="Cartoonito" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cartoonito_-_Logo_2021.svg/330px-Cartoonito_-_Logo_2021.svg.png" tvg-country="France" group-title="11. Jeunesse",Cartoonito
 https://tvradiozap.eu/1391
-#EXTINF:-1 tvg-id="" tvg-name="Les Schtroumpfs" tvg-logo="https://images.pluto.tv/channels/68b16d2282862c1f067dc763/thumbnail_1760383271593.jpg" tvg-country="France" group-title="11. Jeunesse",Les Schtroumpfs
+#EXTINF:-1 tvg-id="" tvg-name="Plu.TV Les Schtroumpfs" tvg-logo="https://images.pluto.tv/channels/68b16d2282862c1f067dc763/thumbnail_1760383271593.jpg" tvg-country="France" group-title="11. Jeunesse",Plu.TV Les Schtroumpfs
 https://tvradiozap.eu/1385
 #EXTINF:-1 tvg-id="" tvg-name="Plu.TV Retro Toons" tvg-logo="https://images.pluto.tv/channels/611e6a9b4bb5790007a6f0f8/thumbnail.jpg" tvg-country="France" group-title="11. Jeunesse",Plu.TV Retro Toons
 https://tvradiozap.eu/802
@@ -295,6 +297,8 @@ https://tvradiozap.eu/704
 https://tvradiozap.eu/833
 #EXTINF:-1 tvg-id="IDF1.fr" tvg-name="20 Minutes TV  (IdF)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/20_Minutes_TV_IDF_logo_%282023%29.png/330px-20_Minutes_TV_IDF_logo_%282023%29.png" tvg-country="France" group-title="15. Régional",20 Minutes TV  (IdF)
 https://tvradiozap.eu/681
+#EXTINF:-1 tvg-id="8MontBlanc.fr" tvg-name="8 Mont-Blanc" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/6/6a/Logo_8_Mont_Blanc_2015.svg/330px-Logo_8_Mont_Blanc_2015.svg.png" tvg-country="France" group-title="15. Régional",8 Mont-Blanc
+https://tvradiozap.eu/885
 #EXTINF:-1 tvg-id="DiciTvAlpes.fr" tvg-name="BFM Alpes" tvg-logo="https://images.bfmtv.com/Ae0173vxsMFF7MwersgOLeUZ9TQ=/0x0:0x0/800x0/site_manager_images/image_contenu5_nav_pastilles_1623851237615_1652343029595.jpg" tvg-country="France" group-title="15. Régional",BFM Alpes
 https://tvradiozap.eu/732
 #EXTINF:-1 tvg-id="Alsace20.fr" tvg-name="BFM Alsace" tvg-logo="https://images.bfmtv.com/1ebczxrFED3yTu3d4I4gKVg6Hf4=/0x0:0x0/800x0/site_manager_images/image_contenu9_nav_pastilles_1623851237615_1656410376249.jpg" tvg-country="France" group-title="15. Régional",BFM Alsace
