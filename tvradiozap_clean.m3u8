@@ -91,6 +91,8 @@ https://tvradiozap.eu/972
 https://tvradiozap.eu/1094
 #EXTINF:-1 tvg-id="" tvg-name="100% Cinéma" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR13000020W_20250819T032458SQUARE.png" tvg-country="France" group-title="04. Cinéma",100% Cinéma
 https://tvradiozap.eu/717
+#EXTINF:-1 tvg-id="" tvg-name="Action Club" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FRBD2300001UQ_20260528T055208SQUARE.png" tvg-country="France" group-title="04. Cinéma",Action Club
+https://tvradiozap.eu/829
 #EXTINF:-1 tvg-id="" tvg-name="Action Totale" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR220000105_20250617T031603SQUARE.png" tvg-country="France" group-title="04. Cinéma",Action Totale
 https://tvradiozap.eu/1263
 #EXTINF:-1 tvg-id="AlloCine.fr" tvg-name="AlloCiné" tvg-logo="https://www.logotheque-vectorielle.fr/wp-content/uploads/2022/10/logo-vectoriel-allocine.jpg" tvg-country="France" group-title="04. Cinéma",AlloCiné
