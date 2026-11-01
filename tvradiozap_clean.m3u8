@@ -113,6 +113,8 @@ https://tvradiozap.eu/782
 https://tvradiozap.eu/861
 #EXTINF:-1 tvg-id="FRBB340000115" tvg-name="Emotion'L" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/130d95fd-f638-4e54-bde9-5d0af0941974-emotion-l-1639670054-width330-quality90.jpeg" tvg-country="France" group-title="04. Cinéma",Emotion'L
 https://tvradiozap.eu/860
+#EXTINF:-1 tvg-id="" tvg-name="French Collection (Pluto)" tvg-logo="https://images.pluto.tv/channels/62f3e0522443200008c567d7/thumbnail.jpg" tvg-country="France" group-title="04. Cinéma",French Collection (Pluto)
+https://tvradiozap.eu/781
 #EXTINF:-1 tvg-id="FR:.Grjngo.-.Films.de.Western.fr" tvg-name="Grjngo" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/42c9c621-f61c-4a9d-9de4-362ba0cf4a29-width200-quality90.jpeg" tvg-country="France" group-title="04. Cinéma",Grjngo
 https://tvradiozap.eu/1219
 #EXTINF:-1 tvg-id="" tvg-name="LG 1" tvg-logo="https://lge-static.ottera.tv/prod/lge/linear_channel/logo/1600x400/lg1_800x200_white_5.png" tvg-country="France" group-title="04. Cinéma",LG 1
@@ -125,8 +127,6 @@ https://tvradiozap.eu/1233
 https://tvradiozap.eu/1524
 #EXTINF:-1 tvg-id="FRBA2200010VN" tvg-name="MyTime Movie Network" tvg-logo="https://mytimemovienetwork.com/wp-content/uploads/2025/07/cropped-MT_SHOWCASE_LOGO_120x90.png" tvg-country="France" group-title="04. Cinéma",MyTime Movie Network
 https://tvradiozap.eu/857
-#EXTINF:-1 tvg-id="" tvg-name="Plu.TV French Collection" tvg-logo="https://images.pluto.tv/channels/62f3e0522443200008c567d7/thumbnail.jpg" tvg-country="France" group-title="04. Cinéma",Plu.TV French Collection
-https://tvradiozap.eu/781
 #EXTINF:-1 tvg-id="FR:.Films.d`Action.-.Rakuten.TV.fr" tvg-name="Rakuten TV Action" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/e87ece78-2a31-4a08-a673-6d08bb8f8a06-films-d-action-rakuten-tv-1621956489.png" tvg-country="France" group-title="04. Cinéma",Rakuten TV Action
 https://tvradiozap.eu/713
 #EXTINF:-1 tvg-id="FR:.Comédies.-.Rakuten.TV.fr" tvg-name="Rakuten TV Comédies" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/83ab0208-8f29-4fe7-ac35-3a7082354b86-comedies-rakuten-tv-1621956497-width200-quality100.png" tvg-country="France" group-title="04. Cinéma",Rakuten TV Comédies
@@ -155,7 +155,7 @@ https://tvradiozap.eu/1235
 https://tvradiozap.eu/1012
 #EXTINF:-1 tvg-id="" tvg-name="FilmRise" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Filmrise.svg/330px-Filmrise.svg.png" tvg-country="Canada" group-title="04. Cinéma",FilmRise
 https://tvradiozap.eu/1239
-#EXTINF:-1 tvg-id="PlutoTVHistoire.fr" tvg-name="Plu.TV Histoire" tvg-logo="https://images.pluto.tv/channels/611e771e2f5f180007002224/thumbnail.jpg" tvg-country="France" group-title="05. Culture",Plu.TV Histoire
+#EXTINF:-1 tvg-id="PlutoTVHistoire.fr" tvg-name="Histoire (Pluto)" tvg-logo="https://images.pluto.tv/channels/611e771e2f5f180007002224/thumbnail.jpg" tvg-country="France" group-title="05. Culture",Histoire (Pluto)
 https://tvradiozap.eu/788
 #EXTINF:-1 tvg-id="" tvg-name="TVD (CH)" tvg-logo="https://tvdecouverte.ch/wp-content/uploads/2022/11/Couleur_2_TVDecouverte-1024x184.png" tvg-country="Suisse" group-title="05. Culture",TVD (CH)
 https://tvradiozap.eu/1383
@@ -227,12 +227,12 @@ https://tvradiozap.eu/978
 https://tvradiozap.eu/905
 #EXTINF:-1 tvg-id="Cartoonito.fr" tvg-name="Cartoonito" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cartoonito_-_Logo_2021.svg/330px-Cartoonito_-_Logo_2021.svg.png" tvg-country="France" group-title="11. Jeunesse",Cartoonito
 https://tvradiozap.eu/1391
-#EXTINF:-1 tvg-id="" tvg-name="Plu.TV Les Schtroumpfs" tvg-logo="https://images.pluto.tv/channels/68b16d2282862c1f067dc763/thumbnail_1760383271593.jpg" tvg-country="France" group-title="11. Jeunesse",Plu.TV Les Schtroumpfs
+#EXTINF:-1 tvg-id="" tvg-name="Les Schtroumpfs (Pluto)" tvg-logo="https://images.pluto.tv/channels/68b16d2282862c1f067dc763/thumbnail_1760383271593.jpg" tvg-country="France" group-title="11. Jeunesse",Les Schtroumpfs (Pluto)
 https://tvradiozap.eu/1385
-#EXTINF:-1 tvg-id="" tvg-name="Plu.TV Retro Toons" tvg-logo="https://images.pluto.tv/channels/611e6a9b4bb5790007a6f0f8/thumbnail.jpg" tvg-country="France" group-title="11. Jeunesse",Plu.TV Retro Toons
-https://tvradiozap.eu/802
 #EXTINF:-1 tvg-id="FR:.Famille.-.Rakuten.TV.fr" tvg-name="Rakuten TV Famille" tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/e6d2c8ac-84c1-4f0e-85cb-9ec41be9b3df-width200-quality90.jpeg" tvg-country="France" group-title="11. Jeunesse",Rakuten TV Famille
 https://tvradiozap.eu/1055
+#EXTINF:-1 tvg-id="" tvg-name="Retro Toons (Pluto)" tvg-logo="https://images.pluto.tv/channels/611e6a9b4bb5790007a6f0f8/thumbnail.jpg" tvg-country="France" group-title="11. Jeunesse",Retro Toons (Pluto)
+https://tvradiozap.eu/802
 #EXTINF:-1 tvg-id="FRBD5100002NL" tvg-name="Supertoons" tvg-logo="https://time2replay.com/wp-content/uploads/2023/05/supertoons-direct.jpg" tvg-country="France" group-title="11. Jeunesse",Supertoons
 https://tvradiozap.eu/1218
 #EXTINF:-1 tvg-id="" tvg-name="Wasabi" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/b2d8fc10-ce23-4c02-a72f-8fd81ff219fd-width200-quality90.jpeg" tvg-country="France" group-title="11. Jeunesse",Wasabi
@@ -293,14 +293,14 @@ https://tvradiozap.eu/1316
 https://tvradiozap.eu/1176
 #EXTINF:-1 tvg-id="tvcBF.ca" tvg-name="TVCBF  (CA)" tvg-logo="https://www.tvcbf.tv/images/logo-tvcbf-menu-2024.png" tvg-country="Canada" group-title="13. Local",TVCBF  (CA)
 https://tvradiozap.eu/1177
+#EXTINF:-1 tvg-id="" tvg-name="Animaux (Pluto)" tvg-logo="https://images.pluto.tv/channels/60925a44f0350600075a1fdc/thumbnail.jpg" tvg-country="France" group-title="14. Nature",Animaux (Pluto)
+https://tvradiozap.eu/833
 #EXTINF:-1 tvg-id="FRBC3900004DS" tvg-name="Cap Terre" tvg-logo="https://lookaa.net/live/tv/capterre.jpeg" tvg-country="France" group-title="14. Nature",Cap Terre
 https://tvradiozap.eu/963
 #EXTINF:-1 tvg-id="FRBC4000001IO" tvg-name="Destination Nature" tvg-logo="https://images.samsung.com/is/image/samsung/assets/fr/smart-tv/samsung-tv-plus/all-channels/Destination_Nature_1000x1000_Circle_300_DPI-20220915-141455.png?$330_186_PNG$" tvg-country="France" group-title="14. Nature",Destination Nature
 https://tvradiozap.eu/910
 #EXTINF:-1 tvg-id="FR:.Nature.Time.fr" tvg-name="Nature time" tvg-logo="https://images.samsung.com/is/image/samsung/assets/be_fr/smart-tv/samsung-tv-plus/all-channels/NatureTime_circle_1000x1000.png?$330_186_PNG$" tvg-country="France" group-title="14. Nature",Nature time
 https://tvradiozap.eu/704
-#EXTINF:-1 tvg-id="" tvg-name="Plu.TV Animaux" tvg-logo="https://images.pluto.tv/channels/60925a44f0350600075a1fdc/thumbnail.jpg" tvg-country="France" group-title="14. Nature",Plu.TV Animaux
-https://tvradiozap.eu/833
 #EXTINF:-1 tvg-id="IDF1.fr" tvg-name="20 Minutes TV  (IdF)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/20_Minutes_TV_IDF_logo_%282023%29.png/330px-20_Minutes_TV_IDF_logo_%282023%29.png" tvg-country="France" group-title="15. Régional",20 Minutes TV  (IdF)
 https://tvradiozap.eu/681
 #EXTINF:-1 tvg-id="8MontBlanc.fr" tvg-name="8 Mont-Blanc" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/6/6a/Logo_8_Mont_Blanc_2015.svg/330px-Logo_8_Mont_Blanc_2015.svg.png" tvg-country="France" group-title="15. Régional",8 Mont-Blanc
