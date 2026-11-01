@@ -103,6 +103,8 @@ https://tvradiozap.eu/99
 https://tvradiozap.eu/1224
 #EXTINF:-1 tvg-id="" tvg-name="Box Office Thrillers" tvg-logo="https://fusion.molotov.tv/arts/i/330x330/Ch0SGwoUNF6Jrg-hJ97Vs0TiZuHcM2aAxNkSA3BuZw/png" tvg-country="France" group-title="04. Cinéma",Box Office Thrillers
 https://tvradiozap.eu/97
+#EXTINF:-1 tvg-id="" tvg-name="Ciné d'Asie by Pluto" tvg-logo="https://images.pluto.tv/channels/62f3e2d000418d00070f7dbc/colorLogoPNG_1751272759694.png" tvg-country="France" group-title="04. Cinéma",Ciné d'Asie by Pluto
+https://tvradiozap.eu/815
 #EXTINF:-1 tvg-id="FRBB39000020C" tvg-name="Ciné Nanar" tvg-logo="https://www.planetecsat.com/wp-content/uploads/2022/09/Logo-Cine-Nanar.png" tvg-country="France" group-title="04. Cinéma",Ciné Nanar
 https://tvradiozap.eu/930
 #EXTINF:-1 tvg-id="PlutoTVSciFi.fr" tvg-name="Ciné Sci-Fi" tvg-logo="https://images.pluto.tv/channels/60c34592c911890007f29a73/thumbnail.jpg" tvg-country="France" group-title="04. Cinéma",Ciné Sci-Fi
