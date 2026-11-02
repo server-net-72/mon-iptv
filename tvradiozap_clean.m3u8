@@ -241,8 +241,6 @@ https://tvradiozap.eu/652
 https://tvradiozap.eu/1063
 #EXTINF:-1 tvg-id="FR7000045E" tvg-name="Yu-Gi-Oh!" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/a/a5/Yu-Gi-Oh_Logo.JPG" tvg-country="Corée du Sud" group-title="11. Jeunesse",Yu-Gi-Oh!
 https://tvradiozap.eu/850
-#EXTINF:-1 tvg-id="" tvg-name="MGG Esport" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/4/4e/Mgg_tv.png" tvg-country="France" group-title="12. Jeux",MGG Esport
-https://tvradiozap.eu/1325
 #EXTINF:-1 tvg-id="" tvg-name="iXPé (BE)" tvg-logo="https://static-content.rtbf.be/article/image/1248x702/3/d/d/3740c9c5a9266241f4b10deff5478baf-1633607270.jpg" tvg-country="Belgique" group-title="12. Jeux",iXPé (BE)
 https://tvradiozap.eu/1324
 #EXTINF:-1 tvg-id="7ALimoges.fr" tvg-name="7A Limoges" tvg-logo="https://www.7alimoges.tv/photo/titre_4350949.jpg" tvg-country="France" group-title="13. Local",7A Limoges
@@ -381,6 +379,8 @@ https://tvradiozap.eu/1545
 https://tvradiozap.eu/1228
 #EXTINF:-1 tvg-id="" tvg-name="Au coeur du danger" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR3900002FW_20260310T031715SQUARE.png" tvg-country="France" group-title="16. Reportages",Au coeur du danger
 https://tvradiozap.eu/1074
+#EXTINF:-1 tvg-id="" tvg-name="Bons plans & Arnaques" tvg-logo="https://tvpdotcomdynamiclogopeu.samsungcloud.tv/resize?url=https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FRBC3900003ZH_20260616T034218SQUARE.png&h=250" tvg-country="France" group-title="16. Reportages",Bons plans & Arnaques
+https://tvradiozap.eu/736
 #EXTINF:-1 tvg-id="" tvg-name="Crime Enquêtes & Faits divers" tvg-logo="https://img1.oqee.net/channel_pictures/3738/w300" tvg-country="France" group-title="16. Reportages",Crime Enquêtes & Faits divers
 https://tvradiozap.eu/81
 #EXTINF:-1 tvg-id="" tvg-name="Crime Scene" tvg-logo="https://image.xumo.com/v1/channels/channel/99994448/600x200.png?type=white_cropped" tvg-country="France" group-title="16. Reportages",Crime Scene
