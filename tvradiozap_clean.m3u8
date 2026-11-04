@@ -31,6 +31,8 @@ https://tvradiozap.eu/646
 https://tvradiozap.eu/656
 #EXTINF:-1 tvg-id="" tvg-name="Arte Invitation au Voyage" tvg-logo="https://princealbert1.mc/var/cap/storage/images/_aliases/w2160/7/7/4/0/50477-1-fre-FR/1e396f6f66bb-th-1-.jpg2.jpg" tvg-country="France" group-title="01. TNT-Top",Arte Invitation au Voyage
 https://tvradiozap.eu/91
+#EXTINF:-1 tvg-id="" tvg-name="Bastille TV" tvg-logo="https://d2f0ora2gkri0g.cloudfront.net/87/3b/873bc623-80b7-4fc4-8ec2-1e94dc3ccb81.png" tvg-country="France" group-title="01. TNT-Top",Bastille TV
+https://tvradiozap.eu/765
 #EXTINF:-1 tvg-id="FR:.Brefcinema.fr" tvg-name="BrefCinéma" tvg-logo="https://images.samsung.com/is/image/samsung/assets/fr/smart-tv/samsung-tv-plus/all-channels/Brefcinema.png?$330_186_PNG$" tvg-country="France" group-title="01. TNT-Top",BrefCinéma
 https://tvradiozap.eu/858
 #EXTINF:-1 tvg-id="France24.fr" tvg-name="France 24" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/2/24/Logos_FRANCE24_RVB_2013.svg/330px-Logos_FRANCE24_RVB_2013.svg.png" tvg-country="France" group-title="01. TNT-Top",France 24
