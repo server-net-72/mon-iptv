@@ -31,8 +31,6 @@ https://tvradiozap.eu/646
 https://tvradiozap.eu/656
 #EXTINF:-1 tvg-id="" tvg-name="Arte Invitation au Voyage" tvg-logo="https://princealbert1.mc/var/cap/storage/images/_aliases/w2160/7/7/4/0/50477-1-fre-FR/1e396f6f66bb-th-1-.jpg2.jpg" tvg-country="France" group-title="01. TNT-Top",Arte Invitation au Voyage
 https://tvradiozap.eu/91
-#EXTINF:-1 tvg-id="" tvg-name="Bastille TV" tvg-logo="https://d2f0ora2gkri0g.cloudfront.net/87/3b/873bc623-80b7-4fc4-8ec2-1e94dc3ccb81.png" tvg-country="France" group-title="01. TNT-Top",Bastille TV
-https://tvradiozap.eu/765
 #EXTINF:-1 tvg-id="FR:.Brefcinema.fr" tvg-name="BrefCinéma" tvg-logo="https://images.samsung.com/is/image/samsung/assets/fr/smart-tv/samsung-tv-plus/all-channels/Brefcinema.png?$330_186_PNG$" tvg-country="France" group-title="01. TNT-Top",BrefCinéma
 https://tvradiozap.eu/858
 #EXTINF:-1 tvg-id="France24.fr" tvg-name="France 24" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/2/24/Logos_FRANCE24_RVB_2013.svg/330px-Logos_FRANCE24_RVB_2013.svg.png" tvg-country="France" group-title="01. TNT-Top",France 24
@@ -113,6 +111,8 @@ https://tvradiozap.eu/930
 https://tvradiozap.eu/782
 #EXTINF:-1 tvg-id="FRBD19000095S" tvg-name="Ciné Western" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/988847ff-98f1-445d-8b3c-ad62be4f9648-width330-quality90.jpeg" tvg-country="France" group-title="04. Cinéma",Ciné Western
 https://tvradiozap.eu/861
+#EXTINF:-1 tvg-id="" tvg-name="Dragon TV" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR130000539_20261013T053842SQUARE.png" tvg-country="France" group-title="04. Cinéma",Dragon TV
+https://tvradiozap.eu/1099
 #EXTINF:-1 tvg-id="FRBB340000115" tvg-name="Emotion'L" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/130d95fd-f638-4e54-bde9-5d0af0941974-emotion-l-1639670054-width330-quality90.jpeg" tvg-country="France" group-title="04. Cinéma",Emotion'L
 https://tvradiozap.eu/860
 #EXTINF:-1 tvg-id="" tvg-name="French Collection (Pluto)" tvg-logo="https://images.pluto.tv/channels/62f3e0522443200008c567d7/thumbnail.jpg" tvg-country="France" group-title="04. Cinéma",French Collection (Pluto)
@@ -157,6 +157,8 @@ https://tvradiozap.eu/1235
 https://tvradiozap.eu/1012
 #EXTINF:-1 tvg-id="" tvg-name="FilmRise" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Filmrise.svg/330px-Filmrise.svg.png" tvg-country="Canada" group-title="04. Cinéma",FilmRise
 https://tvradiozap.eu/1239
+#EXTINF:-1 tvg-id="" tvg-name="Bastille TV" tvg-logo="https://d2f0ora2gkri0g.cloudfront.net/87/3b/873bc623-80b7-4fc4-8ec2-1e94dc3ccb81.png" tvg-country="France" group-title="05. Culture",Bastille TV
+https://tvradiozap.eu/765
 #EXTINF:-1 tvg-id="PlutoTVHistoire.fr" tvg-name="Histoire (Pluto)" tvg-logo="https://images.pluto.tv/channels/611e771e2f5f180007002224/thumbnail.jpg" tvg-country="France" group-title="05. Culture",Histoire (Pluto)
 https://tvradiozap.eu/788
 #EXTINF:-1 tvg-id="" tvg-name="TVD (CH)" tvg-logo="https://tvdecouverte.ch/wp-content/uploads/2022/11/Couleur_2_TVDecouverte-1024x184.png" tvg-country="Suisse" group-title="05. Culture",TVD (CH)
@@ -343,6 +345,8 @@ https://tvradiozap.eu/859
 https://tvradiozap.eu/889
 #EXTINF:-1 tvg-id="TeleGrenobleIsere.fr" tvg-name="TG+ (Télé Grenoble)" tvg-logo="https://tgplus.fr/wp-content/uploads/2025/12/LOGOTYPES-RVB-TG-02-scaled-e1762939545843_6949472a9ff3c.png" tvg-country="France" group-title="15. Régional",TG+ (Télé Grenoble)
 https://tvradiozap.eu/280
+#EXTINF:-1 tvg-id="TLC.fr" tvg-name="TLC (Cholet)" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/6/64/TLC_logo_2010.png" tvg-country="France" group-title="15. Régional",TLC (Cholet)
+https://tvradiozap.eu/835
 #EXTINF:-1 tvg-id="TVVendee.fr" tvg-name="TV Vendée" tvg-logo="https://i.imgur.com/YW7JKcw.png" tvg-country="France" group-title="15. Régional",TV Vendée
 https://tvradiozap.eu/682
 #EXTINF:-1 tvg-id="TV7Bordeaux.fr" tvg-name="TV7 Bordeaux" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/LOGO_-_TV7_Bordeaux.png/330px-LOGO_-_TV7_Bordeaux.png" tvg-country="France" group-title="15. Régional",TV7 Bordeaux
