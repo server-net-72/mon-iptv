@@ -43,6 +43,8 @@ https://tvradiozap.eu/1522
 https://tvradiozap.eu/703
 #EXTINF:-1 tvg-id="01TV.fr" tvg-name="Tech&Co" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/8/83/Tech_%26_Co.svg/500px-Tech_%26_Co.svg.png" tvg-country="France" group-title="01. TNT-Top",Tech&Co
 https://tvradiozap.eu/878
+#EXTINF:-1 tvg-id="RTLTVI.be" tvg-name="RTL TVI (BE)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/RTL-TVI_logo.svg/330px-RTL-TVI_logo.svg.png" tvg-country="Belgique" group-title="01. TNT-Top",RTL TVI (BE)
+https://tvradiozap.eu/906
 #EXTINF:-1 tvg-id="TrendsZ.be" tvg-name="Trends Z (BE)" tvg-logo="https://www.csa.be/wp-content/uploads/2009/07/Trends-Z-Blauw.png" tvg-country="Belgique" group-title="01. TNT-Top",Trends Z (BE)
 https://tvradiozap.eu/1271
 #EXTINF:-1 tvg-id="TVMonaco.mc" tvg-name="TV Monaco (MC)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/TV_Monaco_logo.png/960px-TV_Monaco_logo.png" tvg-country="Monaco" group-title="01. TNT-Top",TV Monaco (MC)
@@ -179,6 +181,12 @@ https://tvradiozap.eu/1190
 https://tvradiozap.eu/1014
 #EXTINF:-1 tvg-id="" tvg-name="Tahiti Web Radio TV" tvg-logo="https://storage.googleapis.com/hostinger-horizons-assets-prod/033a3c19-6232-4e1e-ad25-8250d6cef15f/3129ae4cb5351b79624cb0b742e2696a.png" tvg-country="Polynésie Française" group-title="06. Divertissement",Tahiti Web Radio TV
 https://tvradiozap.eu/1083
+#EXTINF:-1 tvg-id="ClubRTL.be" tvg-name="RTL Club (BE)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/RTL_Club_Logo_2023.svg/330px-RTL_Club_Logo_2023.svg.png" tvg-country="Belgique" group-title="06. Divertissement",RTL Club (BE)
+https://tvradiozap.eu/655
+#EXTINF:-1 tvg-id="ClubRTL.be" tvg-name="RTL District (BE)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/RTL_District_Logo_2024.svg/330px-RTL_District_Logo_2024.svg.png" tvg-country="Belgique" group-title="06. Divertissement",RTL District (BE)
+https://tvradiozap.eu/1504
+#EXTINF:-1 tvg-id="PlugRTL.be" tvg-name="RTL Plug (BE)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/RTL_Plug_Logo_2023.svg/330px-RTL_Plug_Logo_2023.svg.png" tvg-country="Belgique" group-title="06. Divertissement",RTL Plug (BE)
+https://tvradiozap.eu/933
 #EXTINF:-1 tvg-id="" tvg-name="MHZ  (CA)" tvg-logo="https://vhx.imgix.net/fred/assets/02012a49-7526-4336-8a91-b26db95ab8bc.png?fit=max&h=84&q=92&w=400" tvg-country="Canada" group-title="06. Divertissement",MHZ  (CA)
 https://tvradiozap.eu/1179
 #EXTINF:-1 tvg-id="NoovoComedies.ca" tvg-name="Noovo Comédies  (CA)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/52/Noovo_logo.png" tvg-country="Canada" group-title="06. Divertissement",Noovo Comédies  (CA)
