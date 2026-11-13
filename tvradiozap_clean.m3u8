@@ -29,7 +29,7 @@ https://tvradiozap.eu/898
 https://tvradiozap.eu/646
 #EXTINF:-1 tvg-id="ViaGrandParis.fr" tvg-name="Le Figaro TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Le_Figaro_TV_IDF_%282023%29.png/330px-Le_Figaro_TV_IDF_%282023%29.png" tvg-country="France" group-title="01. TNT-Top",Le Figaro TV
 https://tvradiozap.eu/656
-#EXTINF:-1 tvg-id="" tvg-name="Arte Invitation au Voyage" tvg-logo="https://princealbert1.mc/var/cap/storage/images/_aliases/w2160/7/7/4/0/50477-1-fre-FR/1e396f6f66bb-th-1-.jpg2.jpg" tvg-country="France" group-title="01. TNT-Top",Arte Invitation au Voyage
+#EXTINF:-1 tvg-id="" tvg-name="Arte Invitation au Voyage" tvg-logo="https://carolinepochon.com/wp-content/uploads/2021/01/53415038_2053883741393312_4356529020758654976_o.png?w=300" tvg-country="France" group-title="01. TNT-Top",Arte Invitation au Voyage
 https://tvradiozap.eu/91
 #EXTINF:-1 tvg-id="FR:.Brefcinema.fr" tvg-name="BrefCinéma" tvg-logo="https://images.samsung.com/is/image/samsung/assets/fr/smart-tv/samsung-tv-plus/all-channels/Brefcinema.png?$330_186_PNG$" tvg-country="France" group-title="01. TNT-Top",BrefCinéma
 https://tvradiozap.eu/858
@@ -67,8 +67,8 @@ https://tvradiozap.eu/675
 https://tvradiozap.eu/1140
 #EXTINF:-1 tvg-id="FR3200001NQ" tvg-name="BBC Earth (GB)" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR3200001NQ_20241015T040214SQUARE.png" tvg-country="Royaume-Uni" group-title="01. TNT-Top",BBC Earth (GB)
 https://tvradiozap.eu/1145
-#EXTINF:-1 group-title="02. Archives",2 ---------- Archives
-https://httpbin.org/status/404
+#EXTINF:-1 tvg-logo="" group-title="02. Archives",2 ---------- Archives
+https://tvradiozap.pages-perso.free.fr/jingles/alea.php/alea.mp3
 #EXTINF:-1 tvg-id="FR: INA 70s" tvg-name="INA 70" tvg-logo="https://images.pluto.tv/series/651fe0613099fc00084bd30e/featuredImage.jpg" tvg-country="France" group-title="02. Archives",INA 70
 https://tvradiozap.eu/935
 #EXTINF:-1 tvg-id="FR:.Ardivision.fr" tvg-name="INA Ardivision" tvg-logo="https://cdn-hub.ina.fr/page_hub/360x270/290/article-corporate_b019d194-2e83-420d-99fa-a2e90ff6229e.jpeg" tvg-country="France" group-title="02. Archives",INA Ardivision
