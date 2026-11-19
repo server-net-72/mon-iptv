@@ -1,8 +1,12 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="TF1.fr" tvg-name="TF1" tvg-logo="https://companieslogo.com/img/orig/TFI.PA-8c6da426.png" tvg-country="France" group-title="01. TNT-Top",TF1
 https://tvradiozap.eu/890
+#EXTINF:-1 tvg-id="M6.fr" tvg-name="M6" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Logo_M6_%282020%2C_fond_clair%29.svg/330px-Logo_M6_%282020%2C_fond_clair%29.svg.png" tvg-country="France" group-title="01. TNT-Top",M6
+https://tvradiozap.eu/664
 #EXTINF:-1 tvg-id="Arte.fr" tvg-name="Arte" tvg-logo="https://images.squarespace-cdn.com/content/v1/553f926ce4b0a46bddb4baf6/1561374992682-AQP12A8997URCIOMDY5I/ARTE-seul-2.png" tvg-country="France" group-title="01. TNT-Top",Arte
 https://tvradiozap.eu/640
+#EXTINF:-1 tvg-id="W9.fr" tvg-name="W9" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/W9-Logo.svg/330px-W9-Logo.svg.png" tvg-country="France" group-title="01. TNT-Top",W9
+https://tvradiozap.eu/897
 #EXTINF:-1 tvg-id="TMC.fr" tvg-name="TMC" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/a/a8/TMC_logo_2016.svg/330px-TMC_logo_2016.svg.png" tvg-country="France" group-title="01. TNT-Top",TMC
 https://tvradiozap.eu/895
 #EXTINF:-1 tvg-id="NT1.fr" tvg-name="TFX" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TFX_logo.svg/330px-TFX_logo.svg.png" tvg-country="France" group-title="01. TNT-Top",TFX
@@ -21,6 +25,8 @@ https://tvradiozap.eu/834
 https://tvradiozap.eu/737
 #EXTINF:-1 tvg-id="TF1SeriesFilms.fr" tvg-name="TF1 Séries Films" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4b/TF1_S%C3%A9ries_Films_logo_2020.svg/330px-TF1_S%C3%A9ries_Films_logo_2020.svg.png" tvg-country="France" group-title="01. TNT-Top",TF1 Séries Films
 https://tvradiozap.eu/649
+#EXTINF:-1 tvg-id="6TER.fr" tvg-name="6TER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Logo_6ter_2016.svg/330px-Logo_6ter_2016.svg.png" tvg-country="France" group-title="01. TNT-Top",6TER
+https://tvradiozap.eu/638
 #EXTINF:-1 tvg-id="Numero23.fr" tvg-name="RMC Story" tvg-logo="https://static-cdn.tv.sfr.net/data/img/apps/edito/attachment/animation/tile/logoschaines169rmcstorycouleurs.png" tvg-country="France" group-title="01. TNT-Top",RMC Story
 https://tvradiozap.eu/644
 #EXTINF:-1 tvg-id="RMCDecouverte.fr" tvg-name="RMC Découverte" tvg-logo="https://static-cdn.tv.sfr.net/data/img/apps/edito/attachment/animation/tile/logoschaines169rmcdecouvertecouleurs.png" tvg-country="France" group-title="01. TNT-Top",RMC Découverte
@@ -493,19 +499,31 @@ https://tvradiozap.eu/851
 https://tvradiozap.eu/1245
 #EXTINF:-1 tvg-id="" tvg-name="Tennis Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4c/Logo_Tennis_Channel.svg/250px-Logo_Tennis_Channel.svg.png" tvg-country="France" group-title="20. Sport",Tennis Channel
 https://tvradiozap.eu/1234
-#EXTINF:-1 tvg-id="FRBC3500002E4" tvg-name="Echappées belles" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/eedf4ae4-7170-48f2-a686-98e80d0d463f-width308-quality100.jpeg" tvg-country="France" group-title="21. Voyage",Echappées belles
+#EXTINF:-1 tvg-id="" tvg-name="RadioTV Mulhouse" tvg-logo="https://i.imgur.com/4esQG8H.png" tvg-country="France" group-title="21. Univers visuel",RadioTV Mulhouse
+https://tvradiozap.eu/1338
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Chansons" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA2900017MW_20250630T232945SQUARE.png" tvg-country="Canada" group-title="21. Univers visuel",Stingray Chansons
+https://tvradiozap.eu/759
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Free Riding" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/d90a57a66251fdda967c2e2b9e6aa25d/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1753727436599_StingrayFreeRiding_HUDlogo_centered_260x147.png" tvg-country="Canada" group-title="21. Univers visuel",Stingray Free Riding
+https://tvradiozap.eu/1517
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Nostalgie" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA2900017MW_20250630T232945SQUARE.png" tvg-country="Canada" group-title="21. Univers visuel",Stingray Nostalgie
+https://tvradiozap.eu/1574
+#EXTINF:-1 tvg-id="" tvg-name="Energy TV Music (US)" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3523-294x165-FFFFFF.jpg" tvg-country="USA" group-title="21. Univers visuel",Energy TV Music (US)
+https://tvradiozap.eu/1444
+#EXTINF:-1 tvg-id="" tvg-name="iHeartCountry Classics (US)" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/3395d3b6c6e895a495fd12a2c719b21c/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1728501104207_260x147_Image_HUD_2.png" tvg-country="USA" group-title="21. Univers visuel",iHeartCountry Classics (US)
+https://tvradiozap.eu/1518
+#EXTINF:-1 tvg-id="FRBC3500002E4" tvg-name="Echappées belles" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/eedf4ae4-7170-48f2-a686-98e80d0d463f-width308-quality100.jpeg" tvg-country="France" group-title="22. Voyage",Echappées belles
 https://tvradiozap.eu/705
-#EXTINF:-1 tvg-id="" tvg-name="Echos du monde" tvg-logo="https://images.plex.tv/photo?size=small-120&scale=2&url=https://provider-static.plex.tv/epg/cms/production/12ed6042-d759-427f-8856-c4a8d1d56cb4/Echos_whiteRDX.png" tvg-country="France" group-title="21. Voyage",Echos du monde
+#EXTINF:-1 tvg-id="" tvg-name="Echos du monde" tvg-logo="https://images.plex.tv/photo?size=small-120&scale=2&url=https://provider-static.plex.tv/epg/cms/production/12ed6042-d759-427f-8856-c4a8d1d56cb4/Echos_whiteRDX.png" tvg-country="France" group-title="22. Voyage",Echos du monde
 https://tvradiozap.eu/1311
-#EXTINF:-1 tvg-id="" tvg-name="Incroyables fortunes" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR600001I2_20251202T002639SQUARE.png" tvg-country="France" group-title="21. Voyage",Incroyables fortunes
+#EXTINF:-1 tvg-id="" tvg-name="Incroyables fortunes" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR600001I2_20251202T002639SQUARE.png" tvg-country="France" group-title="22. Voyage",Incroyables fortunes
 https://tvradiozap.eu/653
-#EXTINF:-1 tvg-id="RMCJiraidormirchezvous.fr" tvg-name="RMC J'irai dormir chez vous" tvg-logo="https://static-cdn.tv.sfr.net/data/img/apps/edito/attachment/animation/tile/imgrectangle1920RMCJDCVmin.jpg" tvg-country="France" group-title="21. Voyage",RMC J'irai dormir chez vous
+#EXTINF:-1 tvg-id="RMCJiraidormirchezvous.fr" tvg-name="RMC J'irai dormir chez vous" tvg-logo="https://static-cdn.tv.sfr.net/data/img/apps/edito/attachment/animation/tile/imgrectangle1920RMCJDCVmin.jpg" tvg-country="France" group-title="22. Voyage",RMC J'irai dormir chez vous
 https://tvradiozap.eu/492
-#EXTINF:-1 tvg-id="FR:.Travelxp.fr" tvg-name="Travelxp" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/Txphd_logo_2015.png" tvg-country="France" group-title="21. Voyage",Travelxp
+#EXTINF:-1 tvg-id="FR:.Travelxp.fr" tvg-name="Travelxp" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/Txphd_logo_2015.png" tvg-country="France" group-title="22. Voyage",Travelxp
 https://tvradiozap.eu/528
-#EXTINF:-1 tvg-id="" tvg-name="TV5Monde+ Voyage" tvg-logo="https://worldscreen.com/wp-content/uploads/2024/10/TV5MondeVoyage-Logo-1024.jpg" tvg-country="France" group-title="21. Voyage",TV5Monde+ Voyage
+#EXTINF:-1 tvg-id="" tvg-name="TV5Monde+ Voyage" tvg-logo="https://worldscreen.com/wp-content/uploads/2024/10/TV5MondeVoyage-Logo-1024.jpg" tvg-country="France" group-title="22. Voyage",TV5Monde+ Voyage
 https://tvradiozap.eu/417
-#EXTINF:-1 tvg-id="FR3600005C7" tvg-name="Voyages et Saveurs" tvg-logo="https://images.pluto.tv/channels/680291e38e1ff89c2427aefd/featuredImage_1749650211199.jpg?auto=&ixlib=react-9.1.5&w=448&h=248&dpr=2&q=20" tvg-country="France" group-title="21. Voyage",Voyages et Saveurs
+#EXTINF:-1 tvg-id="FR3600005C7" tvg-name="Voyages et Saveurs" tvg-logo="https://images.pluto.tv/channels/680291e38e1ff89c2427aefd/featuredImage_1749650211199.jpg?auto=&ixlib=react-9.1.5&w=448&h=248&dpr=2&q=20" tvg-country="France" group-title="22. Voyage",Voyages et Saveurs
 https://tvradiozap.eu/1045
-#EXTINF:-1 tvg-id="" tvg-name="Voyages+" tvg-logo="https://tvradiozap.eu/tv/logos/voyages+.png" tvg-country="France" group-title="21. Voyage",Voyages+
+#EXTINF:-1 tvg-id="" tvg-name="Voyages+" tvg-logo="https://tvradiozap.eu/tv/logos/voyages+.png" tvg-country="France" group-title="22. Voyage",Voyages+
 https://tvradiozap.eu/989
