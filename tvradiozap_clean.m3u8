@@ -253,8 +253,6 @@ https://tvradiozap.eu/1063
 https://tvradiozap.eu/850
 #EXTINF:-1 tvg-id="" tvg-name="iXPé (BE)" tvg-logo="https://static-content.rtbf.be/article/image/1248x702/3/d/d/3740c9c5a9266241f4b10deff5478baf-1633607270.jpg" tvg-country="Belgique" group-title="12. Jeux",iXPé (BE)
 https://tvradiozap.eu/1324
-#EXTINF:-1 tvg-id="7ALimoges.fr" tvg-name="7A Limoges" tvg-logo="https://www.7alimoges.tv/photo/titre_4350949.jpg" tvg-country="France" group-title="13. Local",7A Limoges
-https://tvradiozap.eu/969
 #EXTINF:-1 tvg-id="AlpedHuez.fr" tvg-name="Alpe d'Huez" tvg-logo="https://static.wixstatic.com/media/dd5ade_19f789617d654077a0f66846c2e75056~mv2.png" tvg-country="France" group-title="13. Local",Alpe d'Huez
 https://tvradiozap.eu/849
 #EXTINF:-1 tvg-id="AngersTele.fr" tvg-name="Angers Télé" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7f/Logo_Angers_T%C3%A9l%C3%A9_%282023%29.png" tvg-country="France" group-title="13. Local",Angers Télé
