@@ -53,6 +53,8 @@ https://tvradiozap.eu/878
 https://tvradiozap.eu/1271
 #EXTINF:-1 tvg-id="TVMonaco.mc" tvg-name="TV Monaco (MC)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/TV_Monaco_logo.png/960px-TV_Monaco_logo.png" tvg-country="Monaco" group-title="01. TNT-Top",TV Monaco (MC)
 https://tvradiozap.eu/886
+#EXTINF:-1 tvg-id="RTS1.ch" tvg-name="RTS1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/RTS_1_Logo_2023.svg/330px-RTS_1_Logo_2023.svg.png" tvg-country="Suisse" group-title="01. TNT-Top",RTS1
+https://tvradiozap.eu/903
 #EXTINF:-1 tvg-id="RougeTV.ch" tvg-name="Carac1 (CH)" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/7/74/CARAC1_logo_2023.svg/330px-CARAC1_logo_2023.svg.png" tvg-country="Suisse" group-title="01. TNT-Top",Carac1 (CH)
 https://tvradiozap.eu/661
 #EXTINF:-1 tvg-id="ONETV.ch" tvg-name="Carac2 (CH)" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/e/e8/CARAC2_logo_2023.svg/330px-CARAC2_logo_2023.svg.png" tvg-country="Suisse" group-title="01. TNT-Top",Carac2 (CH)
