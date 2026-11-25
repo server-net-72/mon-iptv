@@ -477,6 +477,8 @@ https://tvradiozap.eu/1523
 https://tvradiozap.eu/1009
 #EXTINF:-1 tvg-id="" tvg-name="Zitata" tvg-logo="https://zitata.tv/wp-content/uploads/2026/03/cropped-Logo-Zitata-or-400.png" tvg-country="France Martinique" group-title="19. Sociétal",Zitata
 https://tvradiozap.eu/1026
+#EXTINF:-1 tvg-id="BAM.be" tvg-name="BAM (BE)" tvg-logo="https://le-de.cdn-website.com/894133b4cadc4c66aa2a5f508c2b66fd/dms3rep/multi/opt/LogoBAM-1920w.png" tvg-country="Belgique" group-title="19. Sociétal",BAM (BE)
+https://tvradiozap.eu/941
 #EXTINF:-1 tvg-id="CPAC.ca" tvg-name="CPAC (CA)" tvg-logo="https://logowik.com/content/uploads/images/cpac-tv-20169103.logowik.com.webp" tvg-country="Canada" group-title="19. Sociétal",CPAC (CA)
 https://tvradiozap.eu/1180
 #EXTINF:-1 tvg-id="LeCanaldelAssemblee.ca" tvg-name="Le Canal de l'Assemblée (CA)" tvg-logo="https://www.assnat.qc.ca/Images/logo_blanc_Assemblee_nationale_du_Quebec.png" tvg-country="Canada" group-title="19. Sociétal",Le Canal de l'Assemblée (CA)
