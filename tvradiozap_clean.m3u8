@@ -427,6 +427,8 @@ https://tvradiozap.eu/1147
 https://tvradiozap.eu/1241
 #EXTINF:-1 tvg-id="" tvg-name="Science & Vie 2" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Science_et_Vie.jpg/330px-Science_et_Vie.jpg" tvg-country="France" group-title="17. Sciences",Science & Vie 2
 https://tvradiozap.eu/1010
+#EXTINF:-1 tvg-id="" tvg-name="Adaptations Littéraires" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/73968a28-4dcc-4e8d-9b66-ba7ad79fa008-width200-quality90.jpeg" tvg-country="France" group-title="18. Séries-Films",Adaptations Littéraires
+https://tvradiozap.eu/784
 #EXTINF:-1 tvg-id="FR:.BBC.Drama.fr" tvg-name="BBC Séries" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR2900001UF_20250916T003553SQUARE.png" tvg-country="France" group-title="18. Séries-Films",BBC Séries
 https://tvradiozap.eu/844
 #EXTINF:-1 tvg-id="" tvg-name="C-Drama Now" tvg-logo="https://images-1.rakuten.tv/smg/storage/global-live-channel/translation/logo-2-1/dd1aec9c-6bec-42a1-a43f-0db13af67493-width400-height200.png" tvg-country="France" group-title="18. Séries-Films",C-Drama Now
