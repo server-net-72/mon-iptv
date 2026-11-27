@@ -305,12 +305,14 @@ https://tvradiozap.eu/1176
 https://tvradiozap.eu/1177
 #EXTINF:-1 tvg-id="" tvg-name="Animaux (Pluto)" tvg-logo="https://images.pluto.tv/channels/60925a44f0350600075a1fdc/thumbnail.jpg" tvg-country="France" group-title="14. Nature",Animaux (Pluto)
 https://tvradiozap.eu/833
-#EXTINF:-1 tvg-id="FRBC3900004DS" tvg-name="Cap Terre" tvg-logo="https://lookaa.net/live/tv/capterre.jpeg" tvg-country="France" group-title="14. Nature",Cap Terre
+#EXTINF:-1 tvg-id="FRBC3900004DS" tvg-name="Cap Terre" tvg-logo="https://capterre.fr/img/logo/transparent_neg.png" tvg-country="France" group-title="14. Nature",Cap Terre
 https://tvradiozap.eu/963
 #EXTINF:-1 tvg-id="FRBC4000001IO" tvg-name="Destination Nature" tvg-logo="https://images.samsung.com/is/image/samsung/assets/fr/smart-tv/samsung-tv-plus/all-channels/Destination_Nature_1000x1000_Circle_300_DPI-20220915-141455.png?$330_186_PNG$" tvg-country="France" group-title="14. Nature",Destination Nature
 https://tvradiozap.eu/910
 #EXTINF:-1 tvg-id="FR:.Nature.Time.fr" tvg-name="Nature time" tvg-logo="https://images.samsung.com/is/image/samsung/assets/be_fr/smart-tv/samsung-tv-plus/all-channels/NatureTime_circle_1000x1000.png?$330_186_PNG$" tvg-country="France" group-title="14. Nature",Nature time
 https://tvradiozap.eu/704
+#EXTINF:-1 tvg-id="" tvg-name="Terra Mater Wild" tvg-logo="https://www.terramater.at/wp-content/uploads/2024/11/Terra-Mater-Wild.jpg" tvg-country="France" group-title="14. Nature",Terra Mater Wild
+https://tvradiozap.eu/798
 #EXTINF:-1 tvg-id="IDF1.fr" tvg-name="20 Minutes TV  (IdF)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/20_Minutes_TV_IDF_logo_%282023%29.png/330px-20_Minutes_TV_IDF_logo_%282023%29.png" tvg-country="France" group-title="15. Régional",20 Minutes TV  (IdF)
 https://tvradiozap.eu/681
 #EXTINF:-1 tvg-id="8MontBlanc.fr" tvg-name="8 Mont-Blanc" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/6/6a/Logo_8_Mont_Blanc_2015.svg/330px-Logo_8_Mont_Blanc_2015.svg.png" tvg-country="France" group-title="15. Régional",8 Mont-Blanc
@@ -509,18 +511,36 @@ https://tvradiozap.eu/1245
 https://tvradiozap.eu/1234
 #EXTINF:-1 tvg-id="" tvg-name="RadioTV Mulhouse" tvg-logo="https://i.imgur.com/4esQG8H.png" tvg-country="France" group-title="21. Univers visuel",RadioTV Mulhouse
 https://tvradiozap.eu/1338
-#EXTINF:-1 tvg-id="" tvg-name="Stingray Chansons" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA2900017MW_20250630T232945SQUARE.png" tvg-country="Canada" group-title="21. Univers visuel",Stingray Chansons
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Chansons" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA2900017MW_20250630T232945SQUARE.png" tvg-country="France" group-title="21. Univers visuel",Stingray Chansons
 https://tvradiozap.eu/759
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Total Hits France" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork-negative/f6586885-0dd2-4bf6-b763-4633fa54f31a-width308-quality90.png" tvg-country="France" group-title="21. Univers visuel",Stingray Total Hits France
+https://tvradiozap.eu/809
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Cityscapes" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/73991aa61267bcc005a855c7b6303afc/https://image.roku.com/bh-uploads/production/infoHUDLogo/1750260327511_StingrayCityscapes_HUDlogo_centered_260x147.png" tvg-country="Canada" group-title="21. Univers visuel",Stingray Cityscapes
+https://tvradiozap.eu/776
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Cozy Cafe" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/f8f717f72440fb688192f83faa71a8ab/https://image.roku.com/bh-uploads/production/infoHUDLogo/1750260347726_CozyCafe_HUDlogo_centered_260x147.png" tvg-country="Canada" group-title="21. Univers visuel",Stingray Cozy Cafe
+https://tvradiozap.eu/743
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Exitos Latinos" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/ce/Stingray_Latin_Hits.svg/revision/latest" tvg-country="Canada" group-title="21. Univers visuel",Stingray Exitos Latinos
+https://tvradiozap.eu/812
 #EXTINF:-1 tvg-id="" tvg-name="Stingray Free Riding" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/d90a57a66251fdda967c2e2b9e6aa25d/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1753727436599_StingrayFreeRiding_HUDlogo_centered_260x147.png" tvg-country="Canada" group-title="21. Univers visuel",Stingray Free Riding
 https://tvradiozap.eu/1517
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Naturescape" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/d12329eda6e3dcc1f42ce2a350a4623d/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1750260369972_Stingray_naturescape_HUDlogo_centered_260x147.png" tvg-country="Canada" group-title="21. Univers visuel",Stingray Naturescape
+https://tvradiozap.eu/745
 #EXTINF:-1 tvg-id="" tvg-name="Stingray Nostalgie" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA2900017MW_20250630T232945SQUARE.png" tvg-country="Canada" group-title="21. Univers visuel",Stingray Nostalgie
 https://tvradiozap.eu/1574
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Greatest Hits UK" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork-negative/eb711ef1-264e-4c63-bc57-d40b99982bbf-width308-quality90.png" tvg-country="Royaume-Uni" group-title="21. Univers visuel",Stingray Greatest Hits UK
+https://tvradiozap.eu/756
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Total Hits UK" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/15/Stingray_Hits.svg" tvg-country="Royaume-Uni" group-title="21. Univers visuel",Stingray Total Hits UK
+https://tvradiozap.eu/755
 #EXTINF:-1 tvg-id="" tvg-name="KAN 26 שמות הנופלים" tvg-logo="https://i.ibb.co/6yjTszg/kan26.png" tvg-country="Israël" group-title="21. Univers visuel",KAN 26 שמות הנופלים
 https://tvradiozap.eu/116
+#EXTINF:-1 tvg-id="" tvg-name="Dreamfair" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/1d217afd4368f6d221c9b4190be34382/https://image.roku.com/bh-uploads/production/infoHUDLogo/1790879165856_dreamfair_logo_hud.png" tvg-country="USA" group-title="21. Univers visuel",Dreamfair
+https://tvradiozap.eu/734
 #EXTINF:-1 tvg-id="" tvg-name="Energy TV Music (US)" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3523-294x165-FFFFFF.jpg" tvg-country="USA" group-title="21. Univers visuel",Energy TV Music (US)
 https://tvradiozap.eu/1444
 #EXTINF:-1 tvg-id="" tvg-name="iHeartCountry Classics (US)" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/3395d3b6c6e895a495fd12a2c719b21c/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1728501104207_260x147_Image_HUD_2.png" tvg-country="USA" group-title="21. Univers visuel",iHeartCountry Classics (US)
 https://tvradiozap.eu/1518
+#EXTINF:-1 tvg-id="" tvg-name="Aventure" tvg-logo="https://images.pluto.tv/channels/611e7811eb9daf000764cbfd/colorLogoPNG.png" tvg-country="France" group-title="22. Voyage",Aventure
+https://tvradiozap.eu/764
 #EXTINF:-1 tvg-id="FRBC3500002E4" tvg-name="Echappées belles" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/eedf4ae4-7170-48f2-a686-98e80d0d463f-width308-quality100.jpeg" tvg-country="France" group-title="22. Voyage",Echappées belles
 https://tvradiozap.eu/705
 #EXTINF:-1 tvg-id="" tvg-name="Echos du monde" tvg-logo="https://images.plex.tv/photo?size=small-120&scale=2&url=https://provider-static.plex.tv/epg/cms/production/12ed6042-d759-427f-8856-c4a8d1d56cb4/Echos_whiteRDX.png" tvg-country="France" group-title="22. Voyage",Echos du monde
