@@ -513,6 +513,8 @@ https://tvradiozap.eu/1234
 https://tvradiozap.eu/1338
 #EXTINF:-1 tvg-id="" tvg-name="Stingray Chansons" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA2900017MW_20250630T232945SQUARE.png" tvg-country="France" group-title="21. Univers visuel",Stingray Chansons
 https://tvradiozap.eu/759
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Nostalgie" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA2900017MW_20250630T232945SQUARE.png" tvg-country="France" group-title="21. Univers visuel",Stingray Nostalgie
+https://tvradiozap.eu/1574
 #EXTINF:-1 tvg-id="" tvg-name="Stingray Total Hits France" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork-negative/f6586885-0dd2-4bf6-b763-4633fa54f31a-width308-quality90.png" tvg-country="France" group-title="21. Univers visuel",Stingray Total Hits France
 https://tvradiozap.eu/809
 #EXTINF:-1 tvg-id="" tvg-name="Stingray Cityscapes" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/73991aa61267bcc005a855c7b6303afc/https://image.roku.com/bh-uploads/production/infoHUDLogo/1750260327511_StingrayCityscapes_HUDlogo_centered_260x147.png" tvg-country="Canada" group-title="21. Univers visuel",Stingray Cityscapes
@@ -523,10 +525,10 @@ https://tvradiozap.eu/743
 https://tvradiozap.eu/812
 #EXTINF:-1 tvg-id="" tvg-name="Stingray Free Riding" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/d90a57a66251fdda967c2e2b9e6aa25d/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1753727436599_StingrayFreeRiding_HUDlogo_centered_260x147.png" tvg-country="Canada" group-title="21. Univers visuel",Stingray Free Riding
 https://tvradiozap.eu/1517
-#EXTINF:-1 tvg-id="" tvg-name="Stingray Naturescape" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/d12329eda6e3dcc1f42ce2a350a4623d/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1750260369972_Stingray_naturescape_HUDlogo_centered_260x147.png" tvg-country="Canada" group-title="21. Univers visuel",Stingray Naturescape
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Naturescape 1" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/d12329eda6e3dcc1f42ce2a350a4623d/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1750260369972_Stingray_naturescape_HUDlogo_centered_260x147.png" tvg-country="Canada" group-title="21. Univers visuel",Stingray Naturescape 1
 https://tvradiozap.eu/745
-#EXTINF:-1 tvg-id="" tvg-name="Stingray Nostalgie" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA2900017MW_20250630T232945SQUARE.png" tvg-country="Canada" group-title="21. Univers visuel",Stingray Nostalgie
-https://tvradiozap.eu/1574
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Naturescape 2" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/d12329eda6e3dcc1f42ce2a350a4623d/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1750260369972_Stingray_naturescape_HUDlogo_centered_260x147.png" tvg-country="Canada" group-title="21. Univers visuel",Stingray Naturescape 2
+https://tvradiozap.eu/774
 #EXTINF:-1 tvg-id="" tvg-name="Stingray Greatest Hits UK" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork-negative/eb711ef1-264e-4c63-bc57-d40b99982bbf-width308-quality90.png" tvg-country="Royaume-Uni" group-title="21. Univers visuel",Stingray Greatest Hits UK
 https://tvradiozap.eu/756
 #EXTINF:-1 tvg-id="" tvg-name="Stingray Total Hits UK" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/15/Stingray_Hits.svg" tvg-country="Royaume-Uni" group-title="21. Univers visuel",Stingray Total Hits UK
